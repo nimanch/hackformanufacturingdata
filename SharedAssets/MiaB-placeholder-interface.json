@@ -1,0 +1,27 @@
+{
+    "@id": "dtmi:com:hackformanufacturing:MiaB;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@type": "Telemetry",
+            "name": "Modbus_Humidity",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "Modbus_Temperature",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "D1_Analog",
+            "schema": "integer"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "Modbus_CO2",
+            "schema": "integer"
+        }
+    ],
+    "@context": "dtmi:dtdl:context;2"
+}
