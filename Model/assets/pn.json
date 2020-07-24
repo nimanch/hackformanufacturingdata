@@ -1,0 +1,37 @@
+[
+    {
+        "EndpointUrl": "opc.tcp://miabfeed:4980/",
+        "OpcNodes": [
+            {
+                "Id": "ns=3;s=Mitsubishi_1.Banner_Analog_Sensor"
+            },
+            {
+                "Id": "ns=3;s=Mitsubishi_1.Banner_Digital_Sensor"
+            }
+        ]
+    },
+    {
+        "EndpointUrl": "opc.tcp://192.168.4.123:4841/Softing_dataFEED_OPC_Suite_Configuration1",
+        "UseSecurity": false,
+        "OpcNodes": [
+            {
+                "Id": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog"
+            },
+            {
+                "Id": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D0_Digital"
+            },
+            {
+                "Id": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Temperature"
+            },
+            {
+                "Id": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_CO2"
+            },
+            {
+                "Id": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Humidity"
+            },
+            {
+                "Id": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D2_Blue"
+            }
+        ]
+    }
+]
