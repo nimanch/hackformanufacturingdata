@@ -1,0 +1,33 @@
+{
+  "@id": "dtmi:jabil:hackathon:bc:all;1",
+  "@type": "Interface",
+  "displayName": "All",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "SequentialNumber",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "EMT",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "CreateTime",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "DataType",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "AllData",
+      "schema": "string"
+    }
+  ],
+  "@context": "http://azureiot.com/v1/contexts/IoTModel.json"
+}

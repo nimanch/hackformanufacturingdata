@@ -1,0 +1,126 @@
+{
+  "@id": "dtmi:jabil:hackathon:pis:cutter_info;1",
+  "@type": "Interface",
+  "displayName": "Cutter Info",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "uid",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "OrgUid",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "PartNo",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "PartSpec",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "LifeStand",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "VendorUid",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "Version",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "BatchNo",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "AVGPrice",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "Remark",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "IsDisabled",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "IsDeleted",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "DateCreated",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "DateChanged",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "DateDeleted",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "UserCreated",
+      "displayName": "User Name",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "UserChanged",
+      "displayName": "User Name",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "UserDeleted",
+      "displayName": "User Name",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "Path",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "VendorName",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "VendorCode",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "TextDisabled",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "Row_Num",
+      "schema": "integer"
+    }
+  ],
+  "@context": "http://azureiot.com/v1/contexts/IoTModel.json"
+}

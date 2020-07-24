@@ -1,0 +1,125 @@
+{
+  "@id": "dtmi:jabil:hackathon:pis:cutter_workarea;1",
+  "@type": "Interface",
+  "displayName": "Work Area",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "uid",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "pid",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "OrgUid",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "KPIStationUid",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "WorkareaName",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "Remark",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "IsDisabled",
+      "displayName": "TRUE/FALSE",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "IsDeleted",
+      "displayName": "TRUE/FALSE",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "DateCreated",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "DateChanged",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "DateDeleted",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "UserCreated",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "UserChanged",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "UserDeleted",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "WorkStationUid",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "Path",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "ShowStationName",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "WorkLineUid",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "ShowLineName",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "WorkProjectUid",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "ShowProjectName",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "TextDisabled",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "Row_Num",
+      "schema": "integer"
+    }
+  ],
+  "@context": "http://azureiot.com/v1/contexts/IoTModel.json"
+}

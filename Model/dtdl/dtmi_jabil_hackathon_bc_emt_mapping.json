@@ -1,0 +1,33 @@
+{
+  "@id": "dtmi:jabil:hackathon:bc:emt_mapping;1",
+  "@type": "Interface",
+  "displayName": "EMT Mapping",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "Project",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "Station",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "Process",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "EMT",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "Name",
+      "schema": "string"
+    }
+  ],
+  "@context": "http://azureiot.com/v1/contexts/IoTModel.json"
+}

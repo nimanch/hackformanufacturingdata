@@ -1,0 +1,78 @@
+{
+  "@id": "dtmi:jabil:hackathon:pis:line;1",
+  "@type": "Interface",
+  "displayName": "Line",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "uid",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "OrgUid",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "ProjectUid",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "LineCode",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "LineName",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "Remark",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "IsDisabled",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "IsDeleted",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "DateCreated",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "DateChanged",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "DateDeleted",
+      "schema": "dateTime"
+    },
+    {
+      "@type": "Property",
+      "name": "UserCreated",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "UserChanged",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "UserDeleted",
+      "schema": "string"
+    }
+  ],
+  "@context": "http://azureiot.com/v1/contexts/IoTModel.json"
+}
