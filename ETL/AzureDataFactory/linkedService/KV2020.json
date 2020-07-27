@@ -1,0 +1,10 @@
+{
+	"name": "KV2020",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://kvhack2020.vault.azure.net/"
+		}
+	}
+}
