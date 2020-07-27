@@ -7,7 +7,7 @@
 		"pipelines": [
 			{
 				"pipelineReference": {
-					"referenceName": "pipeline1",
+					"referenceName": "SampleAzureFunctionPipeline",
 					"type": "PipelineReference"
 				}
 			}
