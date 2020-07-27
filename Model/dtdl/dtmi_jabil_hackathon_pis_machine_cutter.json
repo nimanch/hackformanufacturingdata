@@ -1,0 +1,68 @@
+{
+  "@id": "dtmi:jabil:hackathon:pis:machine:cutter;1",
+  "@type": "Interface",
+  "displayName": "Machine Cutter",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "Equipment",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "MachineNo",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "LDBMachineNo",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "Seat",
+      "schema": "integer"
+    },
+    {
+      "@type": "Property",
+      "name": "Path",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "TextDisabled",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "ShowProjectName",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "ShowLineName",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "ShowStationName",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "BuildingName",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "WorkareaName",
+      "schema": "string"
+    },
+    {
+      "@type": "Property",
+      "name": "Row_Num",
+      "schema": "integer"
+    }
+  ],
+  "@context": "http://azureiot.com/v1/contexts/IoTModel.json"
+}
