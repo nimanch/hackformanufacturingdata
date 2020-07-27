@@ -5,14 +5,7 @@
 			{
 				"name": "Base64Convertor",
 				"type": "AzureFunctionActivity",
-				"dependsOn": [
-					{
-						"activity": "KV",
-						"dependencyConditions": [
-							"Succeeded"
-						]
-					}
-				],
+				"dependsOn": [],
 				"policy": {
 					"timeout": "7.00:00:00",
 					"retry": 0,
@@ -28,27 +21,6 @@
 				"linkedServiceName": {
 					"referenceName": "Base64Convertor",
 					"type": "LinkedServiceReference"
-				}
-			},
-			{
-				"name": "KV",
-				"type": "WebActivity",
-				"dependsOn": [],
-				"policy": {
-					"timeout": "7.00:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"url": "https://kvhack2020.vault.azure.net/secrets/sqlhackadmin/1544ef16e1994ef58aa17c1846ca04db?api-version=7.0",
-					"method": "GET",
-					"authentication": {
-						"type": "MSI",
-						"resource": "https://vault.azure.net"
-					}
 				}
 			}
 		],
