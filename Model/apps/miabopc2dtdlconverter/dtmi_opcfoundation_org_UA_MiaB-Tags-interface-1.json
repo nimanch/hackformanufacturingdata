@@ -1,0 +1,37 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@type": "Interface",
+  "@id": "dtmi:opcfoundation:org:UA:MiaB:Tags;1",
+  "contents": [
+    {
+      "name": "Tag_D1_Analog",
+      "schema": "integer",
+      "@type": "Property"
+    },
+    {
+      "name": "Tag_Modbus_Temperature",
+      "schema": "integer",
+      "@type": "Property"
+    },
+    {
+      "name": "Tag_Modbus_CO2",
+      "schema": "integer",
+      "@type": "Property"
+    },
+    {
+      "name": "Tag_D0_Digital",
+      "schema": "integer",
+      "@type": "Property"
+    },
+    {
+      "name": "Tag_Modbus_Humidity",
+      "schema": "integer",
+      "@type": "Property"
+    },
+    {
+      "name": "Tag_D2_Blue",
+      "schema": "integer",
+      "@type": "Property"
+    }
+  ]
+}
