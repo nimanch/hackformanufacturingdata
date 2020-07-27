@@ -14,7 +14,7 @@
 			],
 			"sinks": [],
 			"transformations": [],
-			"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tlimit: 100,\n\tformat: 'xml',\n\tfileSystem: 'messagefiles',\n\tvalidationMode: 'none',\n\tnamespaces: true) ~> messageOutput"
+			"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tlimit: 100,\n\tformat: 'xml',\n\tfileSystem: 'messagefiles',\n\tvalidationMode: 'none',\n\tnamespaces: true,\n\twildcardPaths:['{name}.json']) ~> messageOutput"
 		}
 	}
 }
