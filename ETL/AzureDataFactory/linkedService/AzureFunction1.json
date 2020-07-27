@@ -1,0 +1,19 @@
+{
+	"name": "AzureFunction1",
+	"properties": {
+		"annotations": [],
+		"type": "AzureFunction",
+		"typeProperties": {
+			"functionAppUrl": "https://base64convertor.azurewebsites.net",
+			"functionKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "KV2020",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sqlhackadmin",
+				"secretVersion": "1544ef16e1994ef58aa17c1846ca04db"
+			}
+		}
+	}
+}
