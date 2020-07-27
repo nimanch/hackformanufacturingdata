@@ -22,8 +22,8 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"functionName": "Base64BlobTrigger",
-					"method": "POST"
+					"functionName": "Base64ToXMLConvertor",
+					"method": "GET"
 				},
 				"linkedServiceName": {
 					"referenceName": "Base64Convertor",
