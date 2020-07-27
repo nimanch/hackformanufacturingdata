@@ -291,11 +291,13 @@ namespace MiaB.model.dtdl2cdm
                     Dtmi def = DefiningModel(ri.Name, info);
                     if (def == info.Id)
                     {
-                        string pEntityName = ri.Target.ToString();
+                        string pEntityName = string.Format("{0}_{1}",def.AbsoluteUri.Substring(0,def.AbsoluteUri.IndexOf(";")), ri.Name.ToString());
                         string pConvertedEntityName = pEntityName.Replace(':', '_');
                         pConvertedEntityName = pConvertedEntityName.Replace(';', '-');
                         Log.Out($"{info.Id}: Adding locally defined relationship {ri.Name}");
                         var attributeExplanation = $"{ri.Name}: {ri.Description.Values.FirstOrDefault()}";
+                        var t = kvp.Value;
+                        CreateRelatedCustomEntity(cdmCorpus, manifestAbstract, localRoot, ri.Properties,pConvertedEntityName,ri.Name);
                         // You can all CreateSimpleAttributeForRelationshipBetweenTwoEntities() instead, but CreateAttributeForRelationshipBetweenTwoEntities() can show 
                         // more details of how to use resolution guidance to customize your data
                         var refAttribute = CreateAttributeForRelationshipBetweenTwoEntities(cdmCorpus, convertedEntityName, pConvertedEntityName, attributeExplanation);
@@ -318,7 +320,63 @@ namespace MiaB.model.dtdl2cdm
             // Add the entity to the manifest
             manifestAbstract.Entities.Add(entity);
         }
+private static void CreateRelatedCustomEntity(CdmCorpusDefinition cdmCorpus, CdmManifestDefinition manifestAbstract, 
+                                               CdmFolderDefinition localRoot, List<DTPropertyInfo> info,string entityName,string displayName)
+        {
+        
+            string convertedEntityName = entityName;
 
+            // Create an entity - CustomAccount which has a relationship with the entity CustomPerson
+            // Create the entity definition instance
+            var entity = cdmCorpus.MakeObject<CdmEntityDefinition>(CdmObjectType.EntityDef, convertedEntityName, false);
+            // Add type attributes to the entity instance
+            var entityAttributeId = CreateEntityAttributeWithPurposeAndDataType(cdmCorpus, $"$dtId", "identifiedBy", "entityId");
+            entity.Attributes.Add(entityAttributeId);
+            // Add properties to the entity instance
+            entity.DisplayName = displayName;
+            entity.Version = "0.0.1";
+          //  entity.Description = info.Description.FirstOrDefault().Value;
+            
+            // Create the document which contains the entity
+            var entityDoc = cdmCorpus.MakeObject<CdmDocumentDefinition>(CdmObjectType.DocumentDef, $"{convertedEntityName}.cdm.json", false);
+            // Add an import to the foundations doc so the traits about partitons will resolve nicely
+            entityDoc.Imports.Add(FoundationJsonPath);
+            entityDoc.Definitions.Add(entity);
+
+            foreach (DTPropertyInfo prop in info)
+            {
+                if (prop.EntityKind == DTEntityKind.Property)
+                {
+                    Log.Out($"{convertedEntityName}: Adding locally defined property {prop.Name}");
+
+                        string type = "";
+                        if (prop.Schema != null)
+                        {
+                            switch (prop.Schema.EntityKind)
+                            {
+                                case DTEntityKind.String: type = "string"; break;
+                                case DTEntityKind.Float: type = "float"; break;
+                                case DTEntityKind.Double: type = "double"; break;
+                                case DTEntityKind.Boolean: type = "boolean"; break;
+                                case DTEntityKind.Integer: type = "integer"; break;
+                                default: break;
+                            }
+                        }
+                        if (type != "")
+                        {
+                            var pro = CreateEntityAttributeWithPurposeAndDataType(cdmCorpus, prop.Name, "hasA", type);
+                            entity.Attributes.Add(pro);
+                        }
+                    
+                }
+            }
+
+            // Add the document to the root of the local documents in the corpus
+            localRoot.Documents.Add(entityDoc, entityDoc.Name);
+            
+            // Add the entity to the manifest
+            manifestAbstract.Entities.Add(entity);
+        }
         private static Dtmi DefiningModel(string item, DTInterfaceInfo ifInfo)
         {
             // must be depth first
