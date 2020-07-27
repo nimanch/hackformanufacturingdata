@@ -4,14 +4,7 @@
 		"description": "BlobStorageTrigger to convert Base64 to string ",
 		"annotations": [],
 		"runtimeState": "Started",
-		"pipelines": [
-			{
-				"pipelineReference": {
-					"referenceName": "mfgHack2020",
-					"type": "PipelineReference"
-				}
-			}
-		],
+		"pipelines": [],
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
 			"blobPathBeginsWith": "/messagefiles/blobs/iot-hub-hack",
