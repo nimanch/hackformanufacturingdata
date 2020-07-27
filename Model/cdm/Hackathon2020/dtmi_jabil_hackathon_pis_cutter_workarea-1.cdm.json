@@ -1,0 +1,127 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "dtmi_jabil_hackathon_pis_cutter_workarea-1",
+      "hasAttributes": [
+        {
+          "name": "$dtId",
+          "purpose": "identifiedBy",
+          "dataType": "entityId"
+        },
+        {
+          "name": "$timestamp",
+          "purpose": "hasA",
+          "dataType": "dateTime"
+        },
+        {
+          "name": "uid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "pid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "OrgUid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "IsDisabled",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "KPIStationUid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "IsDeleted",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Remark",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "TextDisabled",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Path",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "ShowLineName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "UserDeleted",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "WorkProjectUid",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "WorkLineUid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "ShowProjectName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "WorkStationUid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "UserCreated",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "UserChanged",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "WorkareaName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "ShowStationName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Row_Num",
+          "purpose": "hasA",
+          "dataType": "integer"
+        }
+      ],
+      "displayName": "Work Area",
+      "version": "0.0.1"
+    }
+  ]
+}

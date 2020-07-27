@@ -1,0 +1,52 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "dtmi_jabil_hackathon_bc_emt_mapping-1",
+      "hasAttributes": [
+        {
+          "name": "$dtId",
+          "purpose": "identifiedBy",
+          "dataType": "entityId"
+        },
+        {
+          "name": "$timestamp",
+          "purpose": "hasA",
+          "dataType": "dateTime"
+        },
+        {
+          "name": "Project",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Process",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Station",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "EMT",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Name",
+          "purpose": "hasA",
+          "dataType": "string"
+        }
+      ],
+      "displayName": "EMT Mapping",
+      "version": "0.0.1"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "defaultNamespace": "local",
+  "adapters": [
+    {
+      "type": "local",
+      "config": {
+        "root": "E:\\Hack2020\\DtdlToCdmConverter\\CDM\\Hackathon2020"
+      },
+      "namespace": "local"
+    },
+    {
+      "type": "local",
+      "config": {
+        "root": "E:\\Hack2020\\DtdlToCdmConverter\\CDM\\Samples\\example-public-standards"
+      },
+      "namespace": "cdm"
+    }
+  ]
+}

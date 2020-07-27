@@ -1,0 +1,127 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "dtmi_jabil_hackathon_pis_cutter_info-1",
+      "hasAttributes": [
+        {
+          "name": "$dtId",
+          "purpose": "identifiedBy",
+          "dataType": "entityId"
+        },
+        {
+          "name": "$timestamp",
+          "purpose": "hasA",
+          "dataType": "dateTime"
+        },
+        {
+          "name": "OrgUid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "PartSpec",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "PartNo",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "LifeStand",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "uid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "VendorUid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "BatchNo",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Version",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "AVGPrice",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "IsDeleted",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "UserChanged",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Path",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "VendorCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "UserCreated",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Row_Num",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "Remark",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "TextDisabled",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "IsDisabled",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "UserDeleted",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "VendorName",
+          "purpose": "hasA",
+          "dataType": "string"
+        }
+      ],
+      "displayName": "Cutter Info",
+      "version": "0.0.1"
+    }
+  ]
+}

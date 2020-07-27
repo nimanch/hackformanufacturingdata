@@ -1,0 +1,143 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "/dtmi_jabil_hackathon_bc_all-1.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "dtmi_jabil_hackathon_bc_all-1",
+      "attributeContext": {
+        "type": "entity",
+        "name": "dtmi_jabil_hackathon_bc_all-1",
+        "definition": "resolvedFrom/dtmi_jabil_hackathon_bc_all-1",
+        "contents": [
+          {
+            "type": "attributeDefinition",
+            "name": "$dtId",
+            "parent": "dtmi_jabil_hackathon_bc_all-1/attributeContext/dtmi_jabil_hackathon_bc_all-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_bc_all-1/hasAttributes/$dtId",
+            "contents": [
+              "dtmi_jabil_hackathon_bc_all-1/hasAttributes/$dtId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "$timestamp",
+            "parent": "dtmi_jabil_hackathon_bc_all-1/attributeContext/dtmi_jabil_hackathon_bc_all-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_bc_all-1/hasAttributes/$timestamp",
+            "contents": [
+              "dtmi_jabil_hackathon_bc_all-1/hasAttributes/$timestamp"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SequentialNumber",
+            "parent": "dtmi_jabil_hackathon_bc_all-1/attributeContext/dtmi_jabil_hackathon_bc_all-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_bc_all-1/hasAttributes/SequentialNumber",
+            "contents": [
+              "dtmi_jabil_hackathon_bc_all-1/hasAttributes/SequentialNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DataType",
+            "parent": "dtmi_jabil_hackathon_bc_all-1/attributeContext/dtmi_jabil_hackathon_bc_all-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_bc_all-1/hasAttributes/DataType",
+            "contents": [
+              "dtmi_jabil_hackathon_bc_all-1/hasAttributes/DataType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "EMT",
+            "parent": "dtmi_jabil_hackathon_bc_all-1/attributeContext/dtmi_jabil_hackathon_bc_all-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_bc_all-1/hasAttributes/EMT",
+            "contents": [
+              "dtmi_jabil_hackathon_bc_all-1/hasAttributes/EMT"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AllData",
+            "parent": "dtmi_jabil_hackathon_bc_all-1/attributeContext/dtmi_jabil_hackathon_bc_all-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_bc_all-1/hasAttributes/AllData",
+            "contents": [
+              "dtmi_jabil_hackathon_bc_all-1/hasAttributes/AllData"
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "$dtId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_bc_all-1/attributeContext/dtmi_jabil_hackathon_bc_all-1/$dtId",
+          "isPrimaryKey": true,
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "$timestamp",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_bc_all-1/attributeContext/dtmi_jabil_hackathon_bc_all-1/$timestamp",
+          "dataFormat": "DateTime"
+        },
+        {
+          "name": "SequentialNumber",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_bc_all-1/attributeContext/dtmi_jabil_hackathon_bc_all-1/SequentialNumber",
+          "dataFormat": "String"
+        },
+        {
+          "name": "DataType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_bc_all-1/attributeContext/dtmi_jabil_hackathon_bc_all-1/DataType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "EMT",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_bc_all-1/attributeContext/dtmi_jabil_hackathon_bc_all-1/EMT",
+          "dataFormat": "String"
+        },
+        {
+          "name": "AllData",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_bc_all-1/attributeContext/dtmi_jabil_hackathon_bc_all-1/AllData",
+          "dataFormat": "String"
+        }
+      ],
+      "displayName": "All",
+      "version": "0.0.1"
+    }
+  ]
+}

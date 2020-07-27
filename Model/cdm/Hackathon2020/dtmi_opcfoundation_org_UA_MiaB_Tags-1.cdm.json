@@ -1,0 +1,56 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "dtmi_opcfoundation_org_UA_MiaB_Tags-1",
+      "hasAttributes": [
+        {
+          "name": "$dtId",
+          "purpose": "identifiedBy",
+          "dataType": "entityId"
+        },
+        {
+          "name": "$timestamp",
+          "purpose": "hasA",
+          "dataType": "dateTime"
+        },
+        {
+          "name": "Tag_Modbus_Temperature",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "Tag_D1_Analog",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "Tag_Modbus_CO2",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "Tag_D0_Digital",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "Tag_D2_Blue",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "Tag_Modbus_Humidity",
+          "purpose": "hasA",
+          "dataType": "integer"
+        }
+      ],
+      "version": "0.0.1"
+    }
+  ]
+}

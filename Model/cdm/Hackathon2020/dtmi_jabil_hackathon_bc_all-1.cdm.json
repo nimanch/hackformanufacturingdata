@@ -1,0 +1,47 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "dtmi_jabil_hackathon_bc_all-1",
+      "hasAttributes": [
+        {
+          "name": "$dtId",
+          "purpose": "identifiedBy",
+          "dataType": "entityId"
+        },
+        {
+          "name": "$timestamp",
+          "purpose": "hasA",
+          "dataType": "dateTime"
+        },
+        {
+          "name": "SequentialNumber",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "DataType",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "EMT",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "AllData",
+          "purpose": "hasA",
+          "dataType": "string"
+        }
+      ],
+      "displayName": "All",
+      "version": "0.0.1"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "dtmi_jabil_hackathon_pis_organization-1",
+      "hasAttributes": [
+        {
+          "name": "$dtId",
+          "purpose": "identifiedBy",
+          "dataType": "entityId"
+        },
+        {
+          "name": "$timestamp",
+          "purpose": "hasA",
+          "dataType": "dateTime"
+        },
+        {
+          "name": "Text",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Code",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "pid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "Remark",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "UserCreated",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "UserDeleted",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "uid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "Type",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Path",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "UserChanged",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "IsDisabled",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "name",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "OrderIndex",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "IsDeleted",
+          "purpose": "hasA",
+          "dataType": "string"
+        }
+      ],
+      "displayName": "Organization",
+      "version": "0.0.1"
+    }
+  ]
+}

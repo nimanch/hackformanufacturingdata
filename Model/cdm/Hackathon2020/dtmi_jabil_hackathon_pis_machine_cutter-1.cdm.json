@@ -1,0 +1,87 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "dtmi_jabil_hackathon_pis_machine_cutter-1",
+      "hasAttributes": [
+        {
+          "name": "$dtId",
+          "purpose": "identifiedBy",
+          "dataType": "entityId"
+        },
+        {
+          "name": "$timestamp",
+          "purpose": "hasA",
+          "dataType": "dateTime"
+        },
+        {
+          "name": "Equipment",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "MachineNo",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "ShowLineName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "LDBMachineNo",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "WorkareaName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "BuildingName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Path",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Seat",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "TextDisabled",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Row_Num",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "ShowProjectName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "ShowStationName",
+          "purpose": "hasA",
+          "dataType": "string"
+        }
+      ],
+      "displayName": "Machine Cutter",
+      "version": "0.0.1"
+    }
+  ]
+}

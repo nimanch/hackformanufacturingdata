@@ -1,0 +1,219 @@
+{
+  "manifestName": "default",
+  "entities": [
+    {
+      "type": "LocalEntity",
+      "entityName": "dtmi_jabil_hackathon_bc_all-1",
+      "entityPath": "resolved/dtmi_jabil_hackathon_bc_all-1.cdm.json/dtmi_jabil_hackathon_bc_all-1",
+      "dataPartitions": [
+        {
+          "name": "dtmi_jabil_hackathon_bc_all-1-data-description",
+          "location": "dtmi_jabil_hackathon_bc_all-1/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "dtmi_jabil_hackathon_bc_emt_mapping-1",
+      "entityPath": "resolved/dtmi_jabil_hackathon_bc_emt_mapping-1.cdm.json/dtmi_jabil_hackathon_bc_emt_mapping-1",
+      "dataPartitions": [
+        {
+          "name": "dtmi_jabil_hackathon_bc_emt_mapping-1-data-description",
+          "location": "dtmi_jabil_hackathon_bc_emt_mapping-1/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "dtmi_jabil_hackathon_pis_cutter_info-1",
+      "entityPath": "resolved/dtmi_jabil_hackathon_pis_cutter_info-1.cdm.json/dtmi_jabil_hackathon_pis_cutter_info-1",
+      "dataPartitions": [
+        {
+          "name": "dtmi_jabil_hackathon_pis_cutter_info-1-data-description",
+          "location": "dtmi_jabil_hackathon_pis_cutter_info-1/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "dtmi_jabil_hackathon_pis_cutter_workarea-1",
+      "entityPath": "resolved/dtmi_jabil_hackathon_pis_cutter_workarea-1.cdm.json/dtmi_jabil_hackathon_pis_cutter_workarea-1",
+      "dataPartitions": [
+        {
+          "name": "dtmi_jabil_hackathon_pis_cutter_workarea-1-data-description",
+          "location": "dtmi_jabil_hackathon_pis_cutter_workarea-1/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "dtmi_jabil_hackathon_pis_line-1",
+      "entityPath": "resolved/dtmi_jabil_hackathon_pis_line-1.cdm.json/dtmi_jabil_hackathon_pis_line-1",
+      "dataPartitions": [
+        {
+          "name": "dtmi_jabil_hackathon_pis_line-1-data-description",
+          "location": "dtmi_jabil_hackathon_pis_line-1/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "dtmi_jabil_hackathon_pis_machine_cutter-1",
+      "entityPath": "resolved/dtmi_jabil_hackathon_pis_machine_cutter-1.cdm.json/dtmi_jabil_hackathon_pis_machine_cutter-1",
+      "dataPartitions": [
+        {
+          "name": "dtmi_jabil_hackathon_pis_machine_cutter-1-data-description",
+          "location": "dtmi_jabil_hackathon_pis_machine_cutter-1/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "dtmi_jabil_hackathon_pis_organization-1",
+      "entityPath": "resolved/dtmi_jabil_hackathon_pis_organization-1.cdm.json/dtmi_jabil_hackathon_pis_organization-1",
+      "dataPartitions": [
+        {
+          "name": "dtmi_jabil_hackathon_pis_organization-1-data-description",
+          "location": "dtmi_jabil_hackathon_pis_organization-1/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "dtmi_opcfoundation_org_UA_MiaB_Tags-1",
+      "entityPath": "resolved/dtmi_opcfoundation_org_UA_MiaB_Tags-1.cdm.json/dtmi_opcfoundation_org_UA_MiaB_Tags-1",
+      "dataPartitions": [
+        {
+          "name": "dtmi_opcfoundation_org_UA_MiaB_Tags-1-data-description",
+          "location": "dtmi_opcfoundation_org_UA_MiaB_Tags-1/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ]
+}

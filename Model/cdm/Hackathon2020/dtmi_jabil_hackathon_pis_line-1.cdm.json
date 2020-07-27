@@ -1,0 +1,82 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "dtmi_jabil_hackathon_pis_line-1",
+      "hasAttributes": [
+        {
+          "name": "$dtId",
+          "purpose": "identifiedBy",
+          "dataType": "entityId"
+        },
+        {
+          "name": "$timestamp",
+          "purpose": "hasA",
+          "dataType": "dateTime"
+        },
+        {
+          "name": "LineName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "uid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "OrgUid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "IsDeleted",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Remark",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "ProjectUid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "UserChanged",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "IsDisabled",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "UserCreated",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "LineCode",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "UserDeleted",
+          "purpose": "hasA",
+          "dataType": "string"
+        }
+      ],
+      "displayName": "Line",
+      "version": "0.0.1"
+    }
+  ]
+}

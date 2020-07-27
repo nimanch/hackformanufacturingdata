@@ -121,5 +121,5 @@
       "schema": "integer"
     }
   ],
-  "@context": "http://azureiot.com/v1/contexts/IoTModel.json"
+  "@context": "dtmi:dtdl:context;2"
 }
