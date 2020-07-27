@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <Reference Include="Microsoft.CommonDataModel.ObjectModel">
-      <HintPath>..\..\..\..\..\..\Work\CDM\CDM\objectModel\CSharp\Microsoft.CommonDataModel.ObjectModel\bin\Debug\netcoreapp3.1\Microsoft.CommonDataModel.ObjectModel.dll</HintPath>
+      <HintPath>CDMObjectModel\Microsoft.CommonDataModel.ObjectModel.dll</HintPath>
     </Reference>
   </ItemGroup>
 
