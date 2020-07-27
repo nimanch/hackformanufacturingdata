@@ -1,0 +1,20 @@
+{
+	"name": "messageFlow1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"linkedService": {
+						"referenceName": "AzureDataLakeStorage1",
+						"type": "LinkedServiceReference"
+					},
+					"name": "messageOutput"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tlimit: 100,\n\tformat: 'xml',\n\tvalidationMode: 'none',\n\tnamespaces: true) ~> messageOutput"
+		}
+	}
+}
