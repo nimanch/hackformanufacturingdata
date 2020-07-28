@@ -1,0 +1,1042 @@
+﻿[
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 183,
+      "SourceTimestamp": "2020-07-27T14:45:39.156Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 190,
+      "SourceTimestamp": "2020-07-27T14:45:39.991Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 189,
+      "SourceTimestamp": "2020-07-27T14:45:41.659Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 203,
+      "SourceTimestamp": "2020-07-27T14:45:42.493Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Temperature",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 567,
+      "SourceTimestamp": "2020-07-27T14:45:44.162Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Humidity",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 567,
+      "SourceTimestamp": "2020-07-27T14:45:44.162Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 178,
+      "SourceTimestamp": "2020-07-27T14:45:44.162Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 187,
+      "SourceTimestamp": "2020-07-27T14:45:44.996Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 186,
+      "SourceTimestamp": "2020-07-27T14:45:46.664Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 183,
+      "SourceTimestamp": "2020-07-27T14:45:48.332Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 176,
+      "SourceTimestamp": "2020-07-27T14:45:49.166Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 184,
+      "SourceTimestamp": "2020-07-27T14:45:50.001Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 189,
+      "SourceTimestamp": "2020-07-27T14:45:51.669Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 178,
+      "SourceTimestamp": "2020-07-27T14:45:52.503Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Temperature",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 568,
+      "SourceTimestamp": "2020-07-27T14:45:53.337Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Humidity",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 568,
+      "SourceTimestamp": "2020-07-27T14:45:53.338Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 188,
+      "SourceTimestamp": "2020-07-27T14:45:54.171Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 187,
+      "SourceTimestamp": "2020-07-27T14:45:55.005Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Temperature",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 569,
+      "SourceTimestamp": "2020-07-27T14:45:56.675Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Humidity",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 569,
+      "SourceTimestamp": "2020-07-27T14:45:56.675Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 185,
+      "SourceTimestamp": "2020-07-27T14:45:56.675Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 189,
+      "SourceTimestamp": "2020-07-27T14:45:57.509Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 187,
+      "SourceTimestamp": "2020-07-27T14:45:58.343Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 178,
+      "SourceTimestamp": "2020-07-27T14:46:00.011Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 190,
+      "SourceTimestamp": "2020-07-27T14:46:01.68Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Temperature",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 570,
+      "SourceTimestamp": "2020-07-27T14:46:02.514Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Humidity",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 570,
+      "SourceTimestamp": "2020-07-27T14:46:02.514Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 188,
+      "SourceTimestamp": "2020-07-27T14:46:03.348Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 179,
+      "SourceTimestamp": "2020-07-27T14:46:05.016Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 168,
+      "SourceTimestamp": "2020-07-27T14:46:06.685Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 188,
+      "SourceTimestamp": "2020-07-27T14:46:07.519Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Temperature",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 571,
+      "SourceTimestamp": "2020-07-27T14:46:08.353Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Humidity",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 571,
+      "SourceTimestamp": "2020-07-27T14:46:08.353Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 190,
+      "SourceTimestamp": "2020-07-27T14:46:09.187Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 180,
+      "SourceTimestamp": "2020-07-27T14:46:10.855Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 190,
+      "SourceTimestamp": "2020-07-27T14:46:11.69Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 167,
+      "SourceTimestamp": "2020-07-27T14:46:12.524Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Temperature",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 572,
+      "SourceTimestamp": "2020-07-27T14:46:14.192Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Humidity",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 572,
+      "SourceTimestamp": "2020-07-27T14:46:14.192Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 190,
+      "SourceTimestamp": "2020-07-27T14:46:14.192Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 191,
+      "SourceTimestamp": "2020-07-27T14:46:15.026Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 179,
+      "SourceTimestamp": "2020-07-27T14:46:15.86Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 191,
+      "SourceTimestamp": "2020-07-27T14:46:16.695Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 189,
+      "SourceTimestamp": "2020-07-27T14:46:17.529Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 204,
+      "SourceTimestamp": "2020-07-27T14:46:19.197Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Temperature",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 573,
+      "SourceTimestamp": "2020-07-27T14:46:20.031Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Humidity",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 573,
+      "SourceTimestamp": "2020-07-27T14:46:20.032Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 186,
+      "SourceTimestamp": "2020-07-27T14:46:20.865Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 177,
+      "SourceTimestamp": "2020-07-27T14:46:21.699Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 192,
+      "SourceTimestamp": "2020-07-27T14:46:23.368Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 184,
+      "SourceTimestamp": "2020-07-27T14:46:24.202Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 167,
+      "SourceTimestamp": "2020-07-27T14:46:25.036Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Temperature",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 574,
+      "SourceTimestamp": "2020-07-27T14:46:26.705Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Humidity",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 574,
+      "SourceTimestamp": "2020-07-27T14:46:26.705Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 190,
+      "SourceTimestamp": "2020-07-27T14:46:26.705Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 191,
+      "SourceTimestamp": "2020-07-27T14:46:27.539Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 190,
+      "SourceTimestamp": "2020-07-27T14:46:29.207Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 187,
+      "SourceTimestamp": "2020-07-27T14:46:30.875Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 178,
+      "SourceTimestamp": "2020-07-27T14:46:31.709Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 188,
+      "SourceTimestamp": "2020-07-27T14:46:33.378Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 186,
+      "SourceTimestamp": "2020-07-27T14:46:34.212Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 183,
+      "SourceTimestamp": "2020-07-27T14:46:35.88Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 186,
+      "SourceTimestamp": "2020-07-27T14:46:36.714Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 185,
+      "SourceTimestamp": "2020-07-27T14:46:38.383Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 177,
+      "SourceTimestamp": "2020-07-27T14:46:40.051Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 188,
+      "SourceTimestamp": "2020-07-27T14:46:40.885Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Temperature",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 575,
+      "SourceTimestamp": "2020-07-27T14:46:41.72Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Humidity",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 575,
+      "SourceTimestamp": "2020-07-27T14:46:41.72Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 181,
+      "SourceTimestamp": "2020-07-27T14:46:41.72Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 188,
+      "SourceTimestamp": "2020-07-27T14:46:42.553Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 179,
+      "SourceTimestamp": "2020-07-27T14:46:44.222Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 189,
+      "SourceTimestamp": "2020-07-27T14:46:45.056Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 181,
+      "SourceTimestamp": "2020-07-27T14:46:46.724Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 188,
+      "SourceTimestamp": "2020-07-27T14:46:47.558Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 180,
+      "SourceTimestamp": "2020-07-27T14:46:49.227Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 174,
+      "SourceTimestamp": "2020-07-27T14:46:50.061Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 189,
+      "SourceTimestamp": "2020-07-27T14:46:51.729Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 190,
+      "SourceTimestamp": "2020-07-27T14:46:53.398Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Temperature",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 576,
+      "SourceTimestamp": "2020-07-27T14:46:53.398Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Humidity",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 576,
+      "SourceTimestamp": "2020-07-27T14:46:53.398Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 189,
+      "SourceTimestamp": "2020-07-27T14:46:55.066Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 183,
+      "SourceTimestamp": "2020-07-27T14:46:56.734Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 165,
+      "SourceTimestamp": "2020-07-27T14:46:57.568Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 192,
+      "SourceTimestamp": "2020-07-27T14:46:59.236Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 189,
+      "SourceTimestamp": "2020-07-27T14:47:00.071Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 179,
+      "SourceTimestamp": "2020-07-27T14:47:01.739Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Temperature",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 577,
+      "SourceTimestamp": "2020-07-27T14:47:02.573Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Humidity",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 577,
+      "SourceTimestamp": "2020-07-27T14:47:02.574Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 184,
+      "SourceTimestamp": "2020-07-27T14:47:03.408Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 176,
+      "SourceTimestamp": "2020-07-27T14:47:05.076Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 188,
+      "SourceTimestamp": "2020-07-27T14:47:05.91Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 178,
+      "SourceTimestamp": "2020-07-27T14:47:06.744Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 180,
+      "SourceTimestamp": "2020-07-27T14:47:07.578Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 189,
+      "SourceTimestamp": "2020-07-27T14:47:09.246Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 185,
+      "SourceTimestamp": "2020-07-27T14:47:10.081Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Temperature",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 578,
+      "SourceTimestamp": "2020-07-27T14:47:10.915Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Humidity",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 578,
+      "SourceTimestamp": "2020-07-27T14:47:10.915Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 183,
+      "SourceTimestamp": "2020-07-27T14:47:11.749Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 184,
+      "SourceTimestamp": "2020-07-27T14:47:12.583Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 176,
+      "SourceTimestamp": "2020-07-27T14:47:14.251Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 182,
+      "SourceTimestamp": "2020-07-27T14:47:15.085Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 179,
+      "SourceTimestamp": "2020-07-27T14:47:16.754Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 173,
+      "SourceTimestamp": "2020-07-27T14:47:18.422Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 181,
+      "SourceTimestamp": "2020-07-27T14:47:20.09Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 176,
+      "SourceTimestamp": "2020-07-27T14:47:20.925Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 177,
+      "SourceTimestamp": "2020-07-27T14:47:21.759Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 184,
+      "SourceTimestamp": "2020-07-27T14:47:22.593Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Temperature",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 579,
+      "SourceTimestamp": "2020-07-27T14:47:23.427Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Humidity",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 579,
+      "SourceTimestamp": "2020-07-27T14:47:23.427Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 189,
+      "SourceTimestamp": "2020-07-27T14:47:24.261Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 185,
+      "SourceTimestamp": "2020-07-27T14:47:25.095Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 187,
+      "SourceTimestamp": "2020-07-27T14:47:26.764Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 172,
+      "SourceTimestamp": "2020-07-27T14:47:28.432Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 183,
+      "SourceTimestamp": "2020-07-27T14:47:29.266Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 174,
+      "SourceTimestamp": "2020-07-27T14:47:30.1Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 170,
+      "SourceTimestamp": "2020-07-27T14:47:31.769Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Temperature",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 580,
+      "SourceTimestamp": "2020-07-27T14:47:32.603Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Humidity",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 580,
+      "SourceTimestamp": "2020-07-27T14:47:32.603Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 191,
+      "SourceTimestamp": "2020-07-27T14:47:34.271Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 170,
+      "SourceTimestamp": "2020-07-27T14:47:35.105Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 177,
+      "SourceTimestamp": "2020-07-27T14:47:36.774Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 173,
+      "SourceTimestamp": "2020-07-27T14:47:37.608Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Temperature",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 581,
+      "SourceTimestamp": "2020-07-27T14:47:38.442Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Humidity",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 581,
+      "SourceTimestamp": "2020-07-27T14:47:38.442Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 196,
+      "SourceTimestamp": "2020-07-27T14:47:39.276Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 172,
+      "SourceTimestamp": "2020-07-27T14:47:40.11Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Temperature",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 582,
+      "SourceTimestamp": "2020-07-27T14:47:40.945Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_Modbus_Humidity",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 582,
+      "SourceTimestamp": "2020-07-27T14:47:40.945Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 177,
+      "SourceTimestamp": "2020-07-27T14:47:40.945Z"
+    }
+  },
+  {
+    "NodeId": "nsu=Beijer;s=Beijer.nsuri=TagProvider;s=Tag_D1_Analog",
+    "ApplicationUri": "urn:miabfeed10/Softing/dataFEEDOPCSuite/OpcUA/Softing_dataFEED_OPC_Suite_UA_Server_Configuration1",
+    "Value": {
+      "Value": 188,
+      "SourceTimestamp": "2020-07-27T14:47:41.778Z"
+    }
+  }
+]
