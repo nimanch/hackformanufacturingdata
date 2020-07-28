@@ -8,6 +8,9 @@ using Microsoft.CommonDataModel.ObjectModel.Utilities;
 using Microsoft.Azure.DigitalTwins.Parser;
 using System.Linq;
 using System.Collections.Generic;
+using Azure.Storage;
+using Azure.Storage.Files.DataLake;
+using System.Text;
 
 namespace MiaB.model.dtdl2cdm
 {
@@ -98,6 +101,95 @@ namespace MiaB.model.dtdl2cdm
             }
 
             await manifestResolved.SaveAsAsync($"{manifestResolved.ManifestName}.manifest.cdm.json", true);
+
+            Console.WriteLine("*************** Save CDM to ADLs *****************************");
+            Console.WriteLine("config ADLs storage adapter");
+            string rootContainer = "testingforuploadcdmtoadls";
+
+            cdmCorpus.Storage.Mount("adls",
+                new ADLSAdapter(
+                    "gen2hackstore.dfs.core.windows.net", // Hostname.
+                    "/" + rootContainer, // Root.
+                    "xnv4EoFbGh53d5n2669F5CniZYRnY/EfDQSz6vStu22m4m/pJlq9zn0nfI8UsQvvtixM/kIoxC4xpinHSYV7ZQ=="
+                ));
+
+            Console.WriteLine("Configurea Azure Data Lake folder path");
+            StorageSharedKeyCredential sharedKeyCredential = new StorageSharedKeyCredential("gen2hackstore", "xnv4EoFbGh53d5n2669F5CniZYRnY/EfDQSz6vStu22m4m/pJlq9zn0nfI8UsQvvtixM/kIoxC4xpinHSYV7ZQ==");
+            string dfsUri = "https://" + "gen2hackstore" + ".dfs.core.windows.net";
+            DataLakeServiceClient _dataLakeServiceClient = new DataLakeServiceClient(new Uri(dfsUri), sharedKeyCredential);
+            DataLakeFileSystemClient fileSystemClient = _dataLakeServiceClient.GetFileSystemClient(rootContainer);
+
+            Console.WriteLine("Make placeholder manifest");
+            // Make the temp manifest and add it to the root of the local documents in the corpus
+            CdmManifestDefinition manifestAbstractForADLs = cdmCorpus.MakeObject<CdmManifestDefinition>(CdmObjectType.ManifestDef, "tempAbstract");
+
+            // Add the temp manifest to the root of the local documents in the corpus.
+            var adlsRoot = cdmCorpus.Storage.FetchRootFolder("adls");
+            adlsRoot.Documents.Add(manifestAbstractForADLs);
+
+            // Create two entities from scratch, and add some attributes, traits, properties, and relationships in between
+            Console.WriteLine("Create net new entities");
+
+            DTDLParser parserForADLs = new DTDLParser(dtdlRoot, "json");
+            foreach (DTInterfaceInfo info in parserForADLs.DTDLInterfaces)
+            {
+                CreateCustomEntity(cdmCorpus, manifestAbstractForADLs, adlsRoot, info);
+            }
+
+            // Create the resolved version of everything in the root folder too
+            Console.WriteLine("Resolve the placeholder");
+            var manifestResolvedForADLs = await manifestAbstractForADLs.CreateResolvedManifestAsync("default", null);
+
+            // Add an import to the foundations doc so the traits about partitons will resolve nicely
+            manifestResolvedForADLs.Imports.Add("cdm:/foundations.cdm.json");
+
+            Console.WriteLine("Save the documents");
+
+            foreach (CdmEntityDeclarationDefinition eDef in manifestResolvedForADLs.Entities)
+            {
+                // Get the entity being pointed at
+                var localEDef = eDef;
+                var entDef = await cdmCorpus.FetchObjectAsync<CdmEntityDefinition>(localEDef.EntityPath, manifestResolvedForADLs);
+                // Make a fake partition, just to demo that
+                var part = cdmCorpus.MakeObject<CdmDataPartitionDefinition>(CdmObjectType.DataPartitionDef, $"{entDef.EntityName}-data-description");
+                localEDef.DataPartitions.Add(part);
+                part.Explanation = "not real data, just for demo";
+
+                // Define the location of the partition, relative to the manifest
+                var location = $"adls:/{entDef.EntityName}/partition-data.csv";
+                part.Location = cdmCorpus.Storage.CreateRelativeCorpusPath(location, manifestResolvedForADLs);
+
+                // Add trait to partition for csv params
+                var csvTrait = part.ExhibitsTraits.Add("is.partition.format.CSV", false);
+                csvTrait.Arguments.Add("columnHeaders", "true");
+                csvTrait.Arguments.Add("delimiter", ",");
+
+                // Get the actual location of the partition file from the corpus
+                string partPath = cdmCorpus.Storage.CorpusPathToAdapterPath(location);
+
+                // Make a fake file with nothing but header for columns
+                string header = "";
+                foreach (CdmTypeAttributeDefinition att in entDef.Attributes)
+                {
+                    if (header != "")
+                        header += ",";
+                    header += att.Name;
+                }
+
+
+                // Save to ADLs
+                DataLakeDirectoryClient directoryClient = fileSystemClient.GetDirectoryClient($"{entDef.EntityName}");
+                DataLakeFileClient fileClient = await directoryClient.CreateFileAsync("partition-data.csv");
+                byte[] bytes = Encoding.UTF8.GetBytes(header);
+                MemoryStream stream = new MemoryStream(bytes);
+                fileClient.Append(stream, 0);
+                fileClient.Flush(stream.Length);
+
+                // Define a partition and add it to the local declaration
+                eDef.DataPartitions.Add(part);
+            }
+
+            await manifestResolvedForADLs.SaveAsAsync($"{manifestResolvedForADLs.ManifestName}.manifest.cdm.json", true);
 
         }
 
