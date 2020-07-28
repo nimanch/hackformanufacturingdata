@@ -12,9 +12,17 @@
 					"name": "messageOutput"
 				}
 			],
-			"sinks": [],
+			"sinks": [
+				{
+					"linkedService": {
+						"referenceName": "AzureDataLakeStorage1",
+						"type": "LinkedServiceReference"
+					},
+					"name": "hack2020sink"
+				}
+			],
 			"transformations": [],
-			"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tlimit: 100,\n\tformat: 'xml',\n\tfileSystem: 'messagefiles',\n\tvalidationMode: 'none',\n\tnamespaces: true,\n\twildcardPaths:['{name}.json']) ~> messageOutput"
+			"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tlimit: 100,\n\tformat: 'xml',\n\tfileSystem: 'messagefiles',\n\tvalidationMode: 'none',\n\tnamespaces: true,\n\twildcardPaths:['{name}.json']) ~> messageOutput\nmessageOutput sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tentity: '',\n\tformat: 'cdm',\n\tcorpusPath: '',\n\tfolderPath: '',\n\tfileSystem: '',\n\tcolumnDelimiter: ',',\n\tcolumnNamesAsHeader: false,\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> hack2020sink"
 		}
 	}
 }
