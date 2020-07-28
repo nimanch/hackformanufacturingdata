@@ -1,0 +1,51 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "ADF-Hack2020"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "[concat(parameters('factoryName'), '/combine_gen2')]",
+			"type": "Microsoft.DataFactory/factories/dataflows",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"type": "MappingDataFlow",
+				"typeProperties": {
+					"sources": [
+						{
+							"dataset": {
+								"referenceName": "DelimitedText1",
+								"type": "DatasetReference"
+							},
+							"name": "single"
+						}
+					],
+					"sinks": [
+						{
+							"dataset": {
+								"referenceName": "sinkgen2",
+								"type": "DatasetReference"
+							},
+							"name": "sinkdatalakeg2"
+						}
+					],
+					"transformations": [
+						{
+							"name": "combine"
+						}
+					],
+					"script": "source(output(\n\t\tMonth_index as string,\n\t\tPredicted_PD as string,\n\t\tYear_Quarter as string,\n\t\tPD_Risk_Rating as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false,\n\twildcardPaths:['**']) ~> single\nsingle union(byName: true)~> combine\ncombine sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tpartitionFileNames:['testcomb.csv'],\n\tpartitionBy('hash', 1),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> sinkdatalakeg2"
+				}
+			},
+			"dependsOn": []
+		}
+	]
+}
