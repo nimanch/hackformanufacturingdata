@@ -13,35 +13,69 @@ namespace MiaB.model.dtdl2cdm
 {
     class Program
     {
-        private const string dtdlRoot = @"C:\Work\ADT Samples\grid mockup";
-
+        
+        private const string cdm = "cdm";
         private const string FoundationJsonPath = "cdm:/foundations.cdm.json";
 
+        // Configure storage adapters to point at the target local manifest location and at the fake public standards
+        // TODO: These values should be changed based on your environment (better to take these from configurations)
+        private const string local = "local";
+        private const string dtdlRoot = @"E:\Hack2020\DtdlToCdmConverter\Models";
+        private const string pathToCDMWork = @"E:\Hack2020\DtdlToCdmConverter\CDM\";
+        private const string pathToCDMSampleData = @"E:\Hack2020\DtdlToCdmConverter\CDM\Samples\";
+        private const string outputFolderName = "Hackathon2020";
+
+        // Hard coded values for ADLS
+        private const string adls = "adls";
+        private const string adlsHostName = "gen2hackstore.dfs.core.windows.net";
+        // Remember ADLS allows only lowercase letters, numbers and hyphens.This root path should be available in ADLS - i.e. needs to be created manually
+        private const string adlsRoot = "/cdm/hack2020";
+        // SECURITY RISK - this should be saved in AKV and retrived from there. Hardcodign for quick hacking
+        private const string adlsAccessKey = "xnv4EoFbGh53d5n2669F5CniZYRnY/EfDQSz6vStu22m4m/pJlq9zn0nfI8UsQvvtixM/kIoxC4xpinHSYV7ZQ==";
+        
         static async Task Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            // Make a corpus, the corpus is the collection of all documents and folders created or discovered while navigating objects and paths
-            var cdmCorpus = new CdmCorpusDefinition();
+            try
+            {
+                Console.WriteLine("Hello CDM!");
+                // Make a corpus, the corpus is the collection of all documents and folders created or discovered while navigating objects and paths
+                var cdmCorpus = new CdmCorpusDefinition();
 
-            Console.WriteLine("Configure storage adapters");
+                Console.WriteLine("Configure storage adapters");
 
-            // Configure storage adapters to point at the target local manifest location and at the fake public standards
-            string pathToCDMWork = @"C:\Work\CDM\";
-            string pathToCDMSampleData = @"C:\Work\CDM\CDM\samples\";
+                cdmCorpus.Storage.Mount(local, new LocalAdapter(pathToCDMWork + outputFolderName));
+                cdmCorpus.Storage.DefaultNamespace = local; // local is our default. so any paths that start out navigating without a device tag will assume local
 
-            cdmCorpus.Storage.Mount("local", new LocalAdapter(pathToCDMWork + "Test"));
-            cdmCorpus.Storage.DefaultNamespace = "local"; // local is our default. so any paths that start out navigating without a device tag will assume local
+                // Fake cdm, normaly use the github adapter
+                // Mount it as the 'cdm' device, not the default so must use "cdm:/folder" to get there
+                cdmCorpus.Storage.Mount(cdm, new LocalAdapter(pathToCDMSampleData + "example-public-standards"));
 
-            // Fake cdm, normaly use the github adapter
-            // Mount it as the 'cdm' device, not the default so must use "cdm:/folder" to get there
-            cdmCorpus.Storage.Mount("cdm", new LocalAdapter(pathToCDMSampleData + "example-public-standards"));
+                // Mount ADLS adapter
+                cdmCorpus.Storage.Mount(
+                                    adls,
+                                    new ADLSAdapter(hostname:adlsHostName,
+                                                    root: adlsRoot,
+                                                    sharedKey:adlsAccessKey)
+                                    );
 
+                await SaveCDMDocuments(local, cdmCorpus);
+                await SaveCDMDocuments(adls, cdmCorpus);
+
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex.ToString());
+            }
+        }
+
+        private static async Task SaveCDMDocuments(string nameSpace, CdmCorpusDefinition cdmCorpus)
+        {
             Console.WriteLine("Make placeholder manifest");
             // Make the temp manifest and add it to the root of the local documents in the corpus
             CdmManifestDefinition manifestAbstract = cdmCorpus.MakeObject<CdmManifestDefinition>(CdmObjectType.ManifestDef, "tempAbstract");
 
             // Add the temp manifest to the root of the local documents in the corpus.
-            var localRoot = cdmCorpus.Storage.FetchRootFolder("local");
+            var localRoot = cdmCorpus.Storage.FetchRootFolder(nameSpace);
             localRoot.Documents.Add(manifestAbstract);
 
             // Create two entities from scratch, and add some attributes, traits, properties, and relationships in between
@@ -60,45 +94,65 @@ namespace MiaB.model.dtdl2cdm
             // Add an import to the foundations doc so the traits about partitons will resolve nicely
             manifestResolved.Imports.Add("cdm:/foundations.cdm.json");
 
-            Console.WriteLine("Save the documents");
+            Console.WriteLine($"Save the folders and partition data documents to {nameSpace} storage.");
+            await SavePartitionDocuments(nameSpace, cdmCorpus, manifestResolved);
 
-            foreach (CdmEntityDeclarationDefinition eDef in manifestResolved.Entities)
-            {
-                // Get the entity being pointed at
-                var localEDef = eDef;
-                var entDef = await cdmCorpus.FetchObjectAsync<CdmEntityDefinition>(localEDef.EntityPath, manifestResolved);
-                // Make a fake partition, just to demo that
-                var part = cdmCorpus.MakeObject<CdmDataPartitionDefinition>(CdmObjectType.DataPartitionDef, $"{entDef.EntityName}-data-description");
-                localEDef.DataPartitions.Add(part);
-                part.Explanation = "not real data, just for demo";
-
-                // Define the location of the partition, relative to the manifest
-                var location = $"local:/{entDef.EntityName}/partition-data.csv";
-                part.Location = cdmCorpus.Storage.CreateRelativeCorpusPath(location, manifestResolved);
-
-                // Add trait to partition for csv params
-                var csvTrait = part.ExhibitsTraits.Add("is.partition.format.CSV", false);
-                csvTrait.Arguments.Add("columnHeaders", "true");
-                csvTrait.Arguments.Add("delimiter", ",");
-
-                // Get the actual location of the partition file from the corpus
-                string partPath = cdmCorpus.Storage.CorpusPathToAdapterPath(location);
-
-                // Make a fake file with nothing but header for columns
-                string header = "";
-                foreach (CdmTypeAttributeDefinition att in entDef.Attributes)
-                {
-                    if (header != "")
-                        header += ",";
-                    header += att.Name;
-                }
-
-                Directory.CreateDirectory(cdmCorpus.Storage.CorpusPathToAdapterPath($"local:/{ entDef.EntityName}"));
-                File.WriteAllText(partPath, header);
-            }
-
+            Console.WriteLine($"Save the manifest, entity and resolved documents to {nameSpace} storage.");
+            // Save all other files (resolved, manifest, entity etc.)
             await manifestResolved.SaveAsAsync($"{manifestResolved.ManifestName}.manifest.cdm.json", true);
+        }
 
+        private static async Task SavePartitionDocuments(string nameSpace, CdmCorpusDefinition cdmCorpus, CdmManifestDefinition manifestResolved)
+        {
+            try
+            {
+                foreach (CdmEntityDeclarationDefinition eDef in manifestResolved.Entities)
+                {
+                    // Get the entity being pointed at
+                    var localEDef = eDef;
+                    var entDef = await cdmCorpus.FetchObjectAsync<CdmEntityDefinition>(localEDef.EntityPath, manifestResolved);
+                    // Make a fake partition, just to demo that
+                    var part = cdmCorpus.MakeObject<CdmDataPartitionDefinition>(CdmObjectType.DataPartitionDef, $"{entDef.EntityName}-data-description");
+                    localEDef.DataPartitions.Add(part);
+                    part.Explanation = "not real data, just for demo";
+
+                    // Define the location of the partition, relative to the manifest
+                    var location = $"{nameSpace}:/{entDef.EntityName}/partition-data.csv";
+                    part.Location = cdmCorpus.Storage.CreateRelativeCorpusPath(location, manifestResolved);
+
+                    // Add trait to partition for csv params
+                    var csvTrait = part.ExhibitsTraits.Add("is.partition.format.CSV", false);
+                    csvTrait.Arguments.Add("columnHeaders", "true");
+                    csvTrait.Arguments.Add("delimiter", ",");
+
+                    // Make a fake file with nothing but header for columns
+                    string header = "";
+                    foreach (CdmTypeAttributeDefinition att in entDef.Attributes)
+                    {
+                        if (header != "")
+                            header += ",";
+                        header += att.Name;
+                    }
+
+                    if (nameSpace.Equals(local, StringComparison.OrdinalIgnoreCase))
+                    {
+                        string directoryPath = cdmCorpus.Storage.CorpusPathToAdapterPath($"{nameSpace}:/{ entDef.EntityName}");
+                        Directory.CreateDirectory(directoryPath);
+                        // Get the actual location of the partition file from the corpus
+                        string partPath = cdmCorpus.Storage.CorpusPathToAdapterPath(location);
+                        File.WriteAllText(partPath, header);
+                    }
+                    else
+                    {
+                        var adapter = cdmCorpus.Storage.FetchAdapter(nameSpace);
+                        await adapter.WriteAsync(location, header);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.Write($"Error while saving CDM Document. Details: {ex.ToString()}");
+            }
         }
 
         /// <summary>
