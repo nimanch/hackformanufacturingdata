@@ -1,0 +1,126 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "ADF-Hack2020"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
+		},
+		"AzureSqldb_sqlhack_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqldb_sqlhack'"
+		},
+		"Base64Convertor_functionKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'functionKey' of 'Base64Convertor'"
+		},
+		"HackSchema_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'HackSchema'"
+		},
+		"gen2hackstore_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'gen2hackstore'"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://gen2hackstore.dfs.core.windows.net"
+		},
+		"AzureFunction1_properties_typeProperties_functionAppUrl": {
+			"type": "string",
+			"defaultValue": "https://base64convertor.azurewebsites.net"
+		},
+		"Base64Convertor_properties_typeProperties_functionAppUrl": {
+			"type": "string",
+			"defaultValue": "https://base64toxmlconvertor.azurewebsites.net"
+		},
+		"HackSchema_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://gen2hackstore.dfs.core.windows.net"
+		},
+		"KV2020_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://kvhack2020.vault.azure.net/"
+		},
+		"gen2hackstore_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://gen2hackstore.dfs.core.windows.net"
+		},
+		"BlobStorageTrigger_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/901ba023-b9b4-4c6d-9494-916872c2c164/resourceGroups/Hack/providers/Microsoft.Storage/storageAccounts/gen2hackstore"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"AzureDataLakeStorage1_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
+					},
+					"AzureSqldb_sqlhack_connectionString": {
+						"value": "[parameters('AzureSqldb_sqlhack_connectionString')]"
+					},
+					"Base64Convertor_functionKey": {
+						"value": "[parameters('Base64Convertor_functionKey')]"
+					},
+					"HackSchema_accountKey": {
+						"value": "[parameters('HackSchema_accountKey')]"
+					},
+					"gen2hackstore_accountKey": {
+						"value": "[parameters('gen2hackstore_accountKey')]"
+					},
+					"AzureDataLakeStorage1_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
+					},
+					"Base64Convertor_properties_typeProperties_functionAppUrl": {
+						"value": "[parameters('Base64Convertor_properties_typeProperties_functionAppUrl')]"
+					},
+					"HackSchema_properties_typeProperties_url": {
+						"value": "[parameters('HackSchema_properties_typeProperties_url')]"
+					},
+					"KV2020_properties_typeProperties_baseUrl": {
+						"value": "[parameters('KV2020_properties_typeProperties_baseUrl')]"
+					},
+					"gen2hackstore_properties_typeProperties_url": {
+						"value": "[parameters('gen2hackstore_properties_typeProperties_url')]"
+					},
+					"AzureFunction1_properties_typeProperties_functionAppUrl": {
+						"value": "[parameters('AzureFunction1_properties_typeProperties_functionAppUrl')]"
+					},
+					"BlobStorageTrigger_properties_typeProperties_scope": {
+						"value": "[parameters('BlobStorageTrigger_properties_typeProperties_scope')]"
+					}
+				}
+			},
+			"dependsOn": []
+		}
+	]
+}
