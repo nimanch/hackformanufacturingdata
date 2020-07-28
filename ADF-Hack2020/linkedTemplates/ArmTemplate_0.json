@@ -231,30 +231,6 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/AzureFunction1')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureFunction",
-				"typeProperties": {
-					"functionAppUrl": "[parameters('AzureFunction1_properties_typeProperties_functionAppUrl')]",
-					"functionKey": {
-						"type": "AzureKeyVaultSecret",
-						"store": {
-							"referenceName": "KV2020",
-							"type": "LinkedServiceReference"
-						},
-						"secretName": "sqlhackadmin",
-						"secretVersion": "1544ef16e1994ef58aa17c1846ca04db"
-					}
-				}
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/KV2020')]"
-			]
-		},
-		{
 			"name": "[concat(parameters('factoryName'), '/sinkgen2')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
@@ -282,13 +258,37 @@
 			]
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/AzureFunction1')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureFunction",
+				"typeProperties": {
+					"functionAppUrl": "[parameters('AzureFunction1_properties_typeProperties_functionAppUrl')]",
+					"functionKey": {
+						"type": "AzureKeyVaultSecret",
+						"store": {
+							"referenceName": "KV2020",
+							"type": "LinkedServiceReference"
+						},
+						"secretName": "sqlhackadmin",
+						"secretVersion": "1544ef16e1994ef58aa17c1846ca04db"
+					}
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/KV2020')]"
+			]
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/BlobStorageTrigger')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"description": "BlobStorageTrigger to convert Base64 to string ",
 				"annotations": [],
-				"runtimeState": "Stopped",
+				"runtimeState": "Started",
 				"pipelines": [
 					{
 						"pipelineReference": {
@@ -342,7 +342,7 @@
 							"name": "combine"
 						}
 					],
-					"script": "source(output(\n\t\tMonth_index as string,\n\t\tPredicted_PD as string,\n\t\tYear_Quarter as string,\n\t\tPD_Risk_Rating as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false) ~> single\nsingle union(byName: true)~> combine\ncombine sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> sinkdatalakeg2"
+					"script": "source(output(\n\t\tMonth_index as string,\n\t\tPredicted_PD as string,\n\t\tYear_Quarter as string,\n\t\tPD_Risk_Rating as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false) ~> single\nsingle union(byName: true)~> combine\ncombine sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tpartitionFileNames:['testcomb'],\n\tpartitionBy('hash', 1),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> sinkdatalakeg2"
 				}
 			},
 			"dependsOn": [
