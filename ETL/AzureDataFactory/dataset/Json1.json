@@ -1,0 +1,40 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "iot-hub-output",
+				"fileSystem": "messagefiles"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"NodeId": {
+					"type": "string"
+				},
+				"ApplicationUri": {
+					"type": "string"
+				},
+				"Value": {
+					"type": "object",
+					"properties": {
+						"Value": {
+							"type": "integer"
+						},
+						"SourceTimestamp": {
+							"type": "string"
+						}
+					}
+				}
+			}
+		}
+	}
+}
