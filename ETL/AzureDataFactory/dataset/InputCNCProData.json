@@ -1,0 +1,68 @@
+{
+	"name": "InputCNCProData",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "gen2hackstore",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "cncprodata/Concatenated",
+				"fileSystem": "cnctransformeddata"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "$dtid",
+				"type": "String"
+			},
+			{
+				"name": "$timestamp",
+				"type": "String"
+			},
+			{
+				"name": "SequentialNumber",
+				"type": "String"
+			},
+			{
+				"name": "EMT",
+				"type": "String"
+			},
+			{
+				"name": "CreateTime",
+				"type": "String"
+			},
+			{
+				"name": "ProcessCycleTm",
+				"type": "String"
+			},
+			{
+				"name": "TotalNum",
+				"type": "String"
+			},
+			{
+				"name": "MainProgram",
+				"type": "String"
+			},
+			{
+				"name": "CycleRunTm",
+				"type": "String"
+			},
+			{
+				"name": "ProcessStartTm",
+				"type": "String"
+			},
+			{
+				"name": "EventTime",
+				"type": "String"
+			}
+		]
+	}
+}
