@@ -2,7 +2,7 @@
 	"name": "Trigger_4y9",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipeline": {
 			"pipelineReference": {
 				"referenceName": "Copy_delta_files",
