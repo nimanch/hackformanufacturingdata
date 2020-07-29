@@ -9,10 +9,11 @@
 		"parameters": {
 			"Container": {
 				"type": "string",
-				"defaultValue": "signiot_delta_files"
+				"defaultValue": "mbtest"
 			},
 			"Directory": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "signiot_delta_files"
 			}
 		},
 		"annotations": [],
