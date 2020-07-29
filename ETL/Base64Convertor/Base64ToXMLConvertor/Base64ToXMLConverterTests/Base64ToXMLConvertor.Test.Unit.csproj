@@ -15,12 +15,16 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Base64ToXMLConvertor\Base64ToXMLConvertor.csproj" />
+    <ProjectReference Include="..\JsonToCsvConvertor\JsonToCsvConvertor\JsonToCsvConvertor.csproj" />
   </ItemGroup>
   <ItemGroup>
     <None Update="input.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="output.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="partition-data.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

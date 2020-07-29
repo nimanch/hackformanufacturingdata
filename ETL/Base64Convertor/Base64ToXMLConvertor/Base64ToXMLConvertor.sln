@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Base64ToXMLConvertor", "Bas
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Base64ToXMLConvertor.Test.Unit", "Base64ToXMLConverterTests\Base64ToXMLConvertor.Test.Unit.csproj", "{1945DFFA-8028-4A3F-A098-5832493993A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonToCsvConvertor", "JsonToCsvConvertor\JsonToCsvConvertor\JsonToCsvConvertor.csproj", "{4DFE4581-517F-4BB7-87FB-E0EA0E43B9DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1945DFFA-8028-4A3F-A098-5832493993A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1945DFFA-8028-4A3F-A098-5832493993A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1945DFFA-8028-4A3F-A098-5832493993A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DFE4581-517F-4BB7-87FB-E0EA0E43B9DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DFE4581-517F-4BB7-87FB-E0EA0E43B9DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DFE4581-517F-4BB7-87FB-E0EA0E43B9DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DFE4581-517F-4BB7-87FB-E0EA0E43B9DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
