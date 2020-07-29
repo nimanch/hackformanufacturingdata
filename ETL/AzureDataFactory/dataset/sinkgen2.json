@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "cncdatagroup1/Concatenated",
+				"folderPath": "cncdatagroup2/Concatenated",
 				"fileSystem": "cnctransformeddata"
 			},
 			"columnDelimiter": ",",
