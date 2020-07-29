@@ -21,7 +21,103 @@
 		},
 		"schema": [
 			{
-				"name": "OrderNumber|WorkflowStatus|ApplicationTime|EmployeeID|MachineType|ProcessName|Building|Area|MachineID|CutterNumber|CutterName|CutterSpecification|CutterProcessLife|CutterStandardLife|ExchangeReason|ExchangeReasonDetails|Manufacturer|IsCompliant|IPQCNumber|Size|Appearance|Calibrator|ConfirmationDetails|ReviewResult|ReviewDetails",
+				"name": "OrderNumber",
+				"type": "String"
+			},
+			{
+				"name": "WorkflowStatus",
+				"type": "String"
+			},
+			{
+				"name": "ApplicationTime",
+				"type": "String"
+			},
+			{
+				"name": "EmployeeID",
+				"type": "String"
+			},
+			{
+				"name": "MachineType",
+				"type": "String"
+			},
+			{
+				"name": "ProcessName",
+				"type": "String"
+			},
+			{
+				"name": "Building",
+				"type": "String"
+			},
+			{
+				"name": "Area",
+				"type": "String"
+			},
+			{
+				"name": "MachineID",
+				"type": "String"
+			},
+			{
+				"name": "CutterNumber",
+				"type": "String"
+			},
+			{
+				"name": "CutterName",
+				"type": "String"
+			},
+			{
+				"name": "CutterSpecification",
+				"type": "String"
+			},
+			{
+				"name": "CutterProcessLife",
+				"type": "String"
+			},
+			{
+				"name": "CutterStandardLife",
+				"type": "String"
+			},
+			{
+				"name": "ExchangeReason",
+				"type": "String"
+			},
+			{
+				"name": "ExchangeReasonDetails",
+				"type": "String"
+			},
+			{
+				"name": "Manufacturer",
+				"type": "String"
+			},
+			{
+				"name": "IsCompliant",
+				"type": "String"
+			},
+			{
+				"name": "IPQCNumber",
+				"type": "String"
+			},
+			{
+				"name": "Size",
+				"type": "String"
+			},
+			{
+				"name": "Appearance",
+				"type": "String"
+			},
+			{
+				"name": "Calibrator",
+				"type": "String"
+			},
+			{
+				"name": "ConfirmationDetails",
+				"type": "String"
+			},
+			{
+				"name": "ReviewResult",
+				"type": "String"
+			},
+			{
+				"name": "ReviewDetails",
 				"type": "String"
 			}
 		]

@@ -1,5 +1,5 @@
 {
-	"name": "df_cdmload_cncstatus",
+	"name": "InputDataToCDMTransfer",
 	"properties": {
 		"type": "MappingDataFlow",
 		"typeProperties": {
