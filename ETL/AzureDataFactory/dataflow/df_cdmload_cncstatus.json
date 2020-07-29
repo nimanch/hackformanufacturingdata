@@ -22,7 +22,7 @@
 				}
 			],
 			"transformations": [],
-			"script": "source(output(\n\t\t{$dtid} as string,\n\t\t{$timestamp} as string,\n\t\tSequentialNumber as string,\n\t\tEMT as string,\n\t\tCreateTime as string,\n\t\tStatus as string,\n\t\tErrorCode as string,\n\t\tTotalNum as string,\n\t\tCategory as string,\n\t\tEventTime as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false) ~> srccncstatus\nsrccncstatus sink(input(\n\t\t{$dtId} as string,\n\t\t{$timestamp} as string,\n\t\tEMT as string,\n\t\tTotalNum as string,\n\t\tStatus as string,\n\t\tCategory as string,\n\t\tSequentialNumber as string,\n\t\tCreateTime as string,\n\t\tErrorCode as string,\n\t\tEventTime as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false,\n\tpartitionFileNames:['partition-data.csv'],\n\ttruncate: true,\n\tpartitionBy('hash', 1)) ~> PartitionDataSetCDM"
+			"script": "source(output(\n\t\t{$dtid} as string,\n\t\t{$timestamp} as string,\n\t\tSequentialNumber as string,\n\t\tEMT as string,\n\t\tCreateTime as string,\n\t\tStatus as string,\n\t\tErrorCode as string,\n\t\tTotalNum as string,\n\t\tCategory as string,\n\t\tEventTime as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false) ~> srccncstatus\nsrccncstatus sink(input(\n\t\t{$dtId} as string,\n\t\t{$timestamp} as string,\n\t\tErrorCode as string,\n\t\tTotalNum as string,\n\t\tTag_Modbus_Humidity as string,\n\t\tCreateTime as string,\n\t\tStatus as string,\n\t\tEventTime as string,\n\t\tSequentialNumber as string,\n\t\tCategory as string,\n\t\tEMT as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false,\n\tpartitionFileNames:['partition-data.csv'],\n\ttruncate: true,\n\tpartitionBy('hash', 1)) ~> PartitionDataSetCDM"
 		}
 	}
 }
