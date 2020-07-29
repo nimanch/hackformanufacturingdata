@@ -46,7 +46,7 @@
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
 							"quoteAllText": true,
-							"fileExtension": "combo.csv"
+							"fileExtension": ".csv"
 						}
 					},
 					"enableStaging": false,
@@ -101,7 +101,7 @@
 						],
 						"typeConversion": true,
 						"typeConversionSettings": {
-							"allowDataTruncation": false,
+							"allowDataTruncation": true,
 							"treatBooleanAsNumber": false
 						}
 					}
