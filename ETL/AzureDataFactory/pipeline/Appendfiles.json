@@ -29,14 +29,6 @@
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
 							"recursive": true,
-							"modifiedDatetimeStart": {
-								"value": "@addminutes(utcnow(),-10)",
-								"type": "Expression"
-							},
-							"modifiedDatetimeEnd": {
-								"value": "@utcnow()",
-								"type": "Expression"
-							},
 							"wildcardFolderPath": "single",
 							"wildcardFileName": "*",
 							"enablePartitionDiscovery": false
