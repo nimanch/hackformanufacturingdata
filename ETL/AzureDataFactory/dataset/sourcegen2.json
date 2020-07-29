@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "cncdatagroup1",
+				"folderPath": "cncdatagroup2",
 				"fileSystem": "cnctransformeddata"
 			},
 			"columnDelimiter": ",",
@@ -40,59 +40,91 @@
 				"type": "String"
 			},
 			{
-				"name": "PowerOn",
+				"name": "S_Temp",
 				"type": "String"
 			},
 			{
-				"name": "ServoName",
+				"name": "S_Torque",
 				"type": "String"
 			},
 			{
-				"name": "PowerOnTm",
+				"name": "S_TE",
 				"type": "String"
 			},
 			{
-				"name": "CuttingTm",
+				"name": "Mcode",
 				"type": "String"
 			},
 			{
-				"name": "CycleRunTm",
+				"name": "Cuttingfluid",
 				"type": "String"
 			},
 			{
-				"name": "CurrenttoolNo",
+				"name": "S_Gap",
 				"type": "String"
 			},
 			{
-				"name": "MaxAxisNo",
+				"name": "ServoTemp",
 				"type": "String"
 			},
 			{
-				"name": "UseAxisNo",
+				"name": "S_Load",
 				"type": "String"
 			},
 			{
-				"name": "CNCMode",
+				"name": "CuttingSpeed",
 				"type": "String"
 			},
 			{
-				"name": "MainProgram",
+				"name": "ActualSpeedX",
 				"type": "String"
 			},
 			{
-				"name": "NowProgram",
+				"name": "ActualSpeedY",
 				"type": "String"
 			},
 			{
-				"name": "ProgramStep",
+				"name": "ActualSpeedZ",
 				"type": "String"
 			},
 			{
-				"name": "Singlenote",
+				"name": "ActualSpeedA",
 				"type": "String"
 			},
 			{
-				"name": "Programnote",
+				"name": "RateJOG",
+				"type": "String"
+			},
+			{
+				"name": "RateFastmove",
+				"type": "String"
+			},
+			{
+				"name": "RateHAND",
+				"type": "String"
+			},
+			{
+				"name": "FastmoveTmC",
+				"type": "String"
+			},
+			{
+				"name": "Fastmovespeed",
+				"type": "String"
+			},
+			{
+				"name": "AbsPos",
+				"type": "String"
+			},
+			{
+				"name": "MachPos",
+				"type": "String"
+			},
+			{
+				"name": "RelPos",
+				"type": "String"
+			},
+			{
+				"name": "Distance",
 				"type": "String"
 			},
 			{
