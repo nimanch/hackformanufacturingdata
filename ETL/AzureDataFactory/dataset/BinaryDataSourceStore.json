@@ -8,10 +8,12 @@
 		},
 		"parameters": {
 			"Container": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "mbtest"
 			},
 			"Directory": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "newfiles"
 			}
 		},
 		"annotations": [],
