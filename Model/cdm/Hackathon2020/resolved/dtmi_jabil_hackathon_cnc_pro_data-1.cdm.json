@@ -34,47 +34,11 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "SequentialNumber",
-            "parent": "dtmi_jabil_hackathon_cnc_pro_data-1/attributeContext/dtmi_jabil_hackathon_cnc_pro_data-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_pro_data-1/hasAttributes/SequentialNumber",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_pro_data-1/hasAttributes/SequentialNumber"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
             "name": "CycleRunTm",
             "parent": "dtmi_jabil_hackathon_cnc_pro_data-1/attributeContext/dtmi_jabil_hackathon_cnc_pro_data-1",
             "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_pro_data-1/hasAttributes/CycleRunTm",
             "contents": [
               "dtmi_jabil_hackathon_cnc_pro_data-1/hasAttributes/CycleRunTm"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "EMT",
-            "parent": "dtmi_jabil_hackathon_cnc_pro_data-1/attributeContext/dtmi_jabil_hackathon_cnc_pro_data-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_pro_data-1/hasAttributes/EMT",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_pro_data-1/hasAttributes/EMT"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "EventTime",
-            "parent": "dtmi_jabil_hackathon_cnc_pro_data-1/attributeContext/dtmi_jabil_hackathon_cnc_pro_data-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_pro_data-1/hasAttributes/EventTime",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_pro_data-1/hasAttributes/EventTime"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "ProcessStartTm",
-            "parent": "dtmi_jabil_hackathon_cnc_pro_data-1/attributeContext/dtmi_jabil_hackathon_cnc_pro_data-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_pro_data-1/hasAttributes/ProcessStartTm",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_pro_data-1/hasAttributes/ProcessStartTm"
             ]
           },
           {
@@ -97,15 +61,6 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "ProcessCycleTm",
-            "parent": "dtmi_jabil_hackathon_cnc_pro_data-1/attributeContext/dtmi_jabil_hackathon_cnc_pro_data-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_pro_data-1/hasAttributes/ProcessCycleTm",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_pro_data-1/hasAttributes/ProcessCycleTm"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
             "name": "MainProgram",
             "parent": "dtmi_jabil_hackathon_cnc_pro_data-1/attributeContext/dtmi_jabil_hackathon_cnc_pro_data-1",
             "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_pro_data-1/hasAttributes/MainProgram",
@@ -115,11 +70,47 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "DataType",
+            "name": "ProcessStartTm",
             "parent": "dtmi_jabil_hackathon_cnc_pro_data-1/attributeContext/dtmi_jabil_hackathon_cnc_pro_data-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_pro_data-1/hasAttributes/DataType",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_pro_data-1/hasAttributes/ProcessStartTm",
             "contents": [
-              "dtmi_jabil_hackathon_cnc_pro_data-1/hasAttributes/DataType"
+              "dtmi_jabil_hackathon_cnc_pro_data-1/hasAttributes/ProcessStartTm"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SequentialNumber",
+            "parent": "dtmi_jabil_hackathon_cnc_pro_data-1/attributeContext/dtmi_jabil_hackathon_cnc_pro_data-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_pro_data-1/hasAttributes/SequentialNumber",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_pro_data-1/hasAttributes/SequentialNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "EventTime",
+            "parent": "dtmi_jabil_hackathon_cnc_pro_data-1/attributeContext/dtmi_jabil_hackathon_cnc_pro_data-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_pro_data-1/hasAttributes/EventTime",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_pro_data-1/hasAttributes/EventTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "EMT",
+            "parent": "dtmi_jabil_hackathon_cnc_pro_data-1/attributeContext/dtmi_jabil_hackathon_cnc_pro_data-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_pro_data-1/hasAttributes/EMT",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_pro_data-1/hasAttributes/EMT"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ProcessCycleTm",
+            "parent": "dtmi_jabil_hackathon_cnc_pro_data-1/attributeContext/dtmi_jabil_hackathon_cnc_pro_data-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_pro_data-1/hasAttributes/ProcessCycleTm",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_pro_data-1/hasAttributes/ProcessCycleTm"
             ]
           }
         ]
@@ -150,44 +141,12 @@
           "dataFormat": "DateTime"
         },
         {
-          "name": "SequentialNumber",
-          "appliedTraits": [
-            "is.dataFormat.integer"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_pro_data-1/attributeContext/dtmi_jabil_hackathon_cnc_pro_data-1/SequentialNumber",
-          "dataFormat": "Int32"
-        },
-        {
           "name": "CycleRunTm",
           "appliedTraits": [
             "is.dataFormat.integer"
           ],
           "attributeContext": "dtmi_jabil_hackathon_cnc_pro_data-1/attributeContext/dtmi_jabil_hackathon_cnc_pro_data-1/CycleRunTm",
           "dataFormat": "Int32"
-        },
-        {
-          "name": "EMT",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_pro_data-1/attributeContext/dtmi_jabil_hackathon_cnc_pro_data-1/EMT",
-          "dataFormat": "String"
-        },
-        {
-          "name": "EventTime",
-          "attributeContext": "dtmi_jabil_hackathon_cnc_pro_data-1/attributeContext/dtmi_jabil_hackathon_cnc_pro_data-1/EventTime"
-        },
-        {
-          "name": "ProcessStartTm",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_pro_data-1/attributeContext/dtmi_jabil_hackathon_cnc_pro_data-1/ProcessStartTm",
-          "dataFormat": "String"
         },
         {
           "name": "TotalNum",
@@ -202,14 +161,6 @@
           "attributeContext": "dtmi_jabil_hackathon_cnc_pro_data-1/attributeContext/dtmi_jabil_hackathon_cnc_pro_data-1/CreateTime"
         },
         {
-          "name": "ProcessCycleTm",
-          "appliedTraits": [
-            "is.dataFormat.integer"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_pro_data-1/attributeContext/dtmi_jabil_hackathon_cnc_pro_data-1/ProcessCycleTm",
-          "dataFormat": "Int32"
-        },
-        {
           "name": "MainProgram",
           "appliedTraits": [
             "is.dataFormat.integer"
@@ -218,14 +169,44 @@
           "dataFormat": "Int32"
         },
         {
-          "name": "DataType",
+          "name": "ProcessStartTm",
           "appliedTraits": [
             "is.dataFormat.character",
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_pro_data-1/attributeContext/dtmi_jabil_hackathon_cnc_pro_data-1/DataType",
+          "attributeContext": "dtmi_jabil_hackathon_cnc_pro_data-1/attributeContext/dtmi_jabil_hackathon_cnc_pro_data-1/ProcessStartTm",
           "dataFormat": "String"
+        },
+        {
+          "name": "SequentialNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_pro_data-1/attributeContext/dtmi_jabil_hackathon_cnc_pro_data-1/SequentialNumber",
+          "dataFormat": "Int32"
+        },
+        {
+          "name": "EventTime",
+          "attributeContext": "dtmi_jabil_hackathon_cnc_pro_data-1/attributeContext/dtmi_jabil_hackathon_cnc_pro_data-1/EventTime"
+        },
+        {
+          "name": "EMT",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_pro_data-1/attributeContext/dtmi_jabil_hackathon_cnc_pro_data-1/EMT",
+          "dataFormat": "String"
+        },
+        {
+          "name": "ProcessCycleTm",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_pro_data-1/attributeContext/dtmi_jabil_hackathon_cnc_pro_data-1/ProcessCycleTm",
+          "dataFormat": "Int32"
         }
       ],
       "displayName": "CNCProData",

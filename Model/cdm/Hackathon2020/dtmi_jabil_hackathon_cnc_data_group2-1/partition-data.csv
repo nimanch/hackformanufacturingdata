@@ -1,1 +1,1 @@
-$dtId,$timestamp,S_Torque,CreateTime,EMT,Mcode,SequentialNumber,S_Temp,ActualSpeedZ,CuttingSpeed,RateHAND,Fastmovespeed,ActualSpeedX,S_TE,S_Load,RateFastmove,Cuttingfluid,RateJOG,RelPos,S_Gap,Distance,ActualSpeedY,MachPos,FastmoveTmC,ServoTemp,EventTime,AbsPos,Tag_D1_Analog,ActualSpeedA
+$dtId,$timestamp,EMT,S_Temp,CuttingSpeed,SequentialNumber,CreateTime,RateFastmove,S_TE,S_Load,RateHAND,ServoTemp,RateJOG,EventTime,RelPos,ActualSpeedX,S_Torque,Distance,S_Gap,ActualSpeedY,ActualSpeedZ,Fastmovespeed,Cuttingfluid,Tag_D1_Analog,AbsPos,ActualSpeedA,FastmoveTmC,MachPos,Mcode

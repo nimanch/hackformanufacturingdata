@@ -20,39 +20,9 @@
           "dataType": "dateTime"
         },
         {
-          "name": "ProcessStartTm",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "Toolset",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "CreateTime",
-          "purpose": "hasA",
-          "dataType": "datetime"
-        },
-        {
           "name": "Z_load",
           "purpose": "hasA",
           "dataType": "integer"
-        },
-        {
-          "name": "Feed",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "X_load",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "AxisangleX",
-          "purpose": "hasA",
-          "dataType": "double"
         },
         {
           "name": "EventTime",
@@ -60,14 +30,19 @@
           "dataType": "datetime"
         },
         {
-          "name": "ProcessCycleTm",
+          "name": "ProcessStartTm",
           "purpose": "hasA",
-          "dataType": "integer"
+          "dataType": "string"
         },
         {
-          "name": "AxisangleY",
+          "name": "CreateTime",
           "purpose": "hasA",
-          "dataType": "double"
+          "dataType": "datetime"
+        },
+        {
+          "name": "Toolset",
+          "purpose": "hasA",
+          "dataType": "integer"
         },
         {
           "name": "SequentialNumber",
@@ -75,9 +50,9 @@
           "dataType": "integer"
         },
         {
-          "name": "S_RPM",
+          "name": "AxisangleA",
           "purpose": "hasA",
-          "dataType": "integer"
+          "dataType": "double"
         },
         {
           "name": "A_load",
@@ -90,9 +65,9 @@
           "dataType": "integer"
         },
         {
-          "name": "AxisangleA",
+          "name": "Feed",
           "purpose": "hasA",
-          "dataType": "double"
+          "dataType": "integer"
         },
         {
           "name": "EMT",
@@ -100,9 +75,34 @@
           "dataType": "string"
         },
         {
+          "name": "X_load",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "S_RPM",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "AxisangleX",
+          "purpose": "hasA",
+          "dataType": "double"
+        },
+        {
           "name": "AxisangleZ",
           "purpose": "hasA",
           "dataType": "double"
+        },
+        {
+          "name": "AxisangleY",
+          "purpose": "hasA",
+          "dataType": "double"
+        },
+        {
+          "name": "ProcessCycleTm",
+          "purpose": "hasA",
+          "dataType": "integer"
         }
       ],
       "displayName": "CNCDataGroup3",

@@ -20,7 +20,7 @@
           "dataType": "dateTime"
         },
         {
-          "name": "Station",
+          "name": "Project",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -35,12 +35,12 @@
           "dataType": "string"
         },
         {
-          "name": "Project",
+          "name": "EMT",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "EMT",
+          "name": "Station",
           "purpose": "hasA",
           "dataType": "string"
         }

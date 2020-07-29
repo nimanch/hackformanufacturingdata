@@ -1,1 +1,1 @@
-$dtId,$timestamp,EventTime,TotalNum,ErrorCode,DataType,Category,Status,SequentialNumber,CreateTime,EMT
+$dtId,$timestamp,EMT,ErrorCode,EventTime,CreateTime,Category,SequentialNumber,TotalNum,Status

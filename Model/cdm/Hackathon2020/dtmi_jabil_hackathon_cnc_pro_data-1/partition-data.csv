@@ -1,1 +1,1 @@
-$dtId,$timestamp,SequentialNumber,CycleRunTm,EMT,EventTime,ProcessStartTm,TotalNum,CreateTime,ProcessCycleTm,MainProgram,DataType
+$dtId,$timestamp,CycleRunTm,TotalNum,CreateTime,MainProgram,ProcessStartTm,SequentialNumber,EventTime,EMT,ProcessCycleTm

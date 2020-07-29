@@ -20,19 +20,54 @@
           "dataType": "dateTime"
         },
         {
-          "name": "ServoName",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
           "name": "CurrenttoolNo",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
+          "name": "ShutdownTm",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "CreateTime",
+          "purpose": "hasA",
+          "dataType": "datetime"
+        },
+        {
           "name": "EMT",
           "purpose": "hasA",
           "dataType": "string"
+        },
+        {
+          "name": "SequentialNumber",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "ProgramStep",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "PowerOn",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "UseAxisNo",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "PowerOnTm",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "MaxAxisNo",
+          "purpose": "hasA",
+          "dataType": "integer"
         },
         {
           "name": "CycleRunTm",
@@ -45,34 +80,14 @@
           "dataType": "integer"
         },
         {
-          "name": "PowerOn",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "Programnote",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "CreateTime",
+          "name": "EventTime",
           "purpose": "hasA",
           "dataType": "datetime"
         },
         {
-          "name": "MainProgram",
+          "name": "ServoName",
           "purpose": "hasA",
           "dataType": "string"
-        },
-        {
-          "name": "UseAxisNo",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "SequentialNumber",
-          "purpose": "hasA",
-          "dataType": "integer"
         },
         {
           "name": "NowProgram",
@@ -80,14 +95,9 @@
           "dataType": "string"
         },
         {
-          "name": "ShutdownTm",
+          "name": "MainProgram",
           "purpose": "hasA",
           "dataType": "string"
-        },
-        {
-          "name": "PowerOnTm",
-          "purpose": "hasA",
-          "dataType": "integer"
         },
         {
           "name": "Singlenote",
@@ -95,24 +105,14 @@
           "dataType": "string"
         },
         {
-          "name": "ProgramStep",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "MaxAxisNo",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
           "name": "CNCMode",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "EventTime",
+          "name": "Programnote",
           "purpose": "hasA",
-          "dataType": "datetime"
+          "dataType": "string"
         }
       ],
       "displayName": "CNCDataGroup1",

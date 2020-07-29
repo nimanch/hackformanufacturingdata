@@ -20,14 +20,9 @@
           "dataType": "dateTime"
         },
         {
-          "name": "EventTime",
+          "name": "EMT",
           "purpose": "hasA",
-          "dataType": "datetime"
-        },
-        {
-          "name": "TotalNum",
-          "purpose": "hasA",
-          "dataType": "integer"
+          "dataType": "string"
         },
         {
           "name": "ErrorCode",
@@ -35,17 +30,17 @@
           "dataType": "string"
         },
         {
-          "name": "DataType",
+          "name": "EventTime",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "datetime"
+        },
+        {
+          "name": "CreateTime",
+          "purpose": "hasA",
+          "dataType": "datetime"
         },
         {
           "name": "Category",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "Status",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -55,12 +50,12 @@
           "dataType": "integer"
         },
         {
-          "name": "CreateTime",
+          "name": "TotalNum",
           "purpose": "hasA",
-          "dataType": "datetime"
+          "dataType": "integer"
         },
         {
-          "name": "EMT",
+          "name": "Status",
           "purpose": "hasA",
           "dataType": "string"
         }
