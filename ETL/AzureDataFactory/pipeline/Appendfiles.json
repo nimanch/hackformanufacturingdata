@@ -1,5 +1,5 @@
 {
-	"name": "pipeline1",
+	"name": "Appendfiles",
 	"properties": {
 		"activities": [
 			{
@@ -108,7 +108,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "DelimitedText1",
+						"referenceName": "sourcegen2",
 						"type": "DatasetReference"
 					}
 				],
