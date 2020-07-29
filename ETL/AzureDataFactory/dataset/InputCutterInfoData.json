@@ -1,0 +1,29 @@
+{
+	"name": "InputCutterInfoData",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "gen2hackstore",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "other_cutter_change_info.csv",
+				"folderPath": "Other",
+				"fileSystem": "rowdatafromjabil"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "OrderNumber|WorkflowStatus|ApplicationTime|EmployeeID|MachineType|ProcessName|Building|Area|MachineID|CutterNumber|CutterName|CutterSpecification|CutterProcessLife|CutterStandardLife|ExchangeReason|ExchangeReasonDetails|Manufacturer|IsCompliant|IPQCNumber|Size|Appearance|Calibrator|ConfirmationDetails|ReviewResult|ReviewDetails",
+				"type": "String"
+			}
+		]
+	}
+}
