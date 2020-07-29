@@ -12,7 +12,11 @@
 					"name": "srccncstatus"
 				},
 				{
-					"name": "source1"
+					"dataset": {
+						"referenceName": "CDMMiabData",
+						"type": "DatasetReference"
+					},
+					"name": "IoTHubData"
 				}
 			],
 			"sinks": [
@@ -21,11 +25,18 @@
 						"referenceName": "CDMCNSPartitionData",
 						"type": "DatasetReference"
 					},
-					"name": "PartitionDataSetCDM"
+					"name": "sink1"
+				},
+				{
+					"dataset": {
+						"referenceName": "CDMCNSPartitionData",
+						"type": "DatasetReference"
+					},
+					"name": "sink2"
 				}
 			],
 			"transformations": [],
-			"script": "source(output(\n\t\t{$dtid} as string,\n\t\t{$timestamp} as string,\n\t\tSequentialNumber as string,\n\t\tEMT as string,\n\t\tCreateTime as string,\n\t\tStatus as string,\n\t\tErrorCode as string,\n\t\tTotalNum as string,\n\t\tCategory as string,\n\t\tEventTime as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false) ~> srccncstatus\nsource(allowSchemaDrift: true,\n\tvalidateSchema: false) ~> source1\nsrccncstatus sink(input(\n\t\t{$dtId} as string,\n\t\t{$timestamp} as string,\n\t\tEMT as string,\n\t\tTotalNum as string,\n\t\tStatus as string,\n\t\tCategory as string,\n\t\tSequentialNumber as string,\n\t\tCreateTime as string,\n\t\tErrorCode as string,\n\t\tEventTime as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false,\n\tpartitionFileNames:['partition-data.csv'],\n\ttruncate: true,\n\tpartitionBy('hash', 1)) ~> PartitionDataSetCDM"
+			"script": "source(output(\n\t\t{$dtid} as string,\n\t\t{$timestamp} as string,\n\t\tSequentialNumber as string,\n\t\tEMT as string,\n\t\tCreateTime as string,\n\t\tStatus as string,\n\t\tErrorCode as string,\n\t\tTotalNum as string,\n\t\tCategory as string,\n\t\tEventTime as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false) ~> srccncstatus\nsource(output(\n\t\t{$dtId} as string,\n\t\t{$timestamp} as string,\n\t\tTag_Modbus_Humidity as string,\n\t\tTag_D2_Blue as string,\n\t\tTag_Modbus_Temperature as string,\n\t\tTag_D1_Analog as string,\n\t\tTag_Modbus_CO2 as string,\n\t\tTag_D0_Digital as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false) ~> IoTHubData\nsrccncstatus sink(input(\n\t\t{$dtId} as string,\n\t\t{$timestamp} as string,\n\t\tErrorCode as string,\n\t\tTotalNum as string,\n\t\tTag_Modbus_Humidity as string,\n\t\tCreateTime as string,\n\t\tStatus as string,\n\t\tEventTime as string,\n\t\tSequentialNumber as string,\n\t\tCategory as string,\n\t\tEMT as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tmapColumn(\n\t\t{$dtId} = {$dtid},\n\t\t{$timestamp},\n\t\tErrorCode,\n\t\tTotalNum,\n\t\tTag_Modbus_Humidity = ErrorCode,\n\t\tCreateTime,\n\t\tStatus,\n\t\tEventTime,\n\t\tSequentialNumber,\n\t\tCategory,\n\t\tEMT\n\t)) ~> sink1\nIoTHubData sink(input(\n\t\t{$dtId} as string,\n\t\t{$timestamp} as string,\n\t\tErrorCode as string,\n\t\tTotalNum as string,\n\t\tTag_Modbus_Humidity as string,\n\t\tCreateTime as string,\n\t\tStatus as string,\n\t\tEventTime as string,\n\t\tSequentialNumber as string,\n\t\tCategory as string,\n\t\tEMT as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false,\n\tmapColumn(\n\t\tTag_Modbus_Humidity\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> sink2"
 		}
 	}
 }

@@ -1,5 +1,5 @@
 {
-	"name": "CDMCNSPartitionData",
+	"name": "CDMMiabData",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "gen2hackstore",
@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "jabilcdm/dtmi_jabil_hackathon_cnc_status-1",
+				"folderPath": "jabilcdm/dtmi_opcfoundation_org_UA_MiaB_Tags-1",
 				"fileSystem": "cdm"
 			},
 			"columnDelimiter": ",",
@@ -28,39 +28,27 @@
 				"type": "String"
 			},
 			{
-				"name": "ErrorCode",
-				"type": "String"
-			},
-			{
-				"name": "TotalNum",
-				"type": "String"
-			},
-			{
 				"name": "Tag_Modbus_Humidity",
 				"type": "String"
 			},
 			{
-				"name": "CreateTime",
+				"name": "Tag_D2_Blue",
 				"type": "String"
 			},
 			{
-				"name": "Status",
+				"name": "Tag_Modbus_Temperature",
 				"type": "String"
 			},
 			{
-				"name": "EventTime",
+				"name": "Tag_D1_Analog",
 				"type": "String"
 			},
 			{
-				"name": "SequentialNumber",
+				"name": "Tag_Modbus_CO2",
 				"type": "String"
 			},
 			{
-				"name": "Category",
-				"type": "String"
-			},
-			{
-				"name": "EMT",
+				"name": "Tag_D0_Digital",
 				"type": "String"
 			}
 		]
