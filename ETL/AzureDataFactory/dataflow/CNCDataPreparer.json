@@ -1,5 +1,5 @@
 {
-	"name": "DF_IOTHUB_DATAFLOW",
+	"name": "CNCDataPreparer",
 	"properties": {
 		"type": "MappingDataFlow",
 		"typeProperties": {
