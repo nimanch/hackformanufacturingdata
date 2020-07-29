@@ -1,0 +1,100 @@
+{
+	"name": "CDMCNCDataGroup3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "gen2hackstore",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "jabilcdm/dtmi_jabil_hackathon_cnc_data_group3-1",
+				"fileSystem": "cdm"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "$dtId",
+				"type": "String"
+			},
+			{
+				"name": "$timestamp",
+				"type": "String"
+			},
+			{
+				"name": "EventTime",
+				"type": "String"
+			},
+			{
+				"name": "AxisangleA",
+				"type": "String"
+			},
+			{
+				"name": "AxisangleZ",
+				"type": "String"
+			},
+			{
+				"name": "Z_load",
+				"type": "String"
+			},
+			{
+				"name": "ProcessStartTm",
+				"type": "String"
+			},
+			{
+				"name": "Y_load",
+				"type": "String"
+			},
+			{
+				"name": "AxisangleX",
+				"type": "String"
+			},
+			{
+				"name": "CreateTime",
+				"type": "String"
+			},
+			{
+				"name": "Toolset",
+				"type": "String"
+			},
+			{
+				"name": "X_load",
+				"type": "String"
+			},
+			{
+				"name": "S_RPM",
+				"type": "String"
+			},
+			{
+				"name": "ProcessCycleTm",
+				"type": "String"
+			},
+			{
+				"name": "EMT",
+				"type": "String"
+			},
+			{
+				"name": "Feed",
+				"type": "String"
+			},
+			{
+				"name": "AxisangleY",
+				"type": "String"
+			},
+			{
+				"name": "A_load",
+				"type": "String"
+			},
+			{
+				"name": "SequentialNumber",
+				"type": "String"
+			}
+		]
+	}
+}
