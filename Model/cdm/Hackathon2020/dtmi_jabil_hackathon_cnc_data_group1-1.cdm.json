@@ -7,7 +7,7 @@
   ],
   "definitions": [
     {
-      "entityName": "dtmi_jabil_hackathon_pis_machine_cutter-1",
+      "entityName": "dtmi_jabil_hackathon_cnc_data_group1-1",
       "hasAttributes": [
         {
           "name": "$dtId",
@@ -20,67 +20,102 @@
           "dataType": "dateTime"
         },
         {
-          "name": "LDBMachineNo",
+          "name": "ServoName",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "Path",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "WorkareaName",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "ShowStationName",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "Seat",
+          "name": "CurrenttoolNo",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "ShowLineName",
+          "name": "EMT",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "MachineNo",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "Row_Num",
+          "name": "CycleRunTm",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "Equipment",
+          "name": "CuttingTm",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "TextDisabled",
+          "name": "PowerOn",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "BuildingName",
+          "name": "Programnote",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "ShowProjectName",
+          "name": "CreateTime",
+          "purpose": "hasA",
+          "dataType": "datetime"
+        },
+        {
+          "name": "MainProgram",
           "purpose": "hasA",
           "dataType": "string"
+        },
+        {
+          "name": "UseAxisNo",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "SequentialNumber",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "NowProgram",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "ShutdownTm",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "PowerOnTm",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "Singlenote",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "ProgramStep",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "MaxAxisNo",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "CNCMode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "EventTime",
+          "purpose": "hasA",
+          "dataType": "datetime"
         }
       ],
-      "displayName": "Machine Cutter",
+      "displayName": "CNCDataGroup1",
       "version": "0.0.1"
     }
   ]

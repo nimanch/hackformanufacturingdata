@@ -30,11 +30,6 @@
           "dataType": "string"
         },
         {
-          "name": "PartNo",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
           "name": "LifeStand",
           "purpose": "hasA",
           "dataType": "string"
@@ -45,17 +40,12 @@
           "dataType": "integer"
         },
         {
-          "name": "VendorUid",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "BatchNo",
+          "name": "Version",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "Version",
+          "name": "BatchNo",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -65,7 +55,32 @@
           "dataType": "string"
         },
         {
+          "name": "IsDisabled",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
           "name": "IsDeleted",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Remark",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "VendorUid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "DateCreated",
+          "purpose": "hasA",
+          "dataType": "datetime"
+        },
+        {
+          "name": "PartNo",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -75,19 +90,24 @@
           "dataType": "string"
         },
         {
+          "name": "DateChanged",
+          "purpose": "hasA",
+          "dataType": "datetime"
+        },
+        {
           "name": "Path",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "VendorCode",
+          "name": "VendorName",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "UserCreated",
+          "name": "DateDeleted",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "datetime"
         },
         {
           "name": "Row_Num",
@@ -95,17 +115,7 @@
           "dataType": "integer"
         },
         {
-          "name": "Remark",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "TextDisabled",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "IsDisabled",
+          "name": "VendorCode",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -115,7 +125,12 @@
           "dataType": "string"
         },
         {
-          "name": "VendorName",
+          "name": "UserCreated",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "TextDisabled",
           "purpose": "hasA",
           "dataType": "string"
         }

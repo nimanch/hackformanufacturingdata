@@ -1,0 +1,199 @@
+{
+  "jsonSchemaSemanticVersion": "1.0.0",
+  "imports": [
+    {
+      "corpusPath": "/dtmi_jabil_hackathon_cnc_tool_info-1.cdm.json",
+      "moniker": "resolvedFrom"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "dtmi_jabil_hackathon_cnc_tool_info-1",
+      "attributeContext": {
+        "type": "entity",
+        "name": "dtmi_jabil_hackathon_cnc_tool_info-1",
+        "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_tool_info-1",
+        "contents": [
+          {
+            "type": "attributeDefinition",
+            "name": "$dtId",
+            "parent": "dtmi_jabil_hackathon_cnc_tool_info-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_info-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_tool_info-1/hasAttributes/$dtId",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_tool_info-1/hasAttributes/$dtId"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "$timestamp",
+            "parent": "dtmi_jabil_hackathon_cnc_tool_info-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_info-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_tool_info-1/hasAttributes/$timestamp",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_tool_info-1/hasAttributes/$timestamp"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "EMT",
+            "parent": "dtmi_jabil_hackathon_cnc_tool_info-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_info-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_tool_info-1/hasAttributes/EMT",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_tool_info-1/hasAttributes/EMT"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DataType",
+            "parent": "dtmi_jabil_hackathon_cnc_tool_info-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_info-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_tool_info-1/hasAttributes/DataType",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_tool_info-1/hasAttributes/DataType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "UseCount",
+            "parent": "dtmi_jabil_hackathon_cnc_tool_info-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_info-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_tool_info-1/hasAttributes/UseCount",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_tool_info-1/hasAttributes/UseCount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ToolNo",
+            "parent": "dtmi_jabil_hackathon_cnc_tool_info-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_info-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_tool_info-1/hasAttributes/ToolNo",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_tool_info-1/hasAttributes/ToolNo"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SequentialNumber",
+            "parent": "dtmi_jabil_hackathon_cnc_tool_info-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_info-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_tool_info-1/hasAttributes/SequentialNumber",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_tool_info-1/hasAttributes/SequentialNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "EditTime",
+            "parent": "dtmi_jabil_hackathon_cnc_tool_info-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_info-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_tool_info-1/hasAttributes/EditTime",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_tool_info-1/hasAttributes/EditTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "LimitCount",
+            "parent": "dtmi_jabil_hackathon_cnc_tool_info-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_info-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_tool_info-1/hasAttributes/LimitCount",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_tool_info-1/hasAttributes/LimitCount"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CreateTime",
+            "parent": "dtmi_jabil_hackathon_cnc_tool_info-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_info-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_tool_info-1/hasAttributes/CreateTime",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_tool_info-1/hasAttributes/CreateTime"
+            ]
+          }
+        ]
+      },
+      "hasAttributes": [
+        {
+          "name": "$dtId",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array",
+            "is.dataFormat.guid",
+            "means.identity.entityId"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_tool_info-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_info-1/$dtId",
+          "isPrimaryKey": true,
+          "dataFormat": "Guid"
+        },
+        {
+          "name": "$timestamp",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_tool_info-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_info-1/$timestamp",
+          "dataFormat": "DateTime"
+        },
+        {
+          "name": "EMT",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_tool_info-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_info-1/EMT",
+          "dataFormat": "String"
+        },
+        {
+          "name": "DataType",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_tool_info-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_info-1/DataType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "UseCount",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_tool_info-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_info-1/UseCount",
+          "dataFormat": "Int32"
+        },
+        {
+          "name": "ToolNo",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_tool_info-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_info-1/ToolNo",
+          "dataFormat": "Int32"
+        },
+        {
+          "name": "SequentialNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_tool_info-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_info-1/SequentialNumber",
+          "dataFormat": "Int32"
+        },
+        {
+          "name": "EditTime",
+          "attributeContext": "dtmi_jabil_hackathon_cnc_tool_info-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_info-1/EditTime"
+        },
+        {
+          "name": "LimitCount",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_tool_info-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_info-1/LimitCount",
+          "dataFormat": "Int32"
+        },
+        {
+          "name": "CreateTime",
+          "attributeContext": "dtmi_jabil_hackathon_cnc_tool_info-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_info-1/CreateTime"
+        }
+      ],
+      "displayName": "CNCToolInfo",
+      "version": "0.0.1"
+    }
+  ]
+}

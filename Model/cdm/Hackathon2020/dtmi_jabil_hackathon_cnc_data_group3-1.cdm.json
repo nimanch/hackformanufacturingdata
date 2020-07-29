@@ -7,7 +7,7 @@
   ],
   "definitions": [
     {
-      "entityName": "dtmi_jabil_hackathon_pis_cutter_workarea-1",
+      "entityName": "dtmi_jabil_hackathon_cnc_data_group3-1",
       "hasAttributes": [
         {
           "name": "$dtId",
@@ -20,122 +20,92 @@
           "dataType": "dateTime"
         },
         {
-          "name": "pid",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "WorkareaName",
+          "name": "ProcessStartTm",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "KPIStationUid",
+          "name": "Toolset",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "DateChanged",
+          "name": "CreateTime",
           "purpose": "hasA",
           "dataType": "datetime"
         },
         {
-          "name": "DateDeleted",
+          "name": "Z_load",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "Feed",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "X_load",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "AxisangleX",
+          "purpose": "hasA",
+          "dataType": "double"
+        },
+        {
+          "name": "EventTime",
           "purpose": "hasA",
           "dataType": "datetime"
         },
         {
-          "name": "UserCreated",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "IsDisabled",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "IsDeleted",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "OrgUid",
+          "name": "ProcessCycleTm",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "Remark",
+          "name": "AxisangleY",
+          "purpose": "hasA",
+          "dataType": "double"
+        },
+        {
+          "name": "SequentialNumber",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "DateCreated",
-          "purpose": "hasA",
-          "dataType": "datetime"
-        },
-        {
-          "name": "uid",
+          "name": "S_RPM",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "UserChanged",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "WorkLineUid",
+          "name": "A_load",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "ShowProjectName",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "ShowLineName",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "Path",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "WorkStationUid",
+          "name": "Y_load",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "TextDisabled",
+          "name": "AxisangleA",
+          "purpose": "hasA",
+          "dataType": "double"
+        },
+        {
+          "name": "EMT",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "UserDeleted",
+          "name": "AxisangleZ",
           "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "Row_Num",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "WorkProjectUid",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "ShowStationName",
-          "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "double"
         }
       ],
-      "displayName": "Work Area",
+      "displayName": "CNCDataGroup3",
       "version": "0.0.1"
     }
   ]

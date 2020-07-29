@@ -20,9 +20,14 @@
           "dataType": "dateTime"
         },
         {
-          "name": "LineName",
+          "name": "LineCode",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "integer"
+        },
+        {
+          "name": "ProjectUid",
+          "purpose": "hasA",
+          "dataType": "integer"
         },
         {
           "name": "uid",
@@ -30,12 +35,22 @@
           "dataType": "integer"
         },
         {
-          "name": "OrgUid",
+          "name": "IsDisabled",
           "purpose": "hasA",
-          "dataType": "integer"
+          "dataType": "string"
         },
         {
-          "name": "IsDeleted",
+          "name": "LineName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "DateCreated",
+          "purpose": "hasA",
+          "dataType": "datetime"
+        },
+        {
+          "name": "UserChanged",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -45,17 +60,22 @@
           "dataType": "string"
         },
         {
-          "name": "ProjectUid",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "UserChanged",
+          "name": "IsDeleted",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "IsDisabled",
+          "name": "DateChanged",
+          "purpose": "hasA",
+          "dataType": "datetime"
+        },
+        {
+          "name": "OrgUid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "UserDeleted",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -65,14 +85,9 @@
           "dataType": "string"
         },
         {
-          "name": "LineCode",
+          "name": "DateDeleted",
           "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "UserDeleted",
-          "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "datetime"
         }
       ],
       "displayName": "Line",

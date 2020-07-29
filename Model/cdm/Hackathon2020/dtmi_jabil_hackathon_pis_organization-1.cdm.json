@@ -20,14 +20,24 @@
           "dataType": "dateTime"
         },
         {
+          "name": "uid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "Path",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
           "name": "Text",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "Code",
+          "name": "DateChanged",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "datetime"
         },
         {
           "name": "pid",
@@ -35,7 +45,12 @@
           "dataType": "integer"
         },
         {
-          "name": "Remark",
+          "name": "UserDeleted",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Type",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -45,37 +60,22 @@
           "dataType": "string"
         },
         {
-          "name": "UserDeleted",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "uid",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "Type",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "Path",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
           "name": "UserChanged",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "IsDisabled",
+          "name": "Code",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "name",
+          "name": "DateDeleted",
+          "purpose": "hasA",
+          "dataType": "datetime"
+        },
+        {
+          "name": "IsDisabled",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -85,9 +85,24 @@
           "dataType": "integer"
         },
         {
+          "name": "name",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Remark",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
           "name": "IsDeleted",
           "purpose": "hasA",
           "dataType": "string"
+        },
+        {
+          "name": "DateCreated",
+          "purpose": "hasA",
+          "dataType": "datetime"
         }
       ],
       "displayName": "Organization",
