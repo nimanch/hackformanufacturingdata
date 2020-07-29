@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "iot_delta_files",
-				"fileSystem": "mbtest"
+				"folderPath": "cncdatagroup1",
+				"fileSystem": "cnctransformeddata"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
