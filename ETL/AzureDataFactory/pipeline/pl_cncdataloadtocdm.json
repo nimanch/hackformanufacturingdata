@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataflow": {
-						"referenceName": "CNCDataPreparer",
+						"referenceName": "AddIoTDataToCNCStatusData",
 						"type": "DataFlowReference"
 					},
 					"compute": {
