@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "dataflow1",
+				"name": "df_cdmload",
 				"type": "ExecuteDataFlow",
 				"dependsOn": [],
 				"policy": {
