@@ -16,7 +16,7 @@
       {
         "@type": "Property",
         "name": "CreateTime",
-        "schema": "DateTime"
+        "schema": "dateTime"
       },
       {
         "@type": "Property",
@@ -91,7 +91,7 @@
       {
         "@type": "Property",
         "name": "EventTime",
-        "schema": "DateTime"
+        "schema": "dateTime"
       }
     ],
     "@context": "dtmi:dtdl:context;2"
