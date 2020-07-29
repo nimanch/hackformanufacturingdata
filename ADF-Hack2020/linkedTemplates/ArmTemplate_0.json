@@ -209,19 +209,24 @@
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
+					"firstRowAsHeader": true,
 					"quoteChar": "\""
 				},
 				"schema": [
 					{
+						"name": "Month_index",
 						"type": "String"
 					},
 					{
+						"name": "Predicted_PD",
 						"type": "String"
 					},
 					{
+						"name": "Year_Quarter",
 						"type": "String"
 					},
 					{
+						"name": "PD_Risk_Rating",
 						"type": "String"
 					}
 				]
