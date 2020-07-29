@@ -1,0 +1,54 @@
+{
+    "@id": "dtmi:jabil:hackathon:cnc:pro:data;1",
+    "@type": "Interface",
+    "displayName": "CNCProData",
+   "contents": [
+      {
+        "@type": "Property",
+        "name": "SequentialNumber",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "EMT",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "ProcessCycleTm",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "TotalNum",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "MainProgram",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "CycleRunTm",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "ProcessStartTm",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "CreateTime",
+        "schema": "dateTime"
+      },
+      {
+        "@type": "Property",
+        "name": "EventTime",
+        "schema": "dateTime"
+      }
+    ],
+    "@context": "dtmi:dtdl:context;2"
+  }
+  

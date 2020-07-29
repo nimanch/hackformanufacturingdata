@@ -20,16 +20,16 @@ namespace MiaB.model.dtdl2cdm
         // Configure storage adapters to point at the target local manifest location and at the fake public standards
         // TODO: These values should be changed based on your environment (better to take these from configurations)
         private const string local = "local";
-        private const string dtdlRoot = @"E:\Hack2020\DtdlToCdmConverter\Models";
-        private const string pathToCDMWork = @"E:\Hack2020\DtdlToCdmConverter\CDM\";
-        private const string pathToCDMSampleData = @"E:\Hack2020\DtdlToCdmConverter\CDM\Samples\";
-        private const string outputFolderName = "Hackathon2020";
+        private const string dtdlRoot = @"C:\Hack2020\DTDL\Jabil";
+        private const string pathToCDMWork = @"C:\Hack2020\CDM\";
+        private const string pathToCDMSampleData = @"C:\Hack2020\CDM\CDM\samples\";
+        private const string outputFolderName = "JabilCDM";
 
         // Hard coded values for ADLS
         private const string adls = "adls";
         private const string adlsHostName = "gen2hackstore.dfs.core.windows.net";
         // Remember ADLS allows only lowercase letters, numbers and hyphens.This root path should be available in ADLS - i.e. needs to be created manually
-        private const string adlsRoot = "/cdm/hack2020";
+        private const string adlsRoot = "/cdm/jabilcdm";
         // SECURITY RISK - this should be saved in AKV and retrived from there. Hardcodign for quick hacking
         private const string adlsAccessKey = "xnv4EoFbGh53d5n2669F5CniZYRnY/EfDQSz6vStu22m4m/pJlq9zn0nfI8UsQvvtixM/kIoxC4xpinHSYV7ZQ==";
         
@@ -305,6 +305,7 @@ namespace MiaB.model.dtdl2cdm
                                 case DTEntityKind.Double: type = "double"; break;
                                 case DTEntityKind.Boolean: type = "boolean"; break;
                                 case DTEntityKind.Integer: type = "integer"; break;
+                                case DTEntityKind.DateTime: type = "datetime"; break;
                                 default: break;
                             }
                         }

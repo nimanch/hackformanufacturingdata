@@ -1,0 +1,99 @@
+{
+    "@id": "dtmi:jabil:hackathon:cnc:data_group1;1",
+    "@type": "Interface",
+    "displayName": "CNCDataGroup1",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "SequentialNumber",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "EMT",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "CreateTime",
+        "schema": "DateTime"
+      },
+      {
+        "@type": "Property",
+        "name": "PowerOn",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "ShutdownTm",
+        "schema": "string"
+      }, {
+        "@type": "Property",
+        "name": "ServoName",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "PowerOnTm",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "CuttingTm",
+        "schema": "integer"
+      },{
+        "@type": "Property",
+        "name": "CycleRunTm",
+        "schema": "integer"
+      },{
+        "@type": "Property",
+        "name": "CurrenttoolNo",
+        "schema": "integer"
+      },{
+        "@type": "Property",
+        "name": "MaxAxisNo",
+        "schema": "integer"
+      },{
+        "@type": "Property",
+        "name": "UseAxisNo",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "CNCMode",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "MainProgram",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "NowProgram",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "ProgramStep",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "Singlenote",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "Programnote",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "EventTime",
+        "schema": "DateTime"
+      }
+    ],
+    "@context": "dtmi:dtdl:context;2"
+  }
+  
