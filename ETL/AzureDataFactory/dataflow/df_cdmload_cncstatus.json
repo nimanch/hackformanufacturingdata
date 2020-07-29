@@ -1,12 +1,32 @@
 {
-	"name": "dataflow1",
+	"name": "df_cdmload_cncstatus",
 	"properties": {
 		"type": "MappingDataFlow",
 		"typeProperties": {
-			"sources": [],
-			"sinks": [],
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "ds_cncstatus",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				}
+			],
+			"sinks": [
+				{
+					"linkedService": {
+						"referenceName": "gen2hackstore",
+						"type": "LinkedServiceReference"
+					},
+					"schemaLinkedService": {
+						"referenceName": "gen2hackstore",
+						"type": "LinkedServiceReference"
+					},
+					"name": "sink1"
+				}
+			],
 			"transformations": [],
-			"script": ""
+			"script": "source(output(\n\t\t{$dtid} as string,\n\t\t{$timestamp} as string,\n\t\tSequentialNumber as string,\n\t\tEMT as string,\n\t\tCreateTime as string,\n\t\tStatus as string,\n\t\tErrorCode as string,\n\t\tTotalNum as string,\n\t\tCategory as string,\n\t\tEventTime as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false) ~> source1\nsource1 sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tentity: '',\n\tformat: 'cdm',\n\tcorpusPath: 'jabilcdm',\n\tfolderPath: '',\n\tfileSystem: '',\n\tcolumnDelimiter: ',',\n\tcolumnNamesAsHeader: false,\n\tcorpusStore: 'adlsgen2',\n\tadlsgen2_fileSystem: 'cdm',\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> sink1"
 		}
 	}
 }
