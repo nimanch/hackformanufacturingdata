@@ -16,21 +16,20 @@ namespace JsonToCsvConvertor
     public static class JsonToCsvConvertor
     {
         [FunctionName("JsonToCsvConvertor")]
-        public static async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)]
-            HttpRequest req,
+        public static async Task Run([BlobTrigger("messagefiles/iot-hub-output/{name}.json", Connection = "AzureWebJobsStorage")] Stream myBlob,string name,
             [Blob("cdm/jabilcdm/dtmi_opcfoundation_org_UA_MiaB_Tags-1/partition-data.csv", FileAccess.ReadWrite, Connection = "AzureWebJobsStorage")] CloudBlockBlob blob, ILogger log)
         {   
             try
             {
-                log.LogInformation($"Converting Blob to CSV ");
-                var data = await req.Body.GetMiabData().ConfigureAwait(false);
+                log.LogInformation($"Converting Blob to CSV for file {name} ");
+                var data = await myBlob.GetMiabData().ConfigureAwait(false);
                 await blob.AppendToBlob(data).ConfigureAwait(false);
             }
             catch(Exception e)
             {
-                return new BadRequestObjectResult($"Exception Occured : {e}");
+                log.LogError($"Exception Occured : {e}");
             }
-            return new OkObjectResult("Conversion Complete");
+            log.LogInformation("Conversion Complete");
         }
     }
 }
