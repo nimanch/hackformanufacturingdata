@@ -1,0 +1,93 @@
+{
+    "@id": "dtmi:jabil:hackathon:cnc:data_group3;1",
+    "@type": "Interface",
+    "displayName": "CNCDataGroup3",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "SequentialNumber",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "EMT",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "CreateTime",
+        "schema": "dateTime"
+      },
+      {
+        "@type": "Property",
+        "name": "ProcessStartTm",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "ProcessCycleTm",
+        "schema": "integer"
+      }
+      ,{
+        "@type": "Property",
+        "name": "X_load",
+        "schema": "integer"
+      }
+      ,{
+        "@type": "Property",
+        "name": "Y_load",
+        "schema": "integer"
+      }
+      ,{
+        "@type": "Property",
+        "name": "Z_load",
+        "schema": "integer"
+      }
+      ,{
+        "@type": "Property",
+        "name": "A_load",
+        "schema": "integer"
+      }
+      ,{
+        "@type": "Property",
+        "name": "S_RPM",
+        "schema": "integer"
+      },{
+        "@type": "Property",
+        "name": "Feed",
+        "schema": "integer"
+      }
+      ,{
+        "@type": "Property",
+        "name": "AxisangleX",
+        "schema": "double"
+      }
+      ,{
+        "@type": "Property",
+        "name": "AxisangleY",
+        "schema": "double"
+      }
+      ,{
+        "@type": "Property",
+        "name": "AxisangleZ",
+        "schema": "double"
+      }
+      ,{
+        "@type": "Property",
+        "name": "AxisangleA",
+        "schema": "double"
+      }
+      ,{
+        "@type": "Property",
+        "name": "Toolset",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "EventTime",
+        "schema": "dateTime"
+      }
+    ],
+    "@context": "dtmi:dtdl:context;2"
+  }
+  

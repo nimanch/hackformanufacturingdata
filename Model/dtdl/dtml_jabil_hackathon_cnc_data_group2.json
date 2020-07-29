@@ -1,0 +1,140 @@
+{
+    "@id": "dtmi:jabil:hackathon:cnc:data_group2;1",
+    "@type": "Interface",
+    "displayName": "CNCDataGroup2",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "SequentialNumber",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "EMT",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "CreateTime",
+        "schema": "dateTime"
+      },
+      {
+        "@type": "Property",
+        "name": "S_Temp",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "S_Torque",
+        "schema": "integer"
+      }, {
+        "@type": "Property",
+        "name": "S_TE",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "Mcode",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "Cuttingfluid",
+        "schema": "integer"
+      },{
+        "@type": "Property",
+        "name": "S_Gap",
+        "schema": "integer"
+      },{
+        "@type": "Property",
+        "name": "ServoTemp",
+        "schema": "integer"
+      },{
+        "@type": "Property",
+        "name": "S_Load",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "CuttingSpeed",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "ActualSpeedX",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "ActualSpeedY",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "ActualSpeedZ",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "ActualSpeedA",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "RateJOG",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "RateFastmove",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "RateHAND",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "FastmoveTmC",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "Fastmovespeed",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "AbsPos",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "MachPos",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "RelPos",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "Distance",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "EventTime",
+        "schema": "dateTime"
+      },
+      {
+        "@type": "Property",
+        "name": "Tag_D1_Analog",
+        "schema": "integer"
+      }
+    ],
+    "@context": "dtmi:dtdl:context;2"
+  }
+  
