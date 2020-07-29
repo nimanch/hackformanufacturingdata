@@ -15,7 +15,7 @@
 			"sinks": [
 				{
 					"dataset": {
-						"referenceName": "DelimitedText1",
+						"referenceName": "JabilPartitionData",
 						"type": "DatasetReference"
 					},
 					"name": "PartitionDataSetCDM"
