@@ -34,11 +34,11 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "Tag_Modbus_Temperature",
+            "name": "Tag_D0_Digital",
             "parent": "dtmi_opcfoundation_org_UA_MiaB_Tags-1/attributeContext/dtmi_opcfoundation_org_UA_MiaB_Tags-1",
-            "definition": "resolvedFrom/dtmi_opcfoundation_org_UA_MiaB_Tags-1/hasAttributes/Tag_Modbus_Temperature",
+            "definition": "resolvedFrom/dtmi_opcfoundation_org_UA_MiaB_Tags-1/hasAttributes/Tag_D0_Digital",
             "contents": [
-              "dtmi_opcfoundation_org_UA_MiaB_Tags-1/hasAttributes/Tag_Modbus_Temperature"
+              "dtmi_opcfoundation_org_UA_MiaB_Tags-1/hasAttributes/Tag_D0_Digital"
             ]
           },
           {
@@ -61,11 +61,11 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "Tag_D0_Digital",
+            "name": "Tag_Modbus_Temperature",
             "parent": "dtmi_opcfoundation_org_UA_MiaB_Tags-1/attributeContext/dtmi_opcfoundation_org_UA_MiaB_Tags-1",
-            "definition": "resolvedFrom/dtmi_opcfoundation_org_UA_MiaB_Tags-1/hasAttributes/Tag_D0_Digital",
+            "definition": "resolvedFrom/dtmi_opcfoundation_org_UA_MiaB_Tags-1/hasAttributes/Tag_Modbus_Temperature",
             "contents": [
-              "dtmi_opcfoundation_org_UA_MiaB_Tags-1/hasAttributes/Tag_D0_Digital"
+              "dtmi_opcfoundation_org_UA_MiaB_Tags-1/hasAttributes/Tag_Modbus_Temperature"
             ]
           },
           {
@@ -114,11 +114,11 @@
           "dataFormat": "DateTime"
         },
         {
-          "name": "Tag_Modbus_Temperature",
+          "name": "Tag_D0_Digital",
           "appliedTraits": [
             "is.dataFormat.integer"
           ],
-          "attributeContext": "dtmi_opcfoundation_org_UA_MiaB_Tags-1/attributeContext/dtmi_opcfoundation_org_UA_MiaB_Tags-1/Tag_Modbus_Temperature",
+          "attributeContext": "dtmi_opcfoundation_org_UA_MiaB_Tags-1/attributeContext/dtmi_opcfoundation_org_UA_MiaB_Tags-1/Tag_D0_Digital",
           "dataFormat": "Int32"
         },
         {
@@ -138,11 +138,11 @@
           "dataFormat": "Int32"
         },
         {
-          "name": "Tag_D0_Digital",
+          "name": "Tag_Modbus_Temperature",
           "appliedTraits": [
             "is.dataFormat.integer"
           ],
-          "attributeContext": "dtmi_opcfoundation_org_UA_MiaB_Tags-1/attributeContext/dtmi_opcfoundation_org_UA_MiaB_Tags-1/Tag_D0_Digital",
+          "attributeContext": "dtmi_opcfoundation_org_UA_MiaB_Tags-1/attributeContext/dtmi_opcfoundation_org_UA_MiaB_Tags-1/Tag_Modbus_Temperature",
           "dataFormat": "Int32"
         },
         {

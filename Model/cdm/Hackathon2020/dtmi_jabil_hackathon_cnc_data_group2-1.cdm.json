@@ -7,7 +7,7 @@
   ],
   "definitions": [
     {
-      "entityName": "dtmi_jabil_hackathon_pis_cutter_workarea-1",
+      "entityName": "dtmi_jabil_hackathon_cnc_data_group2-1",
       "hasAttributes": [
         {
           "name": "$dtId",
@@ -20,122 +20,142 @@
           "dataType": "dateTime"
         },
         {
-          "name": "pid",
+          "name": "S_Torque",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "WorkareaName",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "KPIStationUid",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "DateChanged",
+          "name": "CreateTime",
           "purpose": "hasA",
           "dataType": "datetime"
         },
         {
-          "name": "DateDeleted",
+          "name": "EMT",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Mcode",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "SequentialNumber",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "S_Temp",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "ActualSpeedZ",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "CuttingSpeed",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "RateHAND",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Fastmovespeed",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "ActualSpeedX",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "S_TE",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "S_Load",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "RateFastmove",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Cuttingfluid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "RateJOG",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "RelPos",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "S_Gap",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "Distance",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "ActualSpeedY",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "MachPos",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "FastmoveTmC",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "ServoTemp",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "EventTime",
           "purpose": "hasA",
           "dataType": "datetime"
         },
         {
-          "name": "UserCreated",
+          "name": "AbsPos",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "IsDisabled",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "IsDeleted",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "OrgUid",
+          "name": "Tag_D1_Analog",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "Remark",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "DateCreated",
-          "purpose": "hasA",
-          "dataType": "datetime"
-        },
-        {
-          "name": "uid",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "UserChanged",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "WorkLineUid",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "ShowProjectName",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "ShowLineName",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "Path",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "WorkStationUid",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "TextDisabled",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "UserDeleted",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "Row_Num",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "WorkProjectUid",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "ShowStationName",
+          "name": "ActualSpeedA",
           "purpose": "hasA",
           "dataType": "string"
         }
       ],
-      "displayName": "Work Area",
+      "displayName": "CNCDataGroup2",
       "version": "0.0.1"
     }
   ]

@@ -7,7 +7,7 @@
   ],
   "definitions": [
     {
-      "entityName": "dtmi_jabil_hackathon_bc_emt_mapping-1",
+      "entityName": "dtmi_jabil_hackathon_cnc_status-1",
       "hasAttributes": [
         {
           "name": "$dtId",
@@ -20,24 +20,44 @@
           "dataType": "dateTime"
         },
         {
-          "name": "Station",
+          "name": "EventTime",
+          "purpose": "hasA",
+          "dataType": "datetime"
+        },
+        {
+          "name": "TotalNum",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "ErrorCode",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "Process",
+          "name": "DataType",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "Name",
+          "name": "Category",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "Project",
+          "name": "Status",
           "purpose": "hasA",
           "dataType": "string"
+        },
+        {
+          "name": "SequentialNumber",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "CreateTime",
+          "purpose": "hasA",
+          "dataType": "datetime"
         },
         {
           "name": "EMT",
@@ -45,7 +65,7 @@
           "dataType": "string"
         }
       ],
-      "displayName": "EMT Mapping",
+      "displayName": "CNCStatus",
       "version": "0.0.1"
     }
   ]

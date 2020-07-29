@@ -7,7 +7,7 @@
   ],
   "definitions": [
     {
-      "entityName": "dtmi_jabil_hackathon_bc_emt_mapping-1",
+      "entityName": "dtmi_jabil_hackathon_cnc_tool_change-1",
       "hasAttributes": [
         {
           "name": "$dtId",
@@ -20,32 +20,52 @@
           "dataType": "dateTime"
         },
         {
-          "name": "Station",
+          "name": "LimitCount",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "DataType",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "Process",
+          "name": "UseCountAfter",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "integer"
         },
         {
-          "name": "Name",
+          "name": "UseCount",
           "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "Project",
-          "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "integer"
         },
         {
           "name": "EMT",
           "purpose": "hasA",
           "dataType": "string"
+        },
+        {
+          "name": "EventTime",
+          "purpose": "hasA",
+          "dataType": "datetime"
+        },
+        {
+          "name": "SequentialNumber",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "ToolNo",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "CreateTime",
+          "purpose": "hasA",
+          "dataType": "datetime"
         }
       ],
-      "displayName": "EMT Mapping",
+      "displayName": "CNCToolChange",
       "version": "0.0.1"
     }
   ]

@@ -34,11 +34,11 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "Project",
+            "name": "Station",
             "parent": "dtmi_jabil_hackathon_bc_emt_mapping-1/attributeContext/dtmi_jabil_hackathon_bc_emt_mapping-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_bc_emt_mapping-1/hasAttributes/Project",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_bc_emt_mapping-1/hasAttributes/Station",
             "contents": [
-              "dtmi_jabil_hackathon_bc_emt_mapping-1/hasAttributes/Project"
+              "dtmi_jabil_hackathon_bc_emt_mapping-1/hasAttributes/Station"
             ]
           },
           {
@@ -52,11 +52,20 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "Station",
+            "name": "Name",
             "parent": "dtmi_jabil_hackathon_bc_emt_mapping-1/attributeContext/dtmi_jabil_hackathon_bc_emt_mapping-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_bc_emt_mapping-1/hasAttributes/Station",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_bc_emt_mapping-1/hasAttributes/Name",
             "contents": [
-              "dtmi_jabil_hackathon_bc_emt_mapping-1/hasAttributes/Station"
+              "dtmi_jabil_hackathon_bc_emt_mapping-1/hasAttributes/Name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Project",
+            "parent": "dtmi_jabil_hackathon_bc_emt_mapping-1/attributeContext/dtmi_jabil_hackathon_bc_emt_mapping-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_bc_emt_mapping-1/hasAttributes/Project",
+            "contents": [
+              "dtmi_jabil_hackathon_bc_emt_mapping-1/hasAttributes/Project"
             ]
           },
           {
@@ -66,15 +75,6 @@
             "definition": "resolvedFrom/dtmi_jabil_hackathon_bc_emt_mapping-1/hasAttributes/EMT",
             "contents": [
               "dtmi_jabil_hackathon_bc_emt_mapping-1/hasAttributes/EMT"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "Name",
-            "parent": "dtmi_jabil_hackathon_bc_emt_mapping-1/attributeContext/dtmi_jabil_hackathon_bc_emt_mapping-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_bc_emt_mapping-1/hasAttributes/Name",
-            "contents": [
-              "dtmi_jabil_hackathon_bc_emt_mapping-1/hasAttributes/Name"
             ]
           }
         ]
@@ -105,13 +105,13 @@
           "dataFormat": "DateTime"
         },
         {
-          "name": "Project",
+          "name": "Station",
           "appliedTraits": [
             "is.dataFormat.character",
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_bc_emt_mapping-1/attributeContext/dtmi_jabil_hackathon_bc_emt_mapping-1/Project",
+          "attributeContext": "dtmi_jabil_hackathon_bc_emt_mapping-1/attributeContext/dtmi_jabil_hackathon_bc_emt_mapping-1/Station",
           "dataFormat": "String"
         },
         {
@@ -125,13 +125,23 @@
           "dataFormat": "String"
         },
         {
-          "name": "Station",
+          "name": "Name",
           "appliedTraits": [
             "is.dataFormat.character",
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_bc_emt_mapping-1/attributeContext/dtmi_jabil_hackathon_bc_emt_mapping-1/Station",
+          "attributeContext": "dtmi_jabil_hackathon_bc_emt_mapping-1/attributeContext/dtmi_jabil_hackathon_bc_emt_mapping-1/Name",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Project",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_bc_emt_mapping-1/attributeContext/dtmi_jabil_hackathon_bc_emt_mapping-1/Project",
           "dataFormat": "String"
         },
         {
@@ -142,16 +152,6 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "dtmi_jabil_hackathon_bc_emt_mapping-1/attributeContext/dtmi_jabil_hackathon_bc_emt_mapping-1/EMT",
-          "dataFormat": "String"
-        },
-        {
-          "name": "Name",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_bc_emt_mapping-1/attributeContext/dtmi_jabil_hackathon_bc_emt_mapping-1/Name",
           "dataFormat": "String"
         }
       ],

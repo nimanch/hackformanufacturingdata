@@ -7,7 +7,7 @@
   ],
   "definitions": [
     {
-      "entityName": "dtmi_opcfoundation_org_UA_MiaB_Tags-1",
+      "entityName": "dtmi_jabil_hackathon_cnc_pro_data-1",
       "hasAttributes": [
         {
           "name": "$dtId",
@@ -20,36 +20,57 @@
           "dataType": "dateTime"
         },
         {
-          "name": "Tag_D0_Digital",
+          "name": "SequentialNumber",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "Tag_D1_Analog",
+          "name": "CycleRunTm",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "Tag_Modbus_CO2",
+          "name": "EMT",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "EventTime",
+          "purpose": "hasA",
+          "dataType": "datetime"
+        },
+        {
+          "name": "ProcessStartTm",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "TotalNum",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "Tag_Modbus_Temperature",
+          "name": "CreateTime",
+          "purpose": "hasA",
+          "dataType": "datetime"
+        },
+        {
+          "name": "ProcessCycleTm",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "Tag_D2_Blue",
+          "name": "MainProgram",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "Tag_Modbus_Humidity",
+          "name": "DataType",
           "purpose": "hasA",
-          "dataType": "integer"
+          "dataType": "string"
         }
       ],
+      "displayName": "CNCProData",
       "version": "0.0.1"
     }
   ]
