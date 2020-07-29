@@ -62,7 +62,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"Container": {
-								"value": "@pipeline().parameters.Directory_Source",
+								"value": "@pipeline().parameters.FolderPath_Source",
 								"type": "Expression"
 							},
 							"Directory": {
