@@ -61,52 +61,6 @@
 					"enableSkipIncompatibleRow": false,
 					"translator": {
 						"type": "TabularTranslator",
-						"mappings": [
-							{
-								"source": {
-									"name": "Month_index",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Month_index",
-									"type": "String"
-								}
-							},
-							{
-								"source": {
-									"name": "Predicted_PD",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Predicted_PD",
-									"type": "String"
-								}
-							},
-							{
-								"source": {
-									"name": "Year_Quarter",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "Year_Quarter",
-									"type": "String"
-								}
-							},
-							{
-								"source": {
-									"name": "PD_Risk_Rating",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "PD_Risk_Rating",
-									"type": "String"
-								}
-							}
-						],
 						"typeConversion": true,
 						"typeConversionSettings": {
 							"allowDataTruncation": true,
