@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "*.csv",
+				"fileName": "part-00000-tid-4711089681696309747-e526eeef-9a40-4a36-951f-564fc105ce66-89-1-c000.csv",
 				"folderPath": "cncstatus",
 				"fileSystem": "cnctransformeddata"
 			},
