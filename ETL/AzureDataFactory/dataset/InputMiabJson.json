@@ -1,0 +1,40 @@
+{
+	"name": "InputMiabJson",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "gen2hackStoreDataSet",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "iot-hub-output",
+				"container": "messagefiles"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"NodeId": {
+					"type": "string"
+				},
+				"ApplicationUri": {
+					"type": "string"
+				},
+				"Value": {
+					"type": "object",
+					"properties": {
+						"Value": {
+							"type": "integer"
+						},
+						"SourceTimestamp": {
+							"type": "string"
+						}
+					}
+				}
+			}
+		}
+	}
+}

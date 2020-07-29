@@ -1,10 +1,10 @@
 {
-	"name": "SampleAzureFunctionPipeline",
+	"name": "pl_cncdataloadtocdm",
 	"properties": {
 		"activities": [
 			{
-				"name": "Azure Function1",
-				"type": "AzureFunctionActivity",
+				"name": "df_cdmload",
+				"type": "ExecuteDataFlow",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "7.00:00:00",
@@ -15,12 +15,14 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"functionName": "Base64ToXMLConvertor",
-					"method": "GET"
-				},
-				"linkedServiceName": {
-					"referenceName": "Base64Convertor",
-					"type": "LinkedServiceReference"
+					"dataflow": {
+						"referenceName": "df_cdmload_cncstatus",
+						"type": "DataFlowReference"
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					}
 				}
 			}
 		],

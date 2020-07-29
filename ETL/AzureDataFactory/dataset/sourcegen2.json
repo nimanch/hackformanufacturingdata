@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText1",
+	"name": "sourcegen2",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "gen2hackstore",

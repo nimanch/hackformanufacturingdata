@@ -1,21 +1,24 @@
 ﻿
 using JsonToCsvConvertor.Data;
+using Microsoft.WindowsAzure.Storage.Blob;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace JsonToCsvConvertor
 {
     public static class MiabJsonParser
     {
-        public static List<MiabData> GetMiabData(this Stream blobStream)
+        public static async Task<List<MiabData>> GetMiabData(this Stream blobStream)
         {
             var inputdataset = new List<MiabData>();
             using (var reader = new StreamReader(blobStream))
             {
-                var jsonContent = reader.ReadToEnd();
+                var jsonContent = await reader.ReadToEndAsync().ConfigureAwait(false);
                 var input = JArray.Parse(jsonContent);
                 foreach (var token in input)
                 {
@@ -35,17 +38,42 @@ namespace JsonToCsvConvertor
             }
         }
 
-        public static void AppendToCSV(this Stream csvStream,List<MiabData> miabData)
+        public static async Task<bool> AppendToCSV(this Stream csvStream, List<MiabData> miabData)
         {
+           
             using (var writer = new StreamWriter(csvStream))
             {
+                await writer.WriteLineAsync("").ConfigureAwait(false);
                 foreach (var data in miabData)
                 {
-                    writer.WriteLine("");
+
                     var dat = data.ToString();
-                    writer.WriteLine(dat);
+                    await writer.WriteLineAsync(dat).ConfigureAwait(false);
+                }
+                return true;
+            }
+
+        }
+
+        public static async Task<bool> AppendToBlob(this CloudBlockBlob blob, List<MiabData> miabData)
+        {
+
+            using (MemoryStream stream = new MemoryStream())
+            {
+                await blob.DownloadToStreamAsync(stream).ConfigureAwait(false);
+                using (StreamWriter sw = new StreamWriter(stream))
+                {
+                    await sw.WriteLineAsync("").ConfigureAwait(false);
+                    foreach (var item in miabData)
+                    {
+                        await sw.WriteLineAsync(item.ToString()).ConfigureAwait(false);
+                    }
+                    sw.Flush();
+                    stream.Position = 0;
+                    await blob.UploadFromStreamAsync(stream).ConfigureAwait(false);
                 }
             }
+            return true;
         }
 
         private static string GetTimeFromToken(JToken token)

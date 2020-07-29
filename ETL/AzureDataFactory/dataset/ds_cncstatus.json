@@ -1,0 +1,65 @@
+{
+	"name": "ds_cncstatus",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "gen2hackstore",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "part-00000-tid-4711089681696309747-e526eeef-9a40-4a36-951f-564fc105ce66-89-1-c000.csv",
+				"folderPath": "cncstatus",
+				"fileSystem": "cnctransformeddata"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "$dtid",
+				"type": "String"
+			},
+			{
+				"name": "$timestamp",
+				"type": "String"
+			},
+			{
+				"name": "SequentialNumber",
+				"type": "String"
+			},
+			{
+				"name": "EMT",
+				"type": "String"
+			},
+			{
+				"name": "CreateTime",
+				"type": "String"
+			},
+			{
+				"name": "Status",
+				"type": "String"
+			},
+			{
+				"name": "ErrorCode",
+				"type": "String"
+			},
+			{
+				"name": "TotalNum",
+				"type": "String"
+			},
+			{
+				"name": "Category",
+				"type": "String"
+			},
+			{
+				"name": "EventTime",
+				"type": "String"
+			}
+		]
+	}
+}
