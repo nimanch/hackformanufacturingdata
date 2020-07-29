@@ -2,7 +2,7 @@
 	"name": "Trigger_iu0",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipeline": {
 			"pipelineReference": {
 				"referenceName": "last_modified_files",
