@@ -17,6 +17,12 @@
 		"HackSchema_accountKey": {
 			"value": ""
 		},
+		"JsonToCSVConvertor_functionKey": {
+			"value": ""
+		},
+		"gen2hackStoreDataSet_connectionString": {
+			"value": ""
+		},
 		"gen2hackstore_accountKey": {
 			"value": ""
 		},
@@ -31,6 +37,9 @@
 		},
 		"HackSchema_properties_typeProperties_url": {
 			"value": "https://gen2hackstore.dfs.core.windows.net"
+		},
+		"JsonToCSVConvertor_properties_typeProperties_functionAppUrl": {
+			"value": "https://jsontocsvconvertor.azurewebsites.net"
 		},
 		"KV2020_properties_typeProperties_baseUrl": {
 			"value": "https://kvhack2020.vault.azure.net/"

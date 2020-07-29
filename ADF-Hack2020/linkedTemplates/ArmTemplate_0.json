@@ -23,6 +23,14 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'HackSchema'"
 		},
+		"JsonToCSVConvertor_functionKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'functionKey' of 'JsonToCSVConvertor'"
+		},
+		"gen2hackStoreDataSet_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'gen2hackStoreDataSet'"
+		},
 		"gen2hackstore_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'gen2hackstore'"
@@ -39,6 +47,10 @@
 			"type": "string",
 			"defaultValue": "https://gen2hackstore.dfs.core.windows.net"
 		},
+		"JsonToCSVConvertor_properties_typeProperties_functionAppUrl": {
+			"type": "string",
+			"defaultValue": "https://jsontocsvconvertor.azurewebsites.net"
+		},
 		"KV2020_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://kvhack2020.vault.azure.net/"
@@ -47,13 +59,13 @@
 			"type": "string",
 			"defaultValue": "https://gen2hackstore.dfs.core.windows.net"
 		},
-		"AzureFunction1_properties_typeProperties_functionAppUrl": {
-			"type": "string",
-			"defaultValue": "https://base64convertor.azurewebsites.net"
-		},
 		"BlobStorageTrigger_properties_typeProperties_scope": {
 			"type": "string",
 			"defaultValue": "/subscriptions/901ba023-b9b4-4c6d-9494-916872c2c164/resourceGroups/Hack/providers/Microsoft.Storage/storageAccounts/gen2hackstore"
+		},
+		"AzureFunction1_properties_typeProperties_functionAppUrl": {
+			"type": "string",
+			"defaultValue": "https://base64convertor.azurewebsites.net"
 		}
 	},
 	"variables": {
@@ -126,6 +138,23 @@
 			"dependsOn": []
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/JsonToCSVConvertor')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureFunction",
+				"typeProperties": {
+					"functionAppUrl": "[parameters('JsonToCSVConvertor_properties_typeProperties_functionAppUrl')]",
+					"functionKey": {
+						"type": "SecureString",
+						"value": "[parameters('JsonToCSVConvertor_functionKey')]"
+					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/KV2020')]",
 			"type": "Microsoft.DataFactory/factories/linkedServices",
 			"apiVersion": "2018-06-01",
@@ -134,6 +163,19 @@
 				"type": "AzureKeyVault",
 				"typeProperties": {
 					"baseUrl": "[parameters('KV2020_properties_typeProperties_baseUrl')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/gen2hackStoreDataSet')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobStorage",
+				"typeProperties": {
+					"connectionString": "[parameters('gen2hackStoreDataSet_connectionString')]"
 				}
 			},
 			"dependsOn": []
@@ -156,39 +198,25 @@
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/SampleAzureFunctionPipeline')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
+			"name": "[concat(parameters('factoryName'), '/BlobStorageTrigger')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
-				"activities": [
-					{
-						"name": "Azure Function1",
-						"type": "AzureFunctionActivity",
-						"dependsOn": [],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 0,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"functionName": "Base64ToXMLConvertor",
-							"method": "GET",
-							"headers": {}
-						},
-						"linkedServiceName": {
-							"referenceName": "Base64Convertor",
-							"type": "LinkedServiceReference"
-						}
-					}
-				],
-				"annotations": []
+				"description": "BlobStorageTrigger to convert Base64 to string ",
+				"annotations": [],
+				"runtimeState": "Stopped",
+				"pipelines": [],
+				"type": "BlobEventsTrigger",
+				"typeProperties": {
+					"blobPathBeginsWith": "/messagefiles/blobs/iot-hub-hack",
+					"ignoreEmptyBlobs": true,
+					"scope": "[parameters('BlobStorageTrigger_properties_typeProperties_scope')]",
+					"events": [
+						"Microsoft.Storage.BlobCreated"
+					]
+				}
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/Base64Convertor')]"
-			]
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/DelimitedText1')]",
@@ -233,6 +261,51 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/linkedServices/gen2hackstore')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/InputMiabJson')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "gen2hackStoreDataSet",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "Json",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobStorageLocation",
+						"folderPath": "iot-hub-output",
+						"container": "messagefiles"
+					}
+				},
+				"schema": {
+					"type": "object",
+					"properties": {
+						"NodeId": {
+							"type": "string"
+						},
+						"ApplicationUri": {
+							"type": "string"
+						},
+						"Value": {
+							"type": "object",
+							"properties": {
+								"Value": {
+									"type": "integer"
+								},
+								"SourceTimestamp": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/gen2hackStoreDataSet')]"
 			]
 		},
 		{
@@ -285,6 +358,76 @@
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/linkedServices/KV2020')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/ds_cncstatus')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "gen2hackstore",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "DelimitedText",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobFSLocation",
+						"fileName": "*.csv",
+						"folderPath": "cncstatus",
+						"fileSystem": "cnctransformeddata"
+					},
+					"columnDelimiter": ",",
+					"escapeChar": "\\",
+					"firstRowAsHeader": true,
+					"quoteChar": "\""
+				},
+				"schema": [
+					{
+						"name": "$dtid",
+						"type": "String"
+					},
+					{
+						"name": "$timestamp",
+						"type": "String"
+					},
+					{
+						"name": "SequentialNumber",
+						"type": "String"
+					},
+					{
+						"name": "EMT",
+						"type": "String"
+					},
+					{
+						"name": "CreateTime",
+						"type": "String"
+					},
+					{
+						"name": "Status",
+						"type": "String"
+					},
+					{
+						"name": "ErrorCode",
+						"type": "String"
+					},
+					{
+						"name": "TotalNum",
+						"type": "String"
+					},
+					{
+						"name": "Category",
+						"type": "String"
+					},
+					{
+						"name": "EventTime",
+						"type": "String"
+					}
+				]
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/gen2hackstore')]"
 			]
 		},
 		{
@@ -421,34 +564,83 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/BlobStorageTrigger')]",
-			"type": "Microsoft.DataFactory/factories/triggers",
+			"name": "[concat(parameters('factoryName'), '/df_cdmload_cncstatus')]",
+			"type": "Microsoft.DataFactory/factories/dataflows",
 			"apiVersion": "2018-06-01",
 			"properties": {
-				"description": "BlobStorageTrigger to convert Base64 to string ",
-				"annotations": [],
-				"runtimeState": "Started",
-				"pipelines": [
-					{
-						"pipelineReference": {
-							"referenceName": "SampleAzureFunctionPipeline",
-							"type": "PipelineReference"
-						},
-						"parameters": {}
-					}
-				],
-				"type": "BlobEventsTrigger",
+				"type": "MappingDataFlow",
 				"typeProperties": {
-					"blobPathBeginsWith": "/messagefiles/blobs/iot-hub-hack",
-					"ignoreEmptyBlobs": true,
-					"scope": "[parameters('BlobStorageTrigger_properties_typeProperties_scope')]",
-					"events": [
-						"Microsoft.Storage.BlobCreated"
-					]
+					"sources": [
+						{
+							"dataset": {
+								"referenceName": "ds_cncstatus",
+								"type": "DatasetReference"
+							},
+							"name": "srccncstatus"
+						}
+					],
+					"sinks": [
+						{
+							"linkedService": {
+								"referenceName": "gen2hackstore",
+								"type": "LinkedServiceReference"
+							},
+							"schemaLinkedService": {
+								"referenceName": "gen2hackstore",
+								"type": "LinkedServiceReference"
+							},
+							"name": "loadcncstatus"
+						}
+					],
+					"transformations": [],
+					"script": "source(output(\n\t\t{$dtid} as string,\n\t\t{$timestamp} as string,\n\t\tSequentialNumber as string,\n\t\tEMT as string,\n\t\tCreateTime as string,\n\t\tStatus as string,\n\t\tErrorCode as string,\n\t\tTotalNum as string,\n\t\tCategory as string,\n\t\tEventTime as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false) ~> srccncstatus\nsrccncstatus sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tentity: 'dtmi_jabil_hackathon_cnc_status-1.cdm.json',\n\tformat: 'cdm',\n\tcorpusPath: 'jabilcdm',\n\tfolderPath: 'jabilcdm/dtmi_jabil_hackathon_cnc_status-1',\n\tfileSystem: 'cdm',\n\tcolumnDelimiter: ',',\n\tcolumnNamesAsHeader: false,\n\tcorpusStore: 'adlsgen2',\n\tadlsgen2_fileSystem: 'cdm',\n\tmapColumn(\n\t\t{$dtid},\n\t\t{$timestamp},\n\t\tSequentialNumber,\n\t\tEMT,\n\t\tCreateTime,\n\t\tStatus,\n\t\tErrorCode,\n\t\tTotalNum,\n\t\tCategory,\n\t\tEventTime\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> loadcncstatus"
 				}
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/SampleAzureFunctionPipeline')]"
+				"[concat(variables('factoryId'), '/datasets/ds_cncstatus')]",
+				"[concat(variables('factoryId'), '/linkedServices/gen2hackstore')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/pl_cncdataloadtocdm')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "df_cdmload",
+						"type": "ExecuteDataFlow",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"dataflow": {
+								"referenceName": "df_cdmload_cncstatus",
+								"type": "DataFlowReference",
+								"parameters": {},
+								"datasetParameters": {
+									"srccncstatus": {},
+									"loadcncstatus": {}
+								}
+							},
+							"staging": {},
+							"compute": {
+								"coreCount": 8,
+								"computeType": "General"
+							}
+						}
+					}
+				],
+				"annotations": []
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/dataflows/df_cdmload_cncstatus')]"
 			]
 		}
 	]
