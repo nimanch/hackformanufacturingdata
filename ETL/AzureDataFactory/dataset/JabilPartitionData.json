@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "partition-data.csv",
 				"folderPath": "jabilcdm/dtmi_jabil_hackathon_cnc_data_group1-1",
 				"fileSystem": "cdm"
 			},
