@@ -10,14 +10,31 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "cnctoolinfo/Concatenated",
-				"fileSystem": "cnctransformeddata"
+				"folderPath": "iot_appened_files",
+				"fileSystem": "mbtest"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": []
+		"schema": [
+			{
+				"name": "Month_index",
+				"type": "String"
+			},
+			{
+				"name": "Predicted_PD",
+				"type": "String"
+			},
+			{
+				"name": "Year_Quarter",
+				"type": "String"
+			},
+			{
+				"name": "PD_Risk_Rating",
+				"type": "String"
+			}
+		]
 	}
 }
