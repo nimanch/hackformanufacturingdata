@@ -20,93 +20,123 @@
 		},
 		"schema": [
 			{
+				"name": "$dtId",
 				"type": "String"
 			},
 			{
+				"name": "$timestamp",
 				"type": "String"
 			},
 			{
+				"name": "ApplicationTime",
 				"type": "String"
 			},
 			{
+				"name": "EmployeeName",
 				"type": "String"
 			},
 			{
+				"name": "MachineType",
 				"type": "String"
 			},
 			{
+				"name": "OrderNumber",
 				"type": "String"
 			},
 			{
+				"name": "ProcessName",
 				"type": "String"
 			},
 			{
+				"name": "Building",
 				"type": "String"
 			},
 			{
+				"name": "Area",
 				"type": "String"
 			},
 			{
+				"name": "MachineID",
 				"type": "String"
 			},
 			{
+				"name": "CutterNumber",
 				"type": "String"
 			},
 			{
+				"name": "WorkflowStatus",
 				"type": "String"
 			},
 			{
+				"name": "CutterSpecification",
 				"type": "String"
 			},
 			{
+				"name": "CutterProcessLife",
 				"type": "String"
 			},
 			{
+				"name": "CutterName",
 				"type": "String"
 			},
 			{
+				"name": "EmployeeID",
 				"type": "String"
 			},
 			{
+				"name": "ExchangeReason",
 				"type": "String"
 			},
 			{
+				"name": "CutterStandardLife",
 				"type": "String"
 			},
 			{
+				"name": "ExchangeReasonDetails",
 				"type": "String"
 			},
 			{
+				"name": "Manufacturer",
 				"type": "String"
 			},
 			{
+				"name": "IPQCNumber",
 				"type": "String"
 			},
 			{
+				"name": "Calibrator",
 				"type": "String"
 			},
 			{
+				"name": "Size",
 				"type": "String"
 			},
 			{
+				"name": "Appearance",
 				"type": "String"
 			},
 			{
+				"name": "ReviewDetails",
 				"type": "String"
 			},
 			{
+				"name": "Creator",
 				"type": "String"
 			},
 			{
+				"name": "ConfirmationDetails",
 				"type": "String"
 			},
 			{
+				"name": "ReviewResult",
 				"type": "String"
 			},
 			{
+				"name": "IPQCName",
 				"type": "String"
 			},
 			{
+				"name": "IsCompliant",
 				"type": "String"
 			}
 		]
