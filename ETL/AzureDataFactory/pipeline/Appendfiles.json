@@ -29,7 +29,7 @@
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
 							"recursive": true,
-							"wildcardFolderPath": "cncprodata",
+							"wildcardFolderPath": "cncstatus",
 							"wildcardFileName": "*.csv",
 							"enablePartitionDiscovery": false
 						},
