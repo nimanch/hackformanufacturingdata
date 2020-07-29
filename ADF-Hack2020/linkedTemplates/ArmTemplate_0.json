@@ -230,10 +230,12 @@
 				},
 				"parameters": {
 					"Container": {
-						"type": "string"
+						"type": "string",
+						"defaultValue": "mbtest"
 					},
 					"Directory": {
-						"type": "string"
+						"type": "string",
+						"defaultValue": "signiot_delta_files"
 					}
 				},
 				"annotations": [],
@@ -640,7 +642,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/CopyNewFilesByLastModifiedDate')]",
+			"name": "[concat(parameters('factoryName'), '/iot_copy_deltafiles')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -677,9 +679,6 @@
 										"value": "*",
 										"type": "Expression"
 									}
-								},
-								"formatSettings": {
-									"type": "BinaryReadSettings"
 								}
 							},
 							"sink": {
@@ -688,10 +687,7 @@
 									"type": "AzureBlobFSWriteSettings"
 								}
 							},
-							"enableStaging": false,
-							"skipErrorFile": {
-								"fileMissing": false
-							}
+							"enableStaging": false
 						},
 						"inputs": [
 							{
@@ -790,7 +786,7 @@
 						}
 					],
 					"transformations": [],
-					"script": "source(output(\n\t\t{$dtid} as string,\n\t\t{$timestamp} as string,\n\t\tSequentialNumber as string,\n\t\tEMT as string,\n\t\tCreateTime as string,\n\t\tStatus as string,\n\t\tErrorCode as string,\n\t\tTotalNum as string,\n\t\tCategory as string,\n\t\tEventTime as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false) ~> srccncstatus\nsrccncstatus sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tentity: 'dtmi_jabil_hackathon_cnc_status-1.cdm.json',\n\tformat: 'cdm',\n\tcorpusPath: 'jabilcdm',\n\tfolderPath: 'jabilcdm/dtmi_jabil_hackathon_cnc_status-1',\n\tfileSystem: 'cdm',\n\tcolumnDelimiter: ',',\n\tcolumnNamesAsHeader: false,\n\tcorpusStore: 'adlsgen2',\n\tadlsgen2_fileSystem: 'cdm',\n\tmapColumn(\n\t\t{$dtid},\n\t\t{$timestamp},\n\t\tSequentialNumber,\n\t\tEMT,\n\t\tCreateTime,\n\t\tStatus,\n\t\tErrorCode,\n\t\tTotalNum,\n\t\tCategory,\n\t\tEventTime\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> loadcncstatus"
+					"script": "source(output(\n\t\t{$dtid} as string,\n\t\t{$timestamp} as string,\n\t\tSequentialNumber as string,\n\t\tEMT as string,\n\t\tCreateTime as string,\n\t\tStatus as string,\n\t\tErrorCode as string,\n\t\tTotalNum as string,\n\t\tCategory as string,\n\t\tEventTime as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false) ~> srccncstatus\nsrccncstatus sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tentity: 'resolved/dtmi_jabil_hackathon_cnc_status-1.cdm.json/dtmi_jabil_hackathon_cnc_status-1',\n\tformat: 'cdm',\n\tmanifestName: 'default',\n\tcorpusPath: 'jabilcdm',\n\tfolderPath: 'jabilcdm/dtmi_jabil_hackathon_cnc_status-1',\n\tfileSystem: 'cdm',\n\tcolumnDelimiter: ',',\n\tcolumnNamesAsHeader: false,\n\tcorpusStore: 'adlsgen2',\n\tadlsgen2_fileSystem: 'cdm',\n\tmapColumn(\n\t\t{$dtid},\n\t\t{$timestamp},\n\t\tSequentialNumber,\n\t\tEMT,\n\t\tCreateTime,\n\t\tStatus,\n\t\tErrorCode,\n\t\tTotalNum,\n\t\tCategory,\n\t\tEventTime\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> loadcncstatus"
 				}
 			},
 			"dependsOn": [
