@@ -1,0 +1,140 @@
+{
+	"name": "CDMCNCDataGroup2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "gen2hackstore",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "jabilcdm/dtmi_jabil_hackathon_cnc_data_group2-1",
+				"fileSystem": "cdm"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "$dtId",
+				"type": "String"
+			},
+			{
+				"name": "$timestamp",
+				"type": "String"
+			},
+			{
+				"name": "S_TE",
+				"type": "String"
+			},
+			{
+				"name": "CreateTime",
+				"type": "String"
+			},
+			{
+				"name": "ActualSpeedY",
+				"type": "String"
+			},
+			{
+				"name": "ActualSpeedA",
+				"type": "String"
+			},
+			{
+				"name": "Cuttingfluid",
+				"type": "String"
+			},
+			{
+				"name": "S_Temp",
+				"type": "String"
+			},
+			{
+				"name": "EMT",
+				"type": "String"
+			},
+			{
+				"name": "ActualSpeedX",
+				"type": "String"
+			},
+			{
+				"name": "RateJOG",
+				"type": "String"
+			},
+			{
+				"name": "FastmoveTmC",
+				"type": "String"
+			},
+			{
+				"name": "RateFastmove",
+				"type": "String"
+			},
+			{
+				"name": "EventTime",
+				"type": "String"
+			},
+			{
+				"name": "S_Gap",
+				"type": "String"
+			},
+			{
+				"name": "RateHAND",
+				"type": "String"
+			},
+			{
+				"name": "CuttingSpeed",
+				"type": "String"
+			},
+			{
+				"name": "AbsPos",
+				"type": "String"
+			},
+			{
+				"name": "ActualSpeedZ",
+				"type": "String"
+			},
+			{
+				"name": "SequentialNumber",
+				"type": "String"
+			},
+			{
+				"name": "Mcode",
+				"type": "String"
+			},
+			{
+				"name": "ServoTemp",
+				"type": "String"
+			},
+			{
+				"name": "Tag_D1_Analog",
+				"type": "String"
+			},
+			{
+				"name": "Fastmovespeed",
+				"type": "String"
+			},
+			{
+				"name": "MachPos",
+				"type": "String"
+			},
+			{
+				"name": "S_Torque",
+				"type": "String"
+			},
+			{
+				"name": "Distance",
+				"type": "String"
+			},
+			{
+				"name": "S_Load",
+				"type": "String"
+			},
+			{
+				"name": "RelPos",
+				"type": "String"
+			}
+		]
+	}
+}
