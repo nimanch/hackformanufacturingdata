@@ -1,0 +1,84 @@
+{
+    "@id": "dtmi:jabil:hackathon:pis:machinedetail;1",
+    "@type": "Interface",
+    "displayName": "MachineDetail",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "uid",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "OrgUid",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "MachineMasterUid",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "PartMasterUid",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "SeatNo",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "PartSeqNo",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "Remark",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "IsDisabled",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "IsDeleted",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "DateCreated",
+        "schema": "dateTime"
+      },
+      {
+        "@type": "Property",
+        "name": "DateChanged",
+        "schema": "dateTime"
+      },
+      {
+        "@type": "Property",
+        "name": "DateDeleted",
+        "schema": "dateTime"
+      },
+      {
+        "@type": "Property",
+        "name": "UserCreated",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "UserChanged",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "UserDeleted",
+        "schema": "string"
+      }
+    ],
+    "@context": "dtmi:dtdl:context;2"
+  }
+  

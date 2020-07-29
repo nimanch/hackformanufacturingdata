@@ -1,0 +1,149 @@
+{
+    "@id": "dtmi:jabil:hackathon:other:cutter_change_info;1",
+    "@type": "Interface",
+    "displayName": "Cutter Change Info",
+    "contents": [
+      {
+        "@type": "Property",
+        "name": "OrderNumber",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "WorkflowStatus",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "ApplicationTime",
+        "schema": "dateTime"
+      },
+      {
+        "@type": "Property",
+        "name": "EmployeeID",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "EmployeeName",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "MachineType",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "ProcessName",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "Building",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "Area",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "MachineID",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "CutterNumber",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "CutterName",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "CutterSpecification",
+        "schema": "dateTime"
+      },
+      {
+        "@type": "Property",
+        "name": "CutterProcessLife",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "CutterStandardLife",
+        "schema": "dateTime"
+      },
+      {
+        "@type": "Property",
+        "name": "ExchangeReason",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "ExchangeReasonDetails",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "Manufacturer",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "IsCompliant",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "IPQCNumber",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "IPQCName",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "Size",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "Appearance",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "Calibrator",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "ConfirmationDetails",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "ReviewResult",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "ReviewDetails",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "Creator",
+        "schema": "string"
+      }
+    ],
+    "@context": "dtmi:dtdl:context;2"
+  }
+  
