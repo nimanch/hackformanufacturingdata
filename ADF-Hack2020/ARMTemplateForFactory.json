@@ -275,7 +275,7 @@
 								"type": "DatasetReference",
 								"parameters": {
 									"Container": {
-										"value": "@pipeline().parameters.Directory_Source",
+										"value": "@pipeline().parameters.FolderPath_Source",
 										"type": "Expression"
 									},
 									"Directory": {
@@ -395,7 +395,7 @@
 					},
 					"Directory": {
 						"type": "string",
-						"defaultValue": "signiot_delta_files"
+						"defaultValue": "newfiles"
 					}
 				},
 				"annotations": [],
@@ -430,12 +430,10 @@
 				},
 				"parameters": {
 					"Container": {
-						"type": "string",
-						"defaultValue": "mbtest"
+						"type": "string"
 					},
 					"Directory": {
-						"type": "string",
-						"defaultValue": "newfiles"
+						"type": "string"
 					}
 				},
 				"annotations": [],
