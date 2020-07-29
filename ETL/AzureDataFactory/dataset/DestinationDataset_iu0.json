@@ -1,0 +1,18 @@
+{
+	"name": "DestinationDataset_iu0",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "gen2hackstore",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "iot_delta_files",
+				"fileSystem": "mbtest"
+			}
+		}
+	}
+}
