@@ -1,0 +1,197 @@
+{
+	"name": "WD_ec_basic_info",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "gen2hackstore",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "WD-ec_basic_info.csv",
+				"folderPath": "Workday",
+				"fileSystem": "rowdatafromjabil"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ApproverLevel_ID",
+				"type": "String"
+			},
+			{
+				"name": "Name",
+				"type": "String"
+			},
+			{
+				"name": "person_id",
+				"type": "String"
+			},
+			{
+				"name": "first_name",
+				"type": "String"
+			},
+			{
+				"name": "last_name",
+				"type": "String"
+			},
+			{
+				"name": "division_sector_division_name",
+				"type": "String"
+			},
+			{
+				"name": "company_code",
+				"type": "String"
+			},
+			{
+				"name": "company_name",
+				"type": "String"
+			},
+			{
+				"name": "work_location_code",
+				"type": "String"
+			},
+			{
+				"name": "work_location_name",
+				"type": "String"
+			},
+			{
+				"name": "country",
+				"type": "String"
+			},
+			{
+				"name": "employee_status",
+				"type": "String"
+			},
+			{
+				"name": "employee_type",
+				"type": "String"
+			},
+			{
+				"name": "full_time",
+				"type": "String"
+			},
+			{
+				"name": "labor_category",
+				"type": "String"
+			},
+			{
+				"name": "employee_class",
+				"type": "String"
+			},
+			{
+				"name": "flsa_status",
+				"type": "String"
+			},
+			{
+				"name": "fte",
+				"type": "String"
+			},
+			{
+				"name": "job_code",
+				"type": "String"
+			},
+			{
+				"name": "local_job_title",
+				"type": "String"
+			},
+			{
+				"name": "functional_area_code",
+				"type": "String"
+			},
+			{
+				"name": "functional_area",
+				"type": "String"
+			},
+			{
+				"name": "job_code_job_family",
+				"type": "String"
+			},
+			{
+				"name": "work_from_home",
+				"type": "String"
+			},
+			{
+				"name": "direct_reports",
+				"type": "String"
+			},
+			{
+				"name": "cost_center_code",
+				"type": "String"
+			},
+			{
+				"name": "cost_center",
+				"type": "String"
+			},
+			{
+				"name": "sg_cost_center",
+				"type": "String"
+			},
+			{
+				"name": "charge_back_cost_center",
+				"type": "String"
+			},
+			{
+				"name": "emp_details_hire_date",
+				"type": "String"
+			},
+			{
+				"name": "emp_details_seniority_date",
+				"type": "String"
+			},
+			{
+				"name": "emp_details_original_start_dat",
+				"type": "String"
+			},
+			{
+				"name": "emp_details_termination_date",
+				"type": "String"
+			},
+			{
+				"name": "manager_user_sys_id",
+				"type": "String"
+			},
+			{
+				"name": "supervisor",
+				"type": "String"
+			},
+			{
+				"name": "manager_pa",
+				"type": "String"
+			},
+			{
+				"name": "custom_manager_id",
+				"type": "String"
+			},
+			{
+				"name": "building",
+				"type": "String"
+			},
+			{
+				"name": "standard_hours",
+				"type": "String"
+			},
+			{
+				"name": "timezone",
+				"type": "String"
+			},
+			{
+				"name": "business_email_information_ema",
+				"type": "String"
+			},
+			{
+				"name": "workcell_number",
+				"type": "String"
+			},
+			{
+				"name": "workcell_workcell",
+				"type": "String"
+			}
+		]
+	}
+}
