@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy_4y9",
+				"name": "Copy_delta_files",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
