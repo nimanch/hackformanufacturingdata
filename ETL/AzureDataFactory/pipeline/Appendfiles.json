@@ -16,11 +16,11 @@
 				"userProperties": [
 					{
 						"name": "Source",
-						"value": "mbtest/single/"
+						"value": "mbtest/iot_delta_files/"
 					},
 					{
 						"name": "Destination",
-						"value": "mbtest/combine/"
+						"value": "mbtest/iot_appened_files/"
 					}
 				],
 				"typeProperties": {
