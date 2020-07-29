@@ -6,7 +6,7 @@
 			"sources": [
 				{
 					"dataset": {
-						"referenceName": "InputCNCToolChangeData",
+						"referenceName": "InputCNCToolInfoData",
 						"type": "DatasetReference"
 					},
 					"name": "srccncstatus"
@@ -15,14 +15,14 @@
 			"sinks": [
 				{
 					"dataset": {
-						"referenceName": "CDMCNCToolChangeData",
+						"referenceName": "CDMToolInfoData",
 						"type": "DatasetReference"
 					},
 					"name": "PartitionDataSetCDM"
 				}
 			],
 			"transformations": [],
-			"script": "source(output(\n\t\t{$dtid} as string,\n\t\t{$timestamp} as string,\n\t\tSequentialNumber as string,\n\t\tEMT as string,\n\t\tCreateTime as string,\n\t\tToolNo as string,\n\t\tUseCount as string,\n\t\tLimitCount as string,\n\t\tUseCountAfter as string,\n\t\tEventTime as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false) ~> srccncstatus\nsrccncstatus sink(input(\n\t\t{$dtId} as string,\n\t\t{$timestamp} as string,\n\t\tUseCountAfter as string,\n\t\tToolNo as string,\n\t\tLimitCount as string,\n\t\tUseCount as string,\n\t\tSequentialNumber as string,\n\t\tCreateTime as string,\n\t\tEMT as string,\n\t\tEventTime as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false,\n\tpartitionFileNames:['partition-data.csv'],\n\ttruncate: true,\n\tpartitionBy('hash', 1)) ~> PartitionDataSetCDM"
+			"script": "source(output(\n\t\t{$dtid} as string,\n\t\t{$timestamp} as string,\n\t\tSequentialNumber as string,\n\t\tEMT as string,\n\t\tCreateTime as string,\n\t\tToolNo as string,\n\t\tUseCount as string,\n\t\tLimitCount as string,\n\t\tEventTime as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false) ~> srccncstatus\nsrccncstatus sink(input(\n\t\t{$dtId} as string,\n\t\t{$timestamp} as string,\n\t\tUseCount as string,\n\t\tLimitCount as string,\n\t\tSequentialNumber as string,\n\t\tToolNo as string,\n\t\tEMT as string,\n\t\tCreateTime as string,\n\t\tEditTime as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false,\n\tpartitionFileNames:['partition-data.csv'],\n\ttruncate: true,\n\tpartitionBy('hash', 1)) ~> PartitionDataSetCDM"
 		}
 	}
 }
