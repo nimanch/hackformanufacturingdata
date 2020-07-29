@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataflow": {
-						"referenceName": "Modify_Iot_data",
+						"referenceName": "DF_IOTHUB_DATAFLOW",
 						"type": "DataFlowReference"
 					},
 					"compute": {
