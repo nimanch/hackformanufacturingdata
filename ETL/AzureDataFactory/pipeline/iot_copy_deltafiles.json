@@ -15,7 +15,16 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "@{pipeline().parameters.FolderPath_Source}/@{pipeline().parameters.Directory_Source}/"
+					},
+					{
+						"name": "Destination",
+						"value": "@{pipeline().parameters.FolderPath_Destination}/@{pipeline().parameters.Directory_Destination}/"
+					}
+				],
 				"typeProperties": {
 					"source": {
 						"type": "BinarySource",
@@ -34,6 +43,9 @@
 								"value": "*",
 								"type": "Expression"
 							}
+						},
+						"formatSettings": {
+							"type": "BinaryReadSettings"
 						}
 					},
 					"sink": {
