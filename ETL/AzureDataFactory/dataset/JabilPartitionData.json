@@ -21,66 +21,87 @@
 		},
 		"schema": [
 			{
+				"name": "$dtId",
 				"type": "String"
 			},
 			{
+				"name": "$timestamp",
 				"type": "String"
 			},
 			{
+				"name": "PowerOn",
 				"type": "String"
 			},
 			{
+				"name": "ServoName",
 				"type": "String"
 			},
 			{
+				"name": "MainProgram",
 				"type": "String"
 			},
 			{
+				"name": "SequentialNumber",
 				"type": "String"
 			},
 			{
+				"name": "CuttingTm",
 				"type": "String"
 			},
 			{
+				"name": "CycleRunTm",
 				"type": "String"
 			},
 			{
+				"name": "CreateTime",
 				"type": "String"
 			},
 			{
+				"name": "EMT",
 				"type": "String"
 			},
 			{
+				"name": "MaxAxisNo",
 				"type": "String"
 			},
 			{
+				"name": "UseAxisNo",
 				"type": "String"
 			},
 			{
+				"name": "CNCMode",
 				"type": "String"
 			},
 			{
+				"name": "NowProgram",
 				"type": "String"
 			},
 			{
+				"name": "EventTime",
 				"type": "String"
 			},
 			{
+				"name": "PowerOnTm",
 				"type": "String"
 			},
 			{
+				"name": "CurrenttoolNo",
 				"type": "String"
 			},
 			{
+				"name": "ProgramStep",
 				"type": "String"
 			},
 			{
+				"name": "Programnote",
 				"type": "String"
 			},
 			{
+				"name": "Singlenote",
 				"type": "String"
 			},
 			{
+				"name": "ShutdownTm",
 				"type": "String"
 			}
 		]
