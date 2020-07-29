@@ -20,17 +20,12 @@
           "dataType": "dateTime"
         },
         {
-          "name": "SequentialNumber",
+          "name": "AllData",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
           "name": "DataType",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "AllData",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -42,7 +37,12 @@
         {
           "name": "CreateTime",
           "purpose": "hasA",
-          "dataType": "datetime"
+          "dataType": "dateTime"
+        },
+        {
+          "name": "SequentialNumber",
+          "purpose": "hasA",
+          "dataType": "string"
         }
       ],
       "displayName": "All",

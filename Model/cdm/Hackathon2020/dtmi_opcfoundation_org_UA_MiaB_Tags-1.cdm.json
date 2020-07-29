@@ -20,7 +20,7 @@
           "dataType": "dateTime"
         },
         {
-          "name": "Tag_Modbus_Humidity",
+          "name": "Tag_D1_Analog",
           "purpose": "hasA",
           "dataType": "integer"
         },
@@ -35,17 +35,17 @@
           "dataType": "integer"
         },
         {
-          "name": "Tag_D1_Analog",
+          "name": "Tag_D0_Digital",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "Tag_Modbus_Humidity",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
           "name": "Tag_Modbus_CO2",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "Tag_D0_Digital",
           "purpose": "hasA",
           "dataType": "integer"
         }

@@ -20,44 +20,9 @@
           "dataType": "dateTime"
         },
         {
-          "name": "OrgUid",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
           "name": "uid",
           "purpose": "hasA",
           "dataType": "integer"
-        },
-        {
-          "name": "DateDeleted",
-          "purpose": "hasA",
-          "dataType": "datetime"
-        },
-        {
-          "name": "DateCreated",
-          "purpose": "hasA",
-          "dataType": "datetime"
-        },
-        {
-          "name": "IsDisabled",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "UserChanged",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "ProjectUid",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "UserDeleted",
-          "purpose": "hasA",
-          "dataType": "string"
         },
         {
           "name": "Remark",
@@ -65,14 +30,29 @@
           "dataType": "string"
         },
         {
-          "name": "LineName",
+          "name": "DateDeleted",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "dateTime"
         },
         {
           "name": "LineCode",
           "purpose": "hasA",
           "dataType": "integer"
+        },
+        {
+          "name": "ProjectUid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "OrgUid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "UserChanged",
+          "purpose": "hasA",
+          "dataType": "string"
         },
         {
           "name": "IsDeleted",
@@ -85,9 +65,29 @@
           "dataType": "string"
         },
         {
+          "name": "LineName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "DateCreated",
+          "purpose": "hasA",
+          "dataType": "dateTime"
+        },
+        {
           "name": "DateChanged",
           "purpose": "hasA",
-          "dataType": "datetime"
+          "dataType": "dateTime"
+        },
+        {
+          "name": "UserDeleted",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "IsDisabled",
+          "purpose": "hasA",
+          "dataType": "string"
         }
       ],
       "displayName": "Line",

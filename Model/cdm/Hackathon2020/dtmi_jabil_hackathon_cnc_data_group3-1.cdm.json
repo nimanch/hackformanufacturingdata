@@ -20,16 +20,6 @@
           "dataType": "dateTime"
         },
         {
-          "name": "Z_load",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "EventTime",
-          "purpose": "hasA",
-          "dataType": "datetime"
-        },
-        {
           "name": "ProcessStartTm",
           "purpose": "hasA",
           "dataType": "string"
@@ -37,22 +27,7 @@
         {
           "name": "CreateTime",
           "purpose": "hasA",
-          "dataType": "datetime"
-        },
-        {
-          "name": "Toolset",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "SequentialNumber",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "AxisangleA",
-          "purpose": "hasA",
-          "dataType": "double"
+          "dataType": "dateTime"
         },
         {
           "name": "A_load",
@@ -65,7 +40,22 @@
           "dataType": "integer"
         },
         {
+          "name": "EventTime",
+          "purpose": "hasA",
+          "dataType": "dateTime"
+        },
+        {
+          "name": "AxisangleY",
+          "purpose": "hasA",
+          "dataType": "double"
+        },
+        {
           "name": "Feed",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "Toolset",
           "purpose": "hasA",
           "dataType": "integer"
         },
@@ -76,6 +66,11 @@
         },
         {
           "name": "X_load",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "Z_load",
           "purpose": "hasA",
           "dataType": "integer"
         },
@@ -95,14 +90,19 @@
           "dataType": "double"
         },
         {
-          "name": "AxisangleY",
+          "name": "SequentialNumber",
           "purpose": "hasA",
-          "dataType": "double"
+          "dataType": "integer"
         },
         {
           "name": "ProcessCycleTm",
           "purpose": "hasA",
           "dataType": "integer"
+        },
+        {
+          "name": "AxisangleA",
+          "purpose": "hasA",
+          "dataType": "double"
         }
       ],
       "displayName": "CNCDataGroup3",

@@ -34,24 +34,6 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "Z_load",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/Z_load",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/Z_load"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "EventTime",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/EventTime",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/EventTime"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
             "name": "ProcessStartTm",
             "parent": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1",
             "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/ProcessStartTm",
@@ -66,33 +48,6 @@
             "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/CreateTime",
             "contents": [
               "dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/CreateTime"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "Toolset",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/Toolset",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/Toolset"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "SequentialNumber",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/SequentialNumber",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/SequentialNumber"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "AxisangleA",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/AxisangleA",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/AxisangleA"
             ]
           },
           {
@@ -115,11 +70,38 @@
           },
           {
             "type": "attributeDefinition",
+            "name": "EventTime",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/EventTime",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/EventTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AxisangleY",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/AxisangleY",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/AxisangleY"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
             "name": "Feed",
             "parent": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1",
             "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/Feed",
             "contents": [
               "dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/Feed"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Toolset",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/Toolset",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/Toolset"
             ]
           },
           {
@@ -138,6 +120,15 @@
             "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/X_load",
             "contents": [
               "dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/X_load"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Z_load",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/Z_load",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/Z_load"
             ]
           },
           {
@@ -169,11 +160,11 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "AxisangleY",
+            "name": "SequentialNumber",
             "parent": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/AxisangleY",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/SequentialNumber",
             "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/AxisangleY"
+              "dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/SequentialNumber"
             ]
           },
           {
@@ -183,6 +174,15 @@
             "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/ProcessCycleTm",
             "contents": [
               "dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/ProcessCycleTm"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AxisangleA",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/AxisangleA",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group3-1/hasAttributes/AxisangleA"
             ]
           }
         ]
@@ -213,18 +213,6 @@
           "dataFormat": "DateTime"
         },
         {
-          "name": "Z_load",
-          "appliedTraits": [
-            "is.dataFormat.integer"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1/Z_load",
-          "dataFormat": "Int32"
-        },
-        {
-          "name": "EventTime",
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1/EventTime"
-        },
-        {
           "name": "ProcessStartTm",
           "appliedTraits": [
             "is.dataFormat.character",
@@ -236,32 +224,14 @@
         },
         {
           "name": "CreateTime",
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1/CreateTime"
-        },
-        {
-          "name": "Toolset",
           "appliedTraits": [
-            "is.dataFormat.integer"
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1/Toolset",
-          "dataFormat": "Int32"
-        },
-        {
-          "name": "SequentialNumber",
-          "appliedTraits": [
-            "is.dataFormat.integer"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1/SequentialNumber",
-          "dataFormat": "Int32"
-        },
-        {
-          "name": "AxisangleA",
-          "appliedTraits": [
-            "is.dataFormat.floatingPoint",
-            "is.dataFormat.big"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1/AxisangleA",
-          "dataFormat": "Double"
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1/CreateTime",
+          "dataFormat": "DateTime"
         },
         {
           "name": "A_load",
@@ -280,11 +250,39 @@
           "dataFormat": "Int32"
         },
         {
+          "name": "EventTime",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1/EventTime",
+          "dataFormat": "DateTime"
+        },
+        {
+          "name": "AxisangleY",
+          "appliedTraits": [
+            "is.dataFormat.floatingPoint",
+            "is.dataFormat.big"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1/AxisangleY",
+          "dataFormat": "Double"
+        },
+        {
           "name": "Feed",
           "appliedTraits": [
             "is.dataFormat.integer"
           ],
           "attributeContext": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1/Feed",
+          "dataFormat": "Int32"
+        },
+        {
+          "name": "Toolset",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1/Toolset",
           "dataFormat": "Int32"
         },
         {
@@ -303,6 +301,14 @@
             "is.dataFormat.integer"
           ],
           "attributeContext": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1/X_load",
+          "dataFormat": "Int32"
+        },
+        {
+          "name": "Z_load",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1/Z_load",
           "dataFormat": "Int32"
         },
         {
@@ -332,13 +338,12 @@
           "dataFormat": "Double"
         },
         {
-          "name": "AxisangleY",
+          "name": "SequentialNumber",
           "appliedTraits": [
-            "is.dataFormat.floatingPoint",
-            "is.dataFormat.big"
+            "is.dataFormat.integer"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1/AxisangleY",
-          "dataFormat": "Double"
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1/SequentialNumber",
+          "dataFormat": "Int32"
         },
         {
           "name": "ProcessCycleTm",
@@ -347,6 +352,15 @@
           ],
           "attributeContext": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1/ProcessCycleTm",
           "dataFormat": "Int32"
+        },
+        {
+          "name": "AxisangleA",
+          "appliedTraits": [
+            "is.dataFormat.floatingPoint",
+            "is.dataFormat.big"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group3-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group3-1/AxisangleA",
+          "dataFormat": "Double"
         }
       ],
       "displayName": "CNCDataGroup3",

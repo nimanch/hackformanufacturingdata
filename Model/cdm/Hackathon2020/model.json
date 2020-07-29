@@ -1,0 +1,1923 @@
+{
+  "entities": [
+    {
+      "$type": "LocalEntity",
+      "attributes": [
+        {
+          "dataType": "guid",
+          "name": "$dtId",
+          "cdm:traits": [
+            "means.identity.entityId",
+            {
+              "traitReference": "is.identifiedBy",
+              "arguments": [
+                "dtmi_jabil_hackathon_cnc_data_group2-1/(resolvedAttributes)/$dtId"
+              ]
+            }
+          ]
+        },
+        {
+          "dataType": "dateTime",
+          "name": "$timestamp",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "int64",
+          "name": "S_Gap"
+        },
+        {
+          "dataType": "string",
+          "name": "ActualSpeedZ"
+        },
+        {
+          "dataType": "int64",
+          "name": "Mcode"
+        },
+        {
+          "dataType": "int64",
+          "name": "S_Torque"
+        },
+        {
+          "dataType": "int64",
+          "name": "S_TE"
+        },
+        {
+          "dataType": "string",
+          "name": "ActualSpeedX"
+        },
+        {
+          "dataType": "int64",
+          "name": "SequentialNumber"
+        },
+        {
+          "dataType": "int64",
+          "name": "S_Load"
+        },
+        {
+          "dataType": "string",
+          "name": "RateFastmove"
+        },
+        {
+          "dataType": "string",
+          "name": "RateJOG"
+        },
+        {
+          "dataType": "int64",
+          "name": "CuttingSpeed"
+        },
+        {
+          "dataType": "string",
+          "name": "Fastmovespeed"
+        },
+        {
+          "dataType": "int64",
+          "name": "ServoTemp"
+        },
+        {
+          "dataType": "string",
+          "name": "ActualSpeedA"
+        },
+        {
+          "dataType": "string",
+          "name": "RelPos"
+        },
+        {
+          "dataType": "dateTime",
+          "name": "CreateTime",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "string",
+          "name": "EMT"
+        },
+        {
+          "dataType": "string",
+          "name": "AbsPos"
+        },
+        {
+          "dataType": "int64",
+          "name": "Tag_D1_Analog"
+        },
+        {
+          "dataType": "string",
+          "name": "RateHAND"
+        },
+        {
+          "dataType": "string",
+          "name": "Distance"
+        },
+        {
+          "dataType": "int64",
+          "name": "S_Temp"
+        },
+        {
+          "dataType": "string",
+          "name": "ActualSpeedY"
+        },
+        {
+          "dataType": "int64",
+          "name": "Cuttingfluid"
+        },
+        {
+          "dataType": "string",
+          "name": "MachPos"
+        },
+        {
+          "dataType": "dateTime",
+          "name": "EventTime",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "string",
+          "name": "FastmoveTmC"
+        }
+      ],
+      "partitions": [
+        {
+          "location": "E:\\Hack2020\\DtdlToCdmConverter\\CDM\\Hackathon2020\\dtmi_jabil_hackathon_cnc_data_group2-1\\partition-data.csv",
+          "fileFormatSettings": {
+            "$type": "CsvFormatSettings",
+            "columnHeaders": true,
+            "delimiter": ","
+          },
+          "name": "dtmi_jabil_hackathon_cnc_data_group2-1-data-description"
+        }
+      ],
+      "cdm:imports": [
+        {
+          "corpusPath": "dtmi_jabil_hackathon_cnc_data_group2-1.cdm.json",
+          "moniker": "resolvedFrom"
+        }
+      ],
+      "name": "dtmi_jabil_hackathon_cnc_data_group2-1",
+      "cdm:traits": [
+        {
+          "traitReference": "is.identifiedBy",
+          "arguments": [
+            "dtmi_jabil_hackathon_cnc_data_group2-1/(resolvedAttributes)/$dtId"
+          ]
+        },
+        {
+          "traitReference": "is.localized.displayedAs",
+          "arguments": [
+            {
+              "entityReference": {
+                "entityShape": "localizedTable",
+                "constantValues": [
+                  [
+                    "en",
+                    "CNCDataGroup2"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "LocalEntity",
+      "attributes": [
+        {
+          "dataType": "guid",
+          "name": "$dtId",
+          "cdm:traits": [
+            "means.identity.entityId",
+            {
+              "traitReference": "is.identifiedBy",
+              "arguments": [
+                "dtmi_jabil_hackathon_cnc_data_group1-1/(resolvedAttributes)/$dtId"
+              ]
+            }
+          ]
+        },
+        {
+          "dataType": "dateTime",
+          "name": "$timestamp",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "dateTime",
+          "name": "CreateTime",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "string",
+          "name": "ProgramStep"
+        },
+        {
+          "dataType": "int64",
+          "name": "MaxAxisNo"
+        },
+        {
+          "dataType": "int64",
+          "name": "UseAxisNo"
+        },
+        {
+          "dataType": "string",
+          "name": "ShutdownTm"
+        },
+        {
+          "dataType": "int64",
+          "name": "PowerOnTm"
+        },
+        {
+          "dataType": "string",
+          "name": "NowProgram"
+        },
+        {
+          "dataType": "int64",
+          "name": "CuttingTm"
+        },
+        {
+          "dataType": "string",
+          "name": "MainProgram"
+        },
+        {
+          "dataType": "string",
+          "name": "ServoName"
+        },
+        {
+          "dataType": "string",
+          "name": "PowerOn"
+        },
+        {
+          "dataType": "int64",
+          "name": "SequentialNumber"
+        },
+        {
+          "dataType": "string",
+          "name": "CNCMode"
+        },
+        {
+          "dataType": "string",
+          "name": "EMT"
+        },
+        {
+          "dataType": "string",
+          "name": "Singlenote"
+        },
+        {
+          "dataType": "int64",
+          "name": "CycleRunTm"
+        },
+        {
+          "dataType": "dateTime",
+          "name": "EventTime",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "string",
+          "name": "Programnote"
+        },
+        {
+          "dataType": "int64",
+          "name": "CurrenttoolNo"
+        }
+      ],
+      "partitions": [
+        {
+          "location": "E:\\Hack2020\\DtdlToCdmConverter\\CDM\\Hackathon2020\\dtmi_jabil_hackathon_cnc_data_group1-1\\partition-data.csv",
+          "fileFormatSettings": {
+            "$type": "CsvFormatSettings",
+            "columnHeaders": true,
+            "delimiter": ","
+          },
+          "name": "dtmi_jabil_hackathon_cnc_data_group1-1-data-description"
+        }
+      ],
+      "cdm:imports": [
+        {
+          "corpusPath": "dtmi_jabil_hackathon_cnc_data_group1-1.cdm.json",
+          "moniker": "resolvedFrom"
+        }
+      ],
+      "name": "dtmi_jabil_hackathon_cnc_data_group1-1",
+      "cdm:traits": [
+        {
+          "traitReference": "is.identifiedBy",
+          "arguments": [
+            "dtmi_jabil_hackathon_cnc_data_group1-1/(resolvedAttributes)/$dtId"
+          ]
+        },
+        {
+          "traitReference": "is.localized.displayedAs",
+          "arguments": [
+            {
+              "entityReference": {
+                "entityShape": "localizedTable",
+                "constantValues": [
+                  [
+                    "en",
+                    "CNCDataGroup1"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "LocalEntity",
+      "attributes": [
+        {
+          "dataType": "guid",
+          "name": "$dtId",
+          "cdm:traits": [
+            "means.identity.entityId",
+            {
+              "traitReference": "is.identifiedBy",
+              "arguments": [
+                "dtmi_opcfoundation_org_UA_MiaB_Tags-1/(resolvedAttributes)/$dtId"
+              ]
+            }
+          ]
+        },
+        {
+          "dataType": "dateTime",
+          "name": "$timestamp",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "int64",
+          "name": "Tag_D1_Analog"
+        },
+        {
+          "dataType": "int64",
+          "name": "Tag_D2_Blue"
+        },
+        {
+          "dataType": "int64",
+          "name": "Tag_Modbus_Temperature"
+        },
+        {
+          "dataType": "int64",
+          "name": "Tag_D0_Digital"
+        },
+        {
+          "dataType": "int64",
+          "name": "Tag_Modbus_Humidity"
+        },
+        {
+          "dataType": "int64",
+          "name": "Tag_Modbus_CO2"
+        }
+      ],
+      "partitions": [
+        {
+          "location": "E:\\Hack2020\\DtdlToCdmConverter\\CDM\\Hackathon2020\\dtmi_opcfoundation_org_UA_MiaB_Tags-1\\partition-data.csv",
+          "fileFormatSettings": {
+            "$type": "CsvFormatSettings",
+            "columnHeaders": true,
+            "delimiter": ","
+          },
+          "name": "dtmi_opcfoundation_org_UA_MiaB_Tags-1-data-description"
+        }
+      ],
+      "cdm:imports": [
+        {
+          "corpusPath": "dtmi_opcfoundation_org_UA_MiaB_Tags-1.cdm.json",
+          "moniker": "resolvedFrom"
+        }
+      ],
+      "name": "dtmi_opcfoundation_org_UA_MiaB_Tags-1",
+      "cdm:traits": [
+        {
+          "traitReference": "is.identifiedBy",
+          "arguments": [
+            "dtmi_opcfoundation_org_UA_MiaB_Tags-1/(resolvedAttributes)/$dtId"
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "LocalEntity",
+      "attributes": [
+        {
+          "dataType": "guid",
+          "name": "$dtId",
+          "cdm:traits": [
+            "means.identity.entityId",
+            {
+              "traitReference": "is.identifiedBy",
+              "arguments": [
+                "dtmi_jabil_hackathon_pis_organization-1/(resolvedAttributes)/$dtId"
+              ]
+            }
+          ]
+        },
+        {
+          "dataType": "dateTime",
+          "name": "$timestamp",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "int64",
+          "name": "pid"
+        },
+        {
+          "dataType": "string",
+          "name": "Path"
+        },
+        {
+          "dataType": "string",
+          "name": "Code"
+        },
+        {
+          "dataType": "int64",
+          "name": "uid"
+        },
+        {
+          "dataType": "string",
+          "name": "UserChanged"
+        },
+        {
+          "dataType": "dateTime",
+          "name": "DateCreated",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "string",
+          "name": "IsDeleted"
+        },
+        {
+          "dataType": "int64",
+          "name": "OrderIndex"
+        },
+        {
+          "dataType": "string",
+          "name": "name"
+        },
+        {
+          "dataType": "string",
+          "name": "IsDisabled"
+        },
+        {
+          "dataType": "string",
+          "name": "UserDeleted"
+        },
+        {
+          "dataType": "string",
+          "name": "Type"
+        },
+        {
+          "dataType": "string",
+          "name": "UserCreated"
+        },
+        {
+          "dataType": "dateTime",
+          "name": "DateChanged",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "dateTime",
+          "name": "DateDeleted",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "string",
+          "name": "Remark"
+        },
+        {
+          "dataType": "string",
+          "name": "Text"
+        }
+      ],
+      "partitions": [
+        {
+          "location": "E:\\Hack2020\\DtdlToCdmConverter\\CDM\\Hackathon2020\\dtmi_jabil_hackathon_pis_organization-1\\partition-data.csv",
+          "fileFormatSettings": {
+            "$type": "CsvFormatSettings",
+            "columnHeaders": true,
+            "delimiter": ","
+          },
+          "name": "dtmi_jabil_hackathon_pis_organization-1-data-description"
+        }
+      ],
+      "cdm:imports": [
+        {
+          "corpusPath": "dtmi_jabil_hackathon_pis_organization-1.cdm.json",
+          "moniker": "resolvedFrom"
+        }
+      ],
+      "name": "dtmi_jabil_hackathon_pis_organization-1",
+      "cdm:traits": [
+        {
+          "traitReference": "is.identifiedBy",
+          "arguments": [
+            "dtmi_jabil_hackathon_pis_organization-1/(resolvedAttributes)/$dtId"
+          ]
+        },
+        {
+          "traitReference": "is.localized.displayedAs",
+          "arguments": [
+            {
+              "entityReference": {
+                "entityShape": "localizedTable",
+                "constantValues": [
+                  [
+                    "en",
+                    "Organization"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "LocalEntity",
+      "attributes": [
+        {
+          "dataType": "guid",
+          "name": "$dtId",
+          "cdm:traits": [
+            "means.identity.entityId",
+            {
+              "traitReference": "is.identifiedBy",
+              "arguments": [
+                "dtmi_jabil_hackathon_pis_machine_cutter-1/(resolvedAttributes)/$dtId"
+              ]
+            }
+          ]
+        },
+        {
+          "dataType": "dateTime",
+          "name": "$timestamp",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "string",
+          "name": "Path"
+        },
+        {
+          "dataType": "string",
+          "name": "ShowStationName"
+        },
+        {
+          "dataType": "string",
+          "name": "LDBMachineNo"
+        },
+        {
+          "dataType": "string",
+          "name": "TextDisabled"
+        },
+        {
+          "dataType": "int64",
+          "name": "Equipment"
+        },
+        {
+          "dataType": "int64",
+          "name": "Row_Num"
+        },
+        {
+          "dataType": "int64",
+          "name": "Seat"
+        },
+        {
+          "dataType": "string",
+          "name": "ShowProjectName"
+        },
+        {
+          "dataType": "string",
+          "name": "MachineNo"
+        },
+        {
+          "dataType": "string",
+          "name": "ShowLineName"
+        },
+        {
+          "dataType": "string",
+          "name": "WorkareaName"
+        },
+        {
+          "dataType": "string",
+          "name": "BuildingName"
+        }
+      ],
+      "partitions": [
+        {
+          "location": "E:\\Hack2020\\DtdlToCdmConverter\\CDM\\Hackathon2020\\dtmi_jabil_hackathon_pis_machine_cutter-1\\partition-data.csv",
+          "fileFormatSettings": {
+            "$type": "CsvFormatSettings",
+            "columnHeaders": true,
+            "delimiter": ","
+          },
+          "name": "dtmi_jabil_hackathon_pis_machine_cutter-1-data-description"
+        }
+      ],
+      "cdm:imports": [
+        {
+          "corpusPath": "dtmi_jabil_hackathon_pis_machine_cutter-1.cdm.json",
+          "moniker": "resolvedFrom"
+        }
+      ],
+      "name": "dtmi_jabil_hackathon_pis_machine_cutter-1",
+      "cdm:traits": [
+        {
+          "traitReference": "is.identifiedBy",
+          "arguments": [
+            "dtmi_jabil_hackathon_pis_machine_cutter-1/(resolvedAttributes)/$dtId"
+          ]
+        },
+        {
+          "traitReference": "is.localized.displayedAs",
+          "arguments": [
+            {
+              "entityReference": {
+                "entityShape": "localizedTable",
+                "constantValues": [
+                  [
+                    "en",
+                    "Machine Cutter"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "LocalEntity",
+      "attributes": [
+        {
+          "dataType": "guid",
+          "name": "$dtId",
+          "cdm:traits": [
+            "means.identity.entityId",
+            {
+              "traitReference": "is.identifiedBy",
+              "arguments": [
+                "dtmi_jabil_hackathon_pis_line-1/(resolvedAttributes)/$dtId"
+              ]
+            }
+          ]
+        },
+        {
+          "dataType": "dateTime",
+          "name": "$timestamp",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "int64",
+          "name": "uid"
+        },
+        {
+          "dataType": "string",
+          "name": "Remark"
+        },
+        {
+          "dataType": "dateTime",
+          "name": "DateDeleted",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "int64",
+          "name": "LineCode"
+        },
+        {
+          "dataType": "int64",
+          "name": "ProjectUid"
+        },
+        {
+          "dataType": "int64",
+          "name": "OrgUid"
+        },
+        {
+          "dataType": "string",
+          "name": "UserChanged"
+        },
+        {
+          "dataType": "string",
+          "name": "IsDeleted"
+        },
+        {
+          "dataType": "string",
+          "name": "UserCreated"
+        },
+        {
+          "dataType": "string",
+          "name": "LineName"
+        },
+        {
+          "dataType": "dateTime",
+          "name": "DateCreated",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "dateTime",
+          "name": "DateChanged",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "string",
+          "name": "UserDeleted"
+        },
+        {
+          "dataType": "string",
+          "name": "IsDisabled"
+        }
+      ],
+      "partitions": [
+        {
+          "location": "E:\\Hack2020\\DtdlToCdmConverter\\CDM\\Hackathon2020\\dtmi_jabil_hackathon_pis_line-1\\partition-data.csv",
+          "fileFormatSettings": {
+            "$type": "CsvFormatSettings",
+            "columnHeaders": true,
+            "delimiter": ","
+          },
+          "name": "dtmi_jabil_hackathon_pis_line-1-data-description"
+        }
+      ],
+      "cdm:imports": [
+        {
+          "corpusPath": "dtmi_jabil_hackathon_pis_line-1.cdm.json",
+          "moniker": "resolvedFrom"
+        }
+      ],
+      "name": "dtmi_jabil_hackathon_pis_line-1",
+      "cdm:traits": [
+        {
+          "traitReference": "is.identifiedBy",
+          "arguments": [
+            "dtmi_jabil_hackathon_pis_line-1/(resolvedAttributes)/$dtId"
+          ]
+        },
+        {
+          "traitReference": "is.localized.displayedAs",
+          "arguments": [
+            {
+              "entityReference": {
+                "entityShape": "localizedTable",
+                "constantValues": [
+                  [
+                    "en",
+                    "Line"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "LocalEntity",
+      "attributes": [
+        {
+          "dataType": "guid",
+          "name": "$dtId",
+          "cdm:traits": [
+            "means.identity.entityId",
+            {
+              "traitReference": "is.identifiedBy",
+              "arguments": [
+                "dtmi_jabil_hackathon_pis_cutter_workarea-1/(resolvedAttributes)/$dtId"
+              ]
+            }
+          ]
+        },
+        {
+          "dataType": "dateTime",
+          "name": "$timestamp",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "int64",
+          "name": "uid"
+        },
+        {
+          "dataType": "int64",
+          "name": "KPIStationUid"
+        },
+        {
+          "dataType": "int64",
+          "name": "OrgUid"
+        },
+        {
+          "dataType": "string",
+          "name": "IsDisabled"
+        },
+        {
+          "dataType": "dateTime",
+          "name": "DateCreated",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "string",
+          "name": "ShowStationName"
+        },
+        {
+          "dataType": "string",
+          "name": "UserChanged"
+        },
+        {
+          "dataType": "string",
+          "name": "UserDeleted"
+        },
+        {
+          "dataType": "int64",
+          "name": "pid"
+        },
+        {
+          "dataType": "string",
+          "name": "UserCreated"
+        },
+        {
+          "dataType": "dateTime",
+          "name": "DateDeleted",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "int64",
+          "name": "Remark"
+        },
+        {
+          "dataType": "string",
+          "name": "Path"
+        },
+        {
+          "dataType": "int64",
+          "name": "WorkLineUid"
+        },
+        {
+          "dataType": "string",
+          "name": "ShowProjectName"
+        },
+        {
+          "dataType": "int64",
+          "name": "WorkStationUid"
+        },
+        {
+          "dataType": "string",
+          "name": "WorkareaName"
+        },
+        {
+          "dataType": "string",
+          "name": "WorkProjectUid"
+        },
+        {
+          "dataType": "string",
+          "name": "IsDeleted"
+        },
+        {
+          "dataType": "dateTime",
+          "name": "DateChanged",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "int64",
+          "name": "Row_Num"
+        },
+        {
+          "dataType": "string",
+          "name": "TextDisabled"
+        },
+        {
+          "dataType": "string",
+          "name": "ShowLineName"
+        }
+      ],
+      "partitions": [
+        {
+          "location": "E:\\Hack2020\\DtdlToCdmConverter\\CDM\\Hackathon2020\\dtmi_jabil_hackathon_pis_cutter_workarea-1\\partition-data.csv",
+          "fileFormatSettings": {
+            "$type": "CsvFormatSettings",
+            "columnHeaders": true,
+            "delimiter": ","
+          },
+          "name": "dtmi_jabil_hackathon_pis_cutter_workarea-1-data-description"
+        }
+      ],
+      "cdm:imports": [
+        {
+          "corpusPath": "dtmi_jabil_hackathon_pis_cutter_workarea-1.cdm.json",
+          "moniker": "resolvedFrom"
+        }
+      ],
+      "name": "dtmi_jabil_hackathon_pis_cutter_workarea-1",
+      "cdm:traits": [
+        {
+          "traitReference": "is.identifiedBy",
+          "arguments": [
+            "dtmi_jabil_hackathon_pis_cutter_workarea-1/(resolvedAttributes)/$dtId"
+          ]
+        },
+        {
+          "traitReference": "is.localized.displayedAs",
+          "arguments": [
+            {
+              "entityReference": {
+                "entityShape": "localizedTable",
+                "constantValues": [
+                  [
+                    "en",
+                    "Work Area"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "LocalEntity",
+      "attributes": [
+        {
+          "dataType": "guid",
+          "name": "$dtId",
+          "cdm:traits": [
+            "means.identity.entityId",
+            {
+              "traitReference": "is.identifiedBy",
+              "arguments": [
+                "dtmi_jabil_hackathon_pis_cutter_info-1/(resolvedAttributes)/$dtId"
+              ]
+            }
+          ]
+        },
+        {
+          "dataType": "dateTime",
+          "name": "$timestamp",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "int64",
+          "name": "OrgUid"
+        },
+        {
+          "dataType": "string",
+          "name": "PartSpec"
+        },
+        {
+          "dataType": "int64",
+          "name": "uid"
+        },
+        {
+          "dataType": "string",
+          "name": "PartNo"
+        },
+        {
+          "dataType": "string",
+          "name": "LifeStand"
+        },
+        {
+          "dataType": "string",
+          "name": "BatchNo"
+        },
+        {
+          "dataType": "int64",
+          "name": "VendorUid"
+        },
+        {
+          "dataType": "string",
+          "name": "Version"
+        },
+        {
+          "dataType": "string",
+          "name": "AVGPrice"
+        },
+        {
+          "dataType": "string",
+          "name": "IsDeleted"
+        },
+        {
+          "dataType": "dateTime",
+          "name": "DateChanged",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "string",
+          "name": "IsDisabled"
+        },
+        {
+          "dataType": "dateTime",
+          "name": "DateCreated",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "string",
+          "name": "UserCreated"
+        },
+        {
+          "dataType": "dateTime",
+          "name": "DateDeleted",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "string",
+          "name": "Remark"
+        },
+        {
+          "dataType": "string",
+          "name": "Path"
+        },
+        {
+          "dataType": "string",
+          "name": "UserChanged"
+        },
+        {
+          "dataType": "string",
+          "name": "UserDeleted"
+        },
+        {
+          "dataType": "string",
+          "name": "VendorCode"
+        },
+        {
+          "dataType": "int64",
+          "name": "Row_Num"
+        },
+        {
+          "dataType": "string",
+          "name": "VendorName"
+        },
+        {
+          "dataType": "string",
+          "name": "TextDisabled"
+        }
+      ],
+      "partitions": [
+        {
+          "location": "E:\\Hack2020\\DtdlToCdmConverter\\CDM\\Hackathon2020\\dtmi_jabil_hackathon_pis_cutter_info-1\\partition-data.csv",
+          "fileFormatSettings": {
+            "$type": "CsvFormatSettings",
+            "columnHeaders": true,
+            "delimiter": ","
+          },
+          "name": "dtmi_jabil_hackathon_pis_cutter_info-1-data-description"
+        }
+      ],
+      "cdm:imports": [
+        {
+          "corpusPath": "dtmi_jabil_hackathon_pis_cutter_info-1.cdm.json",
+          "moniker": "resolvedFrom"
+        }
+      ],
+      "name": "dtmi_jabil_hackathon_pis_cutter_info-1",
+      "cdm:traits": [
+        {
+          "traitReference": "is.identifiedBy",
+          "arguments": [
+            "dtmi_jabil_hackathon_pis_cutter_info-1/(resolvedAttributes)/$dtId"
+          ]
+        },
+        {
+          "traitReference": "is.localized.displayedAs",
+          "arguments": [
+            {
+              "entityReference": {
+                "entityShape": "localizedTable",
+                "constantValues": [
+                  [
+                    "en",
+                    "Cutter Info"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "LocalEntity",
+      "attributes": [
+        {
+          "dataType": "guid",
+          "name": "$dtId",
+          "cdm:traits": [
+            "means.identity.entityId",
+            {
+              "traitReference": "is.identifiedBy",
+              "arguments": [
+                "dtmi_jabil_hackathon_bc_emt_mapping-1/(resolvedAttributes)/$dtId"
+              ]
+            }
+          ]
+        },
+        {
+          "dataType": "dateTime",
+          "name": "$timestamp",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "string",
+          "name": "EMT"
+        },
+        {
+          "dataType": "string",
+          "name": "Station"
+        },
+        {
+          "dataType": "string",
+          "name": "Project"
+        },
+        {
+          "dataType": "string",
+          "name": "Process"
+        },
+        {
+          "dataType": "string",
+          "name": "Name"
+        }
+      ],
+      "partitions": [
+        {
+          "location": "E:\\Hack2020\\DtdlToCdmConverter\\CDM\\Hackathon2020\\dtmi_jabil_hackathon_bc_emt_mapping-1\\partition-data.csv",
+          "fileFormatSettings": {
+            "$type": "CsvFormatSettings",
+            "columnHeaders": true,
+            "delimiter": ","
+          },
+          "name": "dtmi_jabil_hackathon_bc_emt_mapping-1-data-description"
+        }
+      ],
+      "cdm:imports": [
+        {
+          "corpusPath": "dtmi_jabil_hackathon_bc_emt_mapping-1.cdm.json",
+          "moniker": "resolvedFrom"
+        }
+      ],
+      "name": "dtmi_jabil_hackathon_bc_emt_mapping-1",
+      "cdm:traits": [
+        {
+          "traitReference": "is.identifiedBy",
+          "arguments": [
+            "dtmi_jabil_hackathon_bc_emt_mapping-1/(resolvedAttributes)/$dtId"
+          ]
+        },
+        {
+          "traitReference": "is.localized.displayedAs",
+          "arguments": [
+            {
+              "entityReference": {
+                "entityShape": "localizedTable",
+                "constantValues": [
+                  [
+                    "en",
+                    "EMT Mapping"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "LocalEntity",
+      "attributes": [
+        {
+          "dataType": "guid",
+          "name": "$dtId",
+          "cdm:traits": [
+            "means.identity.entityId",
+            {
+              "traitReference": "is.identifiedBy",
+              "arguments": [
+                "dtmi_jabil_hackathon_cnc_tool_info-1/(resolvedAttributes)/$dtId"
+              ]
+            }
+          ]
+        },
+        {
+          "dataType": "dateTime",
+          "name": "$timestamp",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "dateTime",
+          "name": "CreateTime",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "dateTime",
+          "name": "EditTime",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "string",
+          "name": "EMT"
+        },
+        {
+          "dataType": "int64",
+          "name": "UseCount"
+        },
+        {
+          "dataType": "int64",
+          "name": "ToolNo"
+        },
+        {
+          "dataType": "int64",
+          "name": "LimitCount"
+        },
+        {
+          "dataType": "int64",
+          "name": "SequentialNumber"
+        }
+      ],
+      "partitions": [
+        {
+          "location": "E:\\Hack2020\\DtdlToCdmConverter\\CDM\\Hackathon2020\\dtmi_jabil_hackathon_cnc_tool_info-1\\partition-data.csv",
+          "fileFormatSettings": {
+            "$type": "CsvFormatSettings",
+            "columnHeaders": true,
+            "delimiter": ","
+          },
+          "name": "dtmi_jabil_hackathon_cnc_tool_info-1-data-description"
+        }
+      ],
+      "cdm:imports": [
+        {
+          "corpusPath": "dtmi_jabil_hackathon_cnc_tool_info-1.cdm.json",
+          "moniker": "resolvedFrom"
+        }
+      ],
+      "name": "dtmi_jabil_hackathon_cnc_tool_info-1",
+      "cdm:traits": [
+        {
+          "traitReference": "is.identifiedBy",
+          "arguments": [
+            "dtmi_jabil_hackathon_cnc_tool_info-1/(resolvedAttributes)/$dtId"
+          ]
+        },
+        {
+          "traitReference": "is.localized.displayedAs",
+          "arguments": [
+            {
+              "entityReference": {
+                "entityShape": "localizedTable",
+                "constantValues": [
+                  [
+                    "en",
+                    "CNCToolInfo"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "LocalEntity",
+      "attributes": [
+        {
+          "dataType": "guid",
+          "name": "$dtId",
+          "cdm:traits": [
+            "means.identity.entityId",
+            {
+              "traitReference": "is.identifiedBy",
+              "arguments": [
+                "dtmi_jabil_hackathon_cnc_tool_change-1/(resolvedAttributes)/$dtId"
+              ]
+            }
+          ]
+        },
+        {
+          "dataType": "dateTime",
+          "name": "$timestamp",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "int64",
+          "name": "ToolNo"
+        },
+        {
+          "dataType": "int64",
+          "name": "UseCountAfter"
+        },
+        {
+          "dataType": "int64",
+          "name": "SequentialNumber"
+        },
+        {
+          "dataType": "dateTime",
+          "name": "EventTime",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "int64",
+          "name": "LimitCount"
+        },
+        {
+          "dataType": "string",
+          "name": "EMT"
+        },
+        {
+          "dataType": "dateTime",
+          "name": "CreateTime",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "int64",
+          "name": "UseCount"
+        }
+      ],
+      "partitions": [
+        {
+          "location": "E:\\Hack2020\\DtdlToCdmConverter\\CDM\\Hackathon2020\\dtmi_jabil_hackathon_cnc_tool_change-1\\partition-data.csv",
+          "fileFormatSettings": {
+            "$type": "CsvFormatSettings",
+            "columnHeaders": true,
+            "delimiter": ","
+          },
+          "name": "dtmi_jabil_hackathon_cnc_tool_change-1-data-description"
+        }
+      ],
+      "cdm:imports": [
+        {
+          "corpusPath": "dtmi_jabil_hackathon_cnc_tool_change-1.cdm.json",
+          "moniker": "resolvedFrom"
+        }
+      ],
+      "name": "dtmi_jabil_hackathon_cnc_tool_change-1",
+      "cdm:traits": [
+        {
+          "traitReference": "is.identifiedBy",
+          "arguments": [
+            "dtmi_jabil_hackathon_cnc_tool_change-1/(resolvedAttributes)/$dtId"
+          ]
+        },
+        {
+          "traitReference": "is.localized.displayedAs",
+          "arguments": [
+            {
+              "entityReference": {
+                "entityShape": "localizedTable",
+                "constantValues": [
+                  [
+                    "en",
+                    "CNCToolChange"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "LocalEntity",
+      "attributes": [
+        {
+          "dataType": "guid",
+          "name": "$dtId",
+          "cdm:traits": [
+            "means.identity.entityId",
+            {
+              "traitReference": "is.identifiedBy",
+              "arguments": [
+                "dtmi_jabil_hackathon_cnc_status-1/(resolvedAttributes)/$dtId"
+              ]
+            }
+          ]
+        },
+        {
+          "dataType": "dateTime",
+          "name": "$timestamp",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "int64",
+          "name": "TotalNum"
+        },
+        {
+          "dataType": "string",
+          "name": "Status"
+        },
+        {
+          "dataType": "string",
+          "name": "EMT"
+        },
+        {
+          "dataType": "dateTime",
+          "name": "CreateTime",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "string",
+          "name": "Category"
+        },
+        {
+          "dataType": "dateTime",
+          "name": "EventTime",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "string",
+          "name": "ErrorCode"
+        },
+        {
+          "dataType": "int64",
+          "name": "SequentialNumber"
+        }
+      ],
+      "partitions": [
+        {
+          "location": "E:\\Hack2020\\DtdlToCdmConverter\\CDM\\Hackathon2020\\dtmi_jabil_hackathon_cnc_status-1\\partition-data.csv",
+          "fileFormatSettings": {
+            "$type": "CsvFormatSettings",
+            "columnHeaders": true,
+            "delimiter": ","
+          },
+          "name": "dtmi_jabil_hackathon_cnc_status-1-data-description"
+        }
+      ],
+      "cdm:imports": [
+        {
+          "corpusPath": "dtmi_jabil_hackathon_cnc_status-1.cdm.json",
+          "moniker": "resolvedFrom"
+        }
+      ],
+      "name": "dtmi_jabil_hackathon_cnc_status-1",
+      "cdm:traits": [
+        {
+          "traitReference": "is.identifiedBy",
+          "arguments": [
+            "dtmi_jabil_hackathon_cnc_status-1/(resolvedAttributes)/$dtId"
+          ]
+        },
+        {
+          "traitReference": "is.localized.displayedAs",
+          "arguments": [
+            {
+              "entityReference": {
+                "entityShape": "localizedTable",
+                "constantValues": [
+                  [
+                    "en",
+                    "CNCStatus"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "LocalEntity",
+      "attributes": [
+        {
+          "dataType": "guid",
+          "name": "$dtId",
+          "cdm:traits": [
+            "means.identity.entityId",
+            {
+              "traitReference": "is.identifiedBy",
+              "arguments": [
+                "dtmi_jabil_hackathon_cnc_pro_data-1/(resolvedAttributes)/$dtId"
+              ]
+            }
+          ]
+        },
+        {
+          "dataType": "dateTime",
+          "name": "$timestamp",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "string",
+          "name": "ProcessStartTm"
+        },
+        {
+          "dataType": "int64",
+          "name": "SequentialNumber"
+        },
+        {
+          "dataType": "string",
+          "name": "EMT"
+        },
+        {
+          "dataType": "int64",
+          "name": "ProcessCycleTm"
+        },
+        {
+          "dataType": "dateTime",
+          "name": "EventTime",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "dateTime",
+          "name": "CreateTime",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "int64",
+          "name": "MainProgram"
+        },
+        {
+          "dataType": "int64",
+          "name": "TotalNum"
+        },
+        {
+          "dataType": "int64",
+          "name": "CycleRunTm"
+        }
+      ],
+      "partitions": [
+        {
+          "location": "E:\\Hack2020\\DtdlToCdmConverter\\CDM\\Hackathon2020\\dtmi_jabil_hackathon_cnc_pro_data-1\\partition-data.csv",
+          "fileFormatSettings": {
+            "$type": "CsvFormatSettings",
+            "columnHeaders": true,
+            "delimiter": ","
+          },
+          "name": "dtmi_jabil_hackathon_cnc_pro_data-1-data-description"
+        }
+      ],
+      "cdm:imports": [
+        {
+          "corpusPath": "dtmi_jabil_hackathon_cnc_pro_data-1.cdm.json",
+          "moniker": "resolvedFrom"
+        }
+      ],
+      "name": "dtmi_jabil_hackathon_cnc_pro_data-1",
+      "cdm:traits": [
+        {
+          "traitReference": "is.identifiedBy",
+          "arguments": [
+            "dtmi_jabil_hackathon_cnc_pro_data-1/(resolvedAttributes)/$dtId"
+          ]
+        },
+        {
+          "traitReference": "is.localized.displayedAs",
+          "arguments": [
+            {
+              "entityReference": {
+                "entityShape": "localizedTable",
+                "constantValues": [
+                  [
+                    "en",
+                    "CNCProData"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "LocalEntity",
+      "attributes": [
+        {
+          "dataType": "guid",
+          "name": "$dtId",
+          "cdm:traits": [
+            "means.identity.entityId",
+            {
+              "traitReference": "is.identifiedBy",
+              "arguments": [
+                "dtmi_jabil_hackathon_cnc_data_group3-1/(resolvedAttributes)/$dtId"
+              ]
+            }
+          ]
+        },
+        {
+          "dataType": "dateTime",
+          "name": "$timestamp",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "string",
+          "name": "ProcessStartTm"
+        },
+        {
+          "dataType": "dateTime",
+          "name": "CreateTime",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "int64",
+          "name": "A_load"
+        },
+        {
+          "dataType": "int64",
+          "name": "Y_load"
+        },
+        {
+          "dataType": "dateTime",
+          "name": "EventTime",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "double",
+          "name": "AxisangleY"
+        },
+        {
+          "dataType": "int64",
+          "name": "Feed"
+        },
+        {
+          "dataType": "int64",
+          "name": "Toolset"
+        },
+        {
+          "dataType": "string",
+          "name": "EMT"
+        },
+        {
+          "dataType": "int64",
+          "name": "X_load"
+        },
+        {
+          "dataType": "int64",
+          "name": "Z_load"
+        },
+        {
+          "dataType": "int64",
+          "name": "S_RPM"
+        },
+        {
+          "dataType": "double",
+          "name": "AxisangleX"
+        },
+        {
+          "dataType": "double",
+          "name": "AxisangleZ"
+        },
+        {
+          "dataType": "int64",
+          "name": "SequentialNumber"
+        },
+        {
+          "dataType": "int64",
+          "name": "ProcessCycleTm"
+        },
+        {
+          "dataType": "double",
+          "name": "AxisangleA"
+        }
+      ],
+      "partitions": [
+        {
+          "location": "E:\\Hack2020\\DtdlToCdmConverter\\CDM\\Hackathon2020\\dtmi_jabil_hackathon_cnc_data_group3-1\\partition-data.csv",
+          "fileFormatSettings": {
+            "$type": "CsvFormatSettings",
+            "columnHeaders": true,
+            "delimiter": ","
+          },
+          "name": "dtmi_jabil_hackathon_cnc_data_group3-1-data-description"
+        }
+      ],
+      "cdm:imports": [
+        {
+          "corpusPath": "dtmi_jabil_hackathon_cnc_data_group3-1.cdm.json",
+          "moniker": "resolvedFrom"
+        }
+      ],
+      "name": "dtmi_jabil_hackathon_cnc_data_group3-1",
+      "cdm:traits": [
+        {
+          "traitReference": "is.identifiedBy",
+          "arguments": [
+            "dtmi_jabil_hackathon_cnc_data_group3-1/(resolvedAttributes)/$dtId"
+          ]
+        },
+        {
+          "traitReference": "is.localized.displayedAs",
+          "arguments": [
+            {
+              "entityReference": {
+                "entityShape": "localizedTable",
+                "constantValues": [
+                  [
+                    "en",
+                    "CNCDataGroup3"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$type": "LocalEntity",
+      "attributes": [
+        {
+          "dataType": "guid",
+          "name": "$dtId",
+          "cdm:traits": [
+            "means.identity.entityId",
+            {
+              "traitReference": "is.identifiedBy",
+              "arguments": [
+                "dtmi_jabil_hackathon_bc_all-1/(resolvedAttributes)/$dtId"
+              ]
+            }
+          ]
+        },
+        {
+          "dataType": "dateTime",
+          "name": "$timestamp",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "string",
+          "name": "AllData"
+        },
+        {
+          "dataType": "string",
+          "name": "DataType"
+        },
+        {
+          "dataType": "string",
+          "name": "EMT"
+        },
+        {
+          "dataType": "dateTime",
+          "name": "CreateTime",
+          "cdm:traits": [
+            "means.measurement.date",
+            "means.measurement.time"
+          ]
+        },
+        {
+          "dataType": "string",
+          "name": "SequentialNumber"
+        }
+      ],
+      "partitions": [
+        {
+          "location": "E:\\Hack2020\\DtdlToCdmConverter\\CDM\\Hackathon2020\\dtmi_jabil_hackathon_bc_all-1\\partition-data.csv",
+          "fileFormatSettings": {
+            "$type": "CsvFormatSettings",
+            "columnHeaders": true,
+            "delimiter": ","
+          },
+          "name": "dtmi_jabil_hackathon_bc_all-1-data-description"
+        }
+      ],
+      "cdm:imports": [
+        {
+          "corpusPath": "dtmi_jabil_hackathon_bc_all-1.cdm.json",
+          "moniker": "resolvedFrom"
+        }
+      ],
+      "name": "dtmi_jabil_hackathon_bc_all-1",
+      "cdm:traits": [
+        {
+          "traitReference": "is.identifiedBy",
+          "arguments": [
+            "dtmi_jabil_hackathon_bc_all-1/(resolvedAttributes)/$dtId"
+          ]
+        },
+        {
+          "traitReference": "is.localized.displayedAs",
+          "arguments": [
+            {
+              "entityReference": {
+                "entityShape": "localizedTable",
+                "constantValues": [
+                  [
+                    "en",
+                    "All"
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "cdm:imports": [
+    {
+      "corpusPath": "cdm:/foundations.cdm.json"
+    }
+  ],
+  "name": "default",
+  "version": "1.0"
+}

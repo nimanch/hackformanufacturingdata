@@ -20,36 +20,6 @@
           "dataType": "dateTime"
         },
         {
-          "name": "EMT",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "ErrorCode",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "EventTime",
-          "purpose": "hasA",
-          "dataType": "datetime"
-        },
-        {
-          "name": "CreateTime",
-          "purpose": "hasA",
-          "dataType": "datetime"
-        },
-        {
-          "name": "Category",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "SequentialNumber",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
           "name": "TotalNum",
           "purpose": "hasA",
           "dataType": "integer"
@@ -58,6 +28,36 @@
           "name": "Status",
           "purpose": "hasA",
           "dataType": "string"
+        },
+        {
+          "name": "EMT",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "CreateTime",
+          "purpose": "hasA",
+          "dataType": "dateTime"
+        },
+        {
+          "name": "Category",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "EventTime",
+          "purpose": "hasA",
+          "dataType": "dateTime"
+        },
+        {
+          "name": "ErrorCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "SequentialNumber",
+          "purpose": "hasA",
+          "dataType": "integer"
         }
       ],
       "displayName": "CNCStatus",

@@ -20,7 +20,37 @@
           "dataType": "dateTime"
         },
         {
-          "name": "Type",
+          "name": "pid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "Path",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Code",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "uid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "UserChanged",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "DateCreated",
+          "purpose": "hasA",
+          "dataType": "dateTime"
+        },
+        {
+          "name": "IsDeleted",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -30,12 +60,7 @@
           "dataType": "integer"
         },
         {
-          "name": "uid",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "Code",
+          "name": "name",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -43,6 +68,31 @@
           "name": "IsDisabled",
           "purpose": "hasA",
           "dataType": "string"
+        },
+        {
+          "name": "UserDeleted",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Type",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "UserCreated",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "DateChanged",
+          "purpose": "hasA",
+          "dataType": "dateTime"
+        },
+        {
+          "name": "DateDeleted",
+          "purpose": "hasA",
+          "dataType": "dateTime"
         },
         {
           "name": "Remark",
@@ -53,56 +103,6 @@
           "name": "Text",
           "purpose": "hasA",
           "dataType": "string"
-        },
-        {
-          "name": "pid",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "IsDeleted",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "DateCreated",
-          "purpose": "hasA",
-          "dataType": "datetime"
-        },
-        {
-          "name": "DateChanged",
-          "purpose": "hasA",
-          "dataType": "datetime"
-        },
-        {
-          "name": "Path",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "name",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "UserChanged",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "UserCreated",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "UserDeleted",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "DateDeleted",
-          "purpose": "hasA",
-          "dataType": "datetime"
         }
       ],
       "displayName": "Organization",

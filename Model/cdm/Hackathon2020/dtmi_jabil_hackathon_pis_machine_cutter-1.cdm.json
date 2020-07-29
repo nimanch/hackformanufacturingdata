@@ -20,42 +20,7 @@
           "dataType": "dateTime"
         },
         {
-          "name": "Equipment",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "LDBMachineNo",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "Seat",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "WorkareaName",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "MachineNo",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "TextDisabled",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "ShowProjectName",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "BuildingName",
+          "name": "Path",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -65,9 +30,19 @@
           "dataType": "string"
         },
         {
-          "name": "Path",
+          "name": "LDBMachineNo",
           "purpose": "hasA",
           "dataType": "string"
+        },
+        {
+          "name": "TextDisabled",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Equipment",
+          "purpose": "hasA",
+          "dataType": "integer"
         },
         {
           "name": "Row_Num",
@@ -75,7 +50,32 @@
           "dataType": "integer"
         },
         {
+          "name": "Seat",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "ShowProjectName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "MachineNo",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
           "name": "ShowLineName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "WorkareaName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "BuildingName",
           "purpose": "hasA",
           "dataType": "string"
         }

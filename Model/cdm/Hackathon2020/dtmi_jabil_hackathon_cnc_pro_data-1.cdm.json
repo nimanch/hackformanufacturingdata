@@ -20,26 +20,6 @@
           "dataType": "dateTime"
         },
         {
-          "name": "CycleRunTm",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "TotalNum",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "CreateTime",
-          "purpose": "hasA",
-          "dataType": "datetime"
-        },
-        {
-          "name": "MainProgram",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
           "name": "ProcessStartTm",
           "purpose": "hasA",
           "dataType": "string"
@@ -50,17 +30,37 @@
           "dataType": "integer"
         },
         {
-          "name": "EventTime",
-          "purpose": "hasA",
-          "dataType": "datetime"
-        },
-        {
           "name": "EMT",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
           "name": "ProcessCycleTm",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "EventTime",
+          "purpose": "hasA",
+          "dataType": "dateTime"
+        },
+        {
+          "name": "CreateTime",
+          "purpose": "hasA",
+          "dataType": "dateTime"
+        },
+        {
+          "name": "MainProgram",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "TotalNum",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "CycleRunTm",
           "purpose": "hasA",
           "dataType": "integer"
         }

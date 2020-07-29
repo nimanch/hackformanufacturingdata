@@ -34,29 +34,20 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "Type",
+            "name": "pid",
             "parent": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/Type",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/pid",
             "contents": [
-              "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/Type"
+              "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/pid"
             ]
           },
           {
             "type": "attributeDefinition",
-            "name": "OrderIndex",
+            "name": "Path",
             "parent": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/OrderIndex",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/Path",
             "contents": [
-              "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/OrderIndex"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "uid",
-            "parent": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/uid",
-            "contents": [
-              "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/uid"
+              "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/Path"
             ]
           },
           {
@@ -70,11 +61,110 @@
           },
           {
             "type": "attributeDefinition",
+            "name": "uid",
+            "parent": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/uid",
+            "contents": [
+              "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/uid"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "UserChanged",
+            "parent": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/UserChanged",
+            "contents": [
+              "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/UserChanged"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DateCreated",
+            "parent": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/DateCreated",
+            "contents": [
+              "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/DateCreated"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IsDeleted",
+            "parent": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/IsDeleted",
+            "contents": [
+              "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/IsDeleted"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "OrderIndex",
+            "parent": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/OrderIndex",
+            "contents": [
+              "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/OrderIndex"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "name",
+            "parent": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/name",
+            "contents": [
+              "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/name"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
             "name": "IsDisabled",
             "parent": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1",
             "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/IsDisabled",
             "contents": [
               "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/IsDisabled"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "UserDeleted",
+            "parent": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/UserDeleted",
+            "contents": [
+              "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/UserDeleted"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Type",
+            "parent": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/Type",
+            "contents": [
+              "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/Type"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "UserCreated",
+            "parent": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/UserCreated",
+            "contents": [
+              "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/UserCreated"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DateChanged",
+            "parent": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/DateChanged",
+            "contents": [
+              "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/DateChanged"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DateDeleted",
+            "parent": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/DateDeleted",
+            "contents": [
+              "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/DateDeleted"
             ]
           },
           {
@@ -93,96 +183,6 @@
             "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/Text",
             "contents": [
               "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/Text"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "pid",
-            "parent": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/pid",
-            "contents": [
-              "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/pid"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "IsDeleted",
-            "parent": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/IsDeleted",
-            "contents": [
-              "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/IsDeleted"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "DateCreated",
-            "parent": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/DateCreated",
-            "contents": [
-              "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/DateCreated"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "DateChanged",
-            "parent": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/DateChanged",
-            "contents": [
-              "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/DateChanged"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "Path",
-            "parent": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/Path",
-            "contents": [
-              "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/Path"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "name",
-            "parent": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/name",
-            "contents": [
-              "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/name"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "UserChanged",
-            "parent": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/UserChanged",
-            "contents": [
-              "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/UserChanged"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "UserCreated",
-            "parent": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/UserCreated",
-            "contents": [
-              "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/UserCreated"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "UserDeleted",
-            "parent": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/UserDeleted",
-            "contents": [
-              "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/UserDeleted"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "DateDeleted",
-            "parent": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_organization-1/hasAttributes/DateDeleted",
-            "contents": [
-              "dtmi_jabil_hackathon_pis_organization-1/hasAttributes/DateDeleted"
             ]
           }
         ]
@@ -213,30 +213,22 @@
           "dataFormat": "DateTime"
         },
         {
-          "name": "Type",
+          "name": "pid",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/pid",
+          "dataFormat": "Int32"
+        },
+        {
+          "name": "Path",
           "appliedTraits": [
             "is.dataFormat.character",
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/Type",
+          "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/Path",
           "dataFormat": "String"
-        },
-        {
-          "name": "OrderIndex",
-          "appliedTraits": [
-            "is.dataFormat.integer"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/OrderIndex",
-          "dataFormat": "Int32"
-        },
-        {
-          "name": "uid",
-          "appliedTraits": [
-            "is.dataFormat.integer"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/uid",
-          "dataFormat": "Int32"
         },
         {
           "name": "Code",
@@ -249,6 +241,63 @@
           "dataFormat": "String"
         },
         {
+          "name": "uid",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/uid",
+          "dataFormat": "Int32"
+        },
+        {
+          "name": "UserChanged",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/UserChanged",
+          "dataFormat": "String"
+        },
+        {
+          "name": "DateCreated",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/DateCreated",
+          "dataFormat": "DateTime"
+        },
+        {
+          "name": "IsDeleted",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/IsDeleted",
+          "dataFormat": "String"
+        },
+        {
+          "name": "OrderIndex",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/OrderIndex",
+          "dataFormat": "Int32"
+        },
+        {
+          "name": "name",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/name",
+          "dataFormat": "String"
+        },
+        {
           "name": "IsDisabled",
           "appliedTraits": [
             "is.dataFormat.character",
@@ -257,6 +306,58 @@
           ],
           "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/IsDisabled",
           "dataFormat": "String"
+        },
+        {
+          "name": "UserDeleted",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/UserDeleted",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Type",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/Type",
+          "dataFormat": "String"
+        },
+        {
+          "name": "UserCreated",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/UserCreated",
+          "dataFormat": "String"
+        },
+        {
+          "name": "DateChanged",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/DateChanged",
+          "dataFormat": "DateTime"
+        },
+        {
+          "name": "DateDeleted",
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/DateDeleted",
+          "dataFormat": "DateTime"
         },
         {
           "name": "Remark",
@@ -277,86 +378,6 @@
           ],
           "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/Text",
           "dataFormat": "String"
-        },
-        {
-          "name": "pid",
-          "appliedTraits": [
-            "is.dataFormat.integer"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/pid",
-          "dataFormat": "Int32"
-        },
-        {
-          "name": "IsDeleted",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/IsDeleted",
-          "dataFormat": "String"
-        },
-        {
-          "name": "DateCreated",
-          "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/DateCreated"
-        },
-        {
-          "name": "DateChanged",
-          "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/DateChanged"
-        },
-        {
-          "name": "Path",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/Path",
-          "dataFormat": "String"
-        },
-        {
-          "name": "name",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/name",
-          "dataFormat": "String"
-        },
-        {
-          "name": "UserChanged",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/UserChanged",
-          "dataFormat": "String"
-        },
-        {
-          "name": "UserCreated",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/UserCreated",
-          "dataFormat": "String"
-        },
-        {
-          "name": "UserDeleted",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/UserDeleted",
-          "dataFormat": "String"
-        },
-        {
-          "name": "DateDeleted",
-          "attributeContext": "dtmi_jabil_hackathon_pis_organization-1/attributeContext/dtmi_jabil_hackathon_pis_organization-1/DateDeleted"
         }
       ],
       "displayName": "Organization",

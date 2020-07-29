@@ -1,1 +1,1 @@
-$dtId,$timestamp,OrgUid,LifeStand,PartSpec,PartNo,AVGPrice,Version,Remark,DateChanged,DateDeleted,uid,VendorUid,IsDeleted,UserCreated,UserDeleted,Path,TextDisabled,VendorCode,DateCreated,VendorName,Row_Num,UserChanged,IsDisabled,BatchNo
+$dtId,$timestamp,OrgUid,PartSpec,uid,PartNo,LifeStand,BatchNo,VendorUid,Version,AVGPrice,IsDeleted,DateChanged,IsDisabled,DateCreated,UserCreated,DateDeleted,Remark,Path,UserChanged,UserDeleted,VendorCode,Row_Num,VendorName,TextDisabled

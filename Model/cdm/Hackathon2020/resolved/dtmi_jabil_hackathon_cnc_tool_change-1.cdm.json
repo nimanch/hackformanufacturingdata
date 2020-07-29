@@ -34,6 +34,33 @@
           },
           {
             "type": "attributeDefinition",
+            "name": "ToolNo",
+            "parent": "dtmi_jabil_hackathon_cnc_tool_change-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_change-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_tool_change-1/hasAttributes/ToolNo",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_tool_change-1/hasAttributes/ToolNo"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "UseCountAfter",
+            "parent": "dtmi_jabil_hackathon_cnc_tool_change-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_change-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_tool_change-1/hasAttributes/UseCountAfter",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_tool_change-1/hasAttributes/UseCountAfter"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SequentialNumber",
+            "parent": "dtmi_jabil_hackathon_cnc_tool_change-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_change-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_tool_change-1/hasAttributes/SequentialNumber",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_tool_change-1/hasAttributes/SequentialNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
             "name": "EventTime",
             "parent": "dtmi_jabil_hackathon_cnc_tool_change-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_change-1",
             "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_tool_change-1/hasAttributes/EventTime",
@@ -52,15 +79,6 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "ToolNo",
-            "parent": "dtmi_jabil_hackathon_cnc_tool_change-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_change-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_tool_change-1/hasAttributes/ToolNo",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_tool_change-1/hasAttributes/ToolNo"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
             "name": "EMT",
             "parent": "dtmi_jabil_hackathon_cnc_tool_change-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_change-1",
             "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_tool_change-1/hasAttributes/EMT",
@@ -70,29 +88,11 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "SequentialNumber",
-            "parent": "dtmi_jabil_hackathon_cnc_tool_change-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_change-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_tool_change-1/hasAttributes/SequentialNumber",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_tool_change-1/hasAttributes/SequentialNumber"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
             "name": "CreateTime",
             "parent": "dtmi_jabil_hackathon_cnc_tool_change-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_change-1",
             "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_tool_change-1/hasAttributes/CreateTime",
             "contents": [
               "dtmi_jabil_hackathon_cnc_tool_change-1/hasAttributes/CreateTime"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "UseCountAfter",
-            "parent": "dtmi_jabil_hackathon_cnc_tool_change-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_change-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_tool_change-1/hasAttributes/UseCountAfter",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_tool_change-1/hasAttributes/UseCountAfter"
             ]
           },
           {
@@ -132,8 +132,39 @@
           "dataFormat": "DateTime"
         },
         {
+          "name": "ToolNo",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_tool_change-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_change-1/ToolNo",
+          "dataFormat": "Int32"
+        },
+        {
+          "name": "UseCountAfter",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_tool_change-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_change-1/UseCountAfter",
+          "dataFormat": "Int32"
+        },
+        {
+          "name": "SequentialNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_tool_change-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_change-1/SequentialNumber",
+          "dataFormat": "Int32"
+        },
+        {
           "name": "EventTime",
-          "attributeContext": "dtmi_jabil_hackathon_cnc_tool_change-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_change-1/EventTime"
+          "appliedTraits": [
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_tool_change-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_change-1/EventTime",
+          "dataFormat": "DateTime"
         },
         {
           "name": "LimitCount",
@@ -141,14 +172,6 @@
             "is.dataFormat.integer"
           ],
           "attributeContext": "dtmi_jabil_hackathon_cnc_tool_change-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_change-1/LimitCount",
-          "dataFormat": "Int32"
-        },
-        {
-          "name": "ToolNo",
-          "appliedTraits": [
-            "is.dataFormat.integer"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_tool_change-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_change-1/ToolNo",
           "dataFormat": "Int32"
         },
         {
@@ -162,24 +185,15 @@
           "dataFormat": "String"
         },
         {
-          "name": "SequentialNumber",
-          "appliedTraits": [
-            "is.dataFormat.integer"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_tool_change-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_change-1/SequentialNumber",
-          "dataFormat": "Int32"
-        },
-        {
           "name": "CreateTime",
-          "attributeContext": "dtmi_jabil_hackathon_cnc_tool_change-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_change-1/CreateTime"
-        },
-        {
-          "name": "UseCountAfter",
           "appliedTraits": [
-            "is.dataFormat.integer"
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_tool_change-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_change-1/UseCountAfter",
-          "dataFormat": "Int32"
+          "attributeContext": "dtmi_jabil_hackathon_cnc_tool_change-1/attributeContext/dtmi_jabil_hackathon_cnc_tool_change-1/CreateTime",
+          "dataFormat": "DateTime"
         },
         {
           "name": "UseCount",

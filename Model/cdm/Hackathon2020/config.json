@@ -4,14 +4,17 @@
     {
       "type": "local",
       "config": {
-        "root": "C:\\Hack2020\\CDM\\JabilCDM"
+        "root": "E:\\Hack2020\\DtdlToCdmConverter\\CDM\\Hackathon2020"
       },
       "namespace": "local"
     },
     {
-      "type": "local",
+      "type": "cdm-standards",
       "config": {
-        "root": "C:\\Hack2020\\CDM\\CDM\\samples\\example-public-standards"
+        "timeout": 2000.0,
+        "maximumTimeout": 10000.0,
+        "numberOfRetries": 0,
+        "root": "/logical"
       },
       "namespace": "cdm"
     },
