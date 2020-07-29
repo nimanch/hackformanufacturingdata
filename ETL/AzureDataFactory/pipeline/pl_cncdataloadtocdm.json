@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataflow": {
-						"referenceName": "InputDataToCDMTransfer",
+						"referenceName": "CNCDataPreparer",
 						"type": "DataFlowReference"
 					},
 					"compute": {
