@@ -1,1 +1,1 @@
-$dtId,$timestamp,LDBMachineNo,Path,WorkareaName,ShowStationName,Seat,ShowLineName,MachineNo,Row_Num,Equipment,TextDisabled,BuildingName,ShowProjectName
+$dtId,$timestamp,Equipment,LDBMachineNo,Seat,WorkareaName,MachineNo,TextDisabled,ShowProjectName,BuildingName,ShowStationName,Path,Row_Num,ShowLineName

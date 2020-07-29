@@ -25,27 +25,17 @@
           "dataType": "integer"
         },
         {
-          "name": "PartSpec",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
           "name": "LifeStand",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "uid",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "Version",
+          "name": "PartSpec",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "BatchNo",
+          "name": "PartNo",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -55,12 +45,7 @@
           "dataType": "string"
         },
         {
-          "name": "IsDisabled",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "IsDeleted",
+          "name": "Version",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -70,39 +55,9 @@
           "dataType": "string"
         },
         {
-          "name": "VendorUid",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "DateCreated",
-          "purpose": "hasA",
-          "dataType": "datetime"
-        },
-        {
-          "name": "PartNo",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "UserChanged",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
           "name": "DateChanged",
           "purpose": "hasA",
           "dataType": "datetime"
-        },
-        {
-          "name": "Path",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "VendorName",
-          "purpose": "hasA",
-          "dataType": "string"
         },
         {
           "name": "DateDeleted",
@@ -110,17 +65,17 @@
           "dataType": "datetime"
         },
         {
-          "name": "Row_Num",
+          "name": "uid",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "VendorCode",
+          "name": "VendorUid",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "integer"
         },
         {
-          "name": "UserDeleted",
+          "name": "IsDeleted",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -130,7 +85,52 @@
           "dataType": "string"
         },
         {
+          "name": "UserDeleted",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Path",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
           "name": "TextDisabled",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "VendorCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "DateCreated",
+          "purpose": "hasA",
+          "dataType": "datetime"
+        },
+        {
+          "name": "VendorName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Row_Num",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "UserChanged",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "IsDisabled",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "BatchNo",
           "purpose": "hasA",
           "dataType": "string"
         }

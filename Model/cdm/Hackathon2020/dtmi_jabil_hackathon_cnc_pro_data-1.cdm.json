@@ -20,29 +20,9 @@
           "dataType": "dateTime"
         },
         {
-          "name": "SequentialNumber",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
           "name": "CycleRunTm",
           "purpose": "hasA",
           "dataType": "integer"
-        },
-        {
-          "name": "EMT",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "EventTime",
-          "purpose": "hasA",
-          "dataType": "datetime"
-        },
-        {
-          "name": "ProcessStartTm",
-          "purpose": "hasA",
-          "dataType": "string"
         },
         {
           "name": "TotalNum",
@@ -55,19 +35,34 @@
           "dataType": "datetime"
         },
         {
-          "name": "ProcessCycleTm",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
           "name": "MainProgram",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "DataType",
+          "name": "ProcessStartTm",
           "purpose": "hasA",
           "dataType": "string"
+        },
+        {
+          "name": "SequentialNumber",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "EventTime",
+          "purpose": "hasA",
+          "dataType": "datetime"
+        },
+        {
+          "name": "EMT",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "ProcessCycleTm",
+          "purpose": "hasA",
+          "dataType": "integer"
         }
       ],
       "displayName": "CNCProData",

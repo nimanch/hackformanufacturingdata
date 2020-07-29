@@ -34,11 +34,29 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "Tag_D0_Digital",
+            "name": "Tag_Modbus_Humidity",
             "parent": "dtmi_opcfoundation_org_UA_MiaB_Tags-1/attributeContext/dtmi_opcfoundation_org_UA_MiaB_Tags-1",
-            "definition": "resolvedFrom/dtmi_opcfoundation_org_UA_MiaB_Tags-1/hasAttributes/Tag_D0_Digital",
+            "definition": "resolvedFrom/dtmi_opcfoundation_org_UA_MiaB_Tags-1/hasAttributes/Tag_Modbus_Humidity",
             "contents": [
-              "dtmi_opcfoundation_org_UA_MiaB_Tags-1/hasAttributes/Tag_D0_Digital"
+              "dtmi_opcfoundation_org_UA_MiaB_Tags-1/hasAttributes/Tag_Modbus_Humidity"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Tag_D2_Blue",
+            "parent": "dtmi_opcfoundation_org_UA_MiaB_Tags-1/attributeContext/dtmi_opcfoundation_org_UA_MiaB_Tags-1",
+            "definition": "resolvedFrom/dtmi_opcfoundation_org_UA_MiaB_Tags-1/hasAttributes/Tag_D2_Blue",
+            "contents": [
+              "dtmi_opcfoundation_org_UA_MiaB_Tags-1/hasAttributes/Tag_D2_Blue"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Tag_Modbus_Temperature",
+            "parent": "dtmi_opcfoundation_org_UA_MiaB_Tags-1/attributeContext/dtmi_opcfoundation_org_UA_MiaB_Tags-1",
+            "definition": "resolvedFrom/dtmi_opcfoundation_org_UA_MiaB_Tags-1/hasAttributes/Tag_Modbus_Temperature",
+            "contents": [
+              "dtmi_opcfoundation_org_UA_MiaB_Tags-1/hasAttributes/Tag_Modbus_Temperature"
             ]
           },
           {
@@ -61,29 +79,11 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "Tag_Modbus_Temperature",
+            "name": "Tag_D0_Digital",
             "parent": "dtmi_opcfoundation_org_UA_MiaB_Tags-1/attributeContext/dtmi_opcfoundation_org_UA_MiaB_Tags-1",
-            "definition": "resolvedFrom/dtmi_opcfoundation_org_UA_MiaB_Tags-1/hasAttributes/Tag_Modbus_Temperature",
+            "definition": "resolvedFrom/dtmi_opcfoundation_org_UA_MiaB_Tags-1/hasAttributes/Tag_D0_Digital",
             "contents": [
-              "dtmi_opcfoundation_org_UA_MiaB_Tags-1/hasAttributes/Tag_Modbus_Temperature"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "Tag_D2_Blue",
-            "parent": "dtmi_opcfoundation_org_UA_MiaB_Tags-1/attributeContext/dtmi_opcfoundation_org_UA_MiaB_Tags-1",
-            "definition": "resolvedFrom/dtmi_opcfoundation_org_UA_MiaB_Tags-1/hasAttributes/Tag_D2_Blue",
-            "contents": [
-              "dtmi_opcfoundation_org_UA_MiaB_Tags-1/hasAttributes/Tag_D2_Blue"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "Tag_Modbus_Humidity",
-            "parent": "dtmi_opcfoundation_org_UA_MiaB_Tags-1/attributeContext/dtmi_opcfoundation_org_UA_MiaB_Tags-1",
-            "definition": "resolvedFrom/dtmi_opcfoundation_org_UA_MiaB_Tags-1/hasAttributes/Tag_Modbus_Humidity",
-            "contents": [
-              "dtmi_opcfoundation_org_UA_MiaB_Tags-1/hasAttributes/Tag_Modbus_Humidity"
+              "dtmi_opcfoundation_org_UA_MiaB_Tags-1/hasAttributes/Tag_D0_Digital"
             ]
           }
         ]
@@ -114,11 +114,27 @@
           "dataFormat": "DateTime"
         },
         {
-          "name": "Tag_D0_Digital",
+          "name": "Tag_Modbus_Humidity",
           "appliedTraits": [
             "is.dataFormat.integer"
           ],
-          "attributeContext": "dtmi_opcfoundation_org_UA_MiaB_Tags-1/attributeContext/dtmi_opcfoundation_org_UA_MiaB_Tags-1/Tag_D0_Digital",
+          "attributeContext": "dtmi_opcfoundation_org_UA_MiaB_Tags-1/attributeContext/dtmi_opcfoundation_org_UA_MiaB_Tags-1/Tag_Modbus_Humidity",
+          "dataFormat": "Int32"
+        },
+        {
+          "name": "Tag_D2_Blue",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_opcfoundation_org_UA_MiaB_Tags-1/attributeContext/dtmi_opcfoundation_org_UA_MiaB_Tags-1/Tag_D2_Blue",
+          "dataFormat": "Int32"
+        },
+        {
+          "name": "Tag_Modbus_Temperature",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_opcfoundation_org_UA_MiaB_Tags-1/attributeContext/dtmi_opcfoundation_org_UA_MiaB_Tags-1/Tag_Modbus_Temperature",
           "dataFormat": "Int32"
         },
         {
@@ -138,27 +154,11 @@
           "dataFormat": "Int32"
         },
         {
-          "name": "Tag_Modbus_Temperature",
+          "name": "Tag_D0_Digital",
           "appliedTraits": [
             "is.dataFormat.integer"
           ],
-          "attributeContext": "dtmi_opcfoundation_org_UA_MiaB_Tags-1/attributeContext/dtmi_opcfoundation_org_UA_MiaB_Tags-1/Tag_Modbus_Temperature",
-          "dataFormat": "Int32"
-        },
-        {
-          "name": "Tag_D2_Blue",
-          "appliedTraits": [
-            "is.dataFormat.integer"
-          ],
-          "attributeContext": "dtmi_opcfoundation_org_UA_MiaB_Tags-1/attributeContext/dtmi_opcfoundation_org_UA_MiaB_Tags-1/Tag_D2_Blue",
-          "dataFormat": "Int32"
-        },
-        {
-          "name": "Tag_Modbus_Humidity",
-          "appliedTraits": [
-            "is.dataFormat.integer"
-          ],
-          "attributeContext": "dtmi_opcfoundation_org_UA_MiaB_Tags-1/attributeContext/dtmi_opcfoundation_org_UA_MiaB_Tags-1/Tag_Modbus_Humidity",
+          "attributeContext": "dtmi_opcfoundation_org_UA_MiaB_Tags-1/attributeContext/dtmi_opcfoundation_org_UA_MiaB_Tags-1/Tag_D0_Digital",
           "dataFormat": "Int32"
         }
       ],

@@ -34,15 +34,6 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "ServoName",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/ServoName",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/ServoName"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
             "name": "CurrenttoolNo",
             "parent": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1",
             "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/CurrenttoolNo",
@@ -52,11 +43,83 @@
           },
           {
             "type": "attributeDefinition",
+            "name": "ShutdownTm",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/ShutdownTm",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/ShutdownTm"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CreateTime",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/CreateTime",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/CreateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
             "name": "EMT",
             "parent": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1",
             "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/EMT",
             "contents": [
               "dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/EMT"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SequentialNumber",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/SequentialNumber",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/SequentialNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ProgramStep",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/ProgramStep",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/ProgramStep"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PowerOn",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/PowerOn",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/PowerOn"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "UseAxisNo",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/UseAxisNo",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/UseAxisNo"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "PowerOnTm",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/PowerOnTm",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/PowerOnTm"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "MaxAxisNo",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/MaxAxisNo",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/MaxAxisNo"
             ]
           },
           {
@@ -79,56 +142,20 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "PowerOn",
+            "name": "EventTime",
             "parent": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/PowerOn",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/EventTime",
             "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/PowerOn"
+              "dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/EventTime"
             ]
           },
           {
             "type": "attributeDefinition",
-            "name": "Programnote",
+            "name": "ServoName",
             "parent": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/Programnote",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/ServoName",
             "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/Programnote"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "CreateTime",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/CreateTime",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/CreateTime"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "MainProgram",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/MainProgram",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/MainProgram"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "UseAxisNo",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/UseAxisNo",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/UseAxisNo"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "SequentialNumber",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/SequentialNumber",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/SequentialNumber"
+              "dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/ServoName"
             ]
           },
           {
@@ -142,20 +169,11 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "ShutdownTm",
+            "name": "MainProgram",
             "parent": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/ShutdownTm",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/MainProgram",
             "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/ShutdownTm"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "PowerOnTm",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/PowerOnTm",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/PowerOnTm"
+              "dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/MainProgram"
             ]
           },
           {
@@ -169,24 +187,6 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "ProgramStep",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/ProgramStep",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/ProgramStep"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "MaxAxisNo",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/MaxAxisNo",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/MaxAxisNo"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
             "name": "CNCMode",
             "parent": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1",
             "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/CNCMode",
@@ -196,11 +196,11 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "EventTime",
+            "name": "Programnote",
             "parent": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/EventTime",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/Programnote",
             "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/EventTime"
+              "dtmi_jabil_hackathon_cnc_data_group1-1/hasAttributes/Programnote"
             ]
           }
         ]
@@ -231,22 +231,26 @@
           "dataFormat": "DateTime"
         },
         {
-          "name": "ServoName",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1/ServoName",
-          "dataFormat": "String"
-        },
-        {
           "name": "CurrenttoolNo",
           "appliedTraits": [
             "is.dataFormat.integer"
           ],
           "attributeContext": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1/CurrenttoolNo",
           "dataFormat": "Int32"
+        },
+        {
+          "name": "ShutdownTm",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1/ShutdownTm",
+          "dataFormat": "String"
+        },
+        {
+          "name": "CreateTime",
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1/CreateTime"
         },
         {
           "name": "EMT",
@@ -257,6 +261,58 @@
           ],
           "attributeContext": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1/EMT",
           "dataFormat": "String"
+        },
+        {
+          "name": "SequentialNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1/SequentialNumber",
+          "dataFormat": "Int32"
+        },
+        {
+          "name": "ProgramStep",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1/ProgramStep",
+          "dataFormat": "String"
+        },
+        {
+          "name": "PowerOn",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1/PowerOn",
+          "dataFormat": "String"
+        },
+        {
+          "name": "UseAxisNo",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1/UseAxisNo",
+          "dataFormat": "Int32"
+        },
+        {
+          "name": "PowerOnTm",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1/PowerOnTm",
+          "dataFormat": "Int32"
+        },
+        {
+          "name": "MaxAxisNo",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1/MaxAxisNo",
+          "dataFormat": "Int32"
         },
         {
           "name": "CycleRunTm",
@@ -275,54 +331,18 @@
           "dataFormat": "Int32"
         },
         {
-          "name": "PowerOn",
+          "name": "EventTime",
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1/EventTime"
+        },
+        {
+          "name": "ServoName",
           "appliedTraits": [
             "is.dataFormat.character",
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1/PowerOn",
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1/ServoName",
           "dataFormat": "String"
-        },
-        {
-          "name": "Programnote",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1/Programnote",
-          "dataFormat": "String"
-        },
-        {
-          "name": "CreateTime",
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1/CreateTime"
-        },
-        {
-          "name": "MainProgram",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1/MainProgram",
-          "dataFormat": "String"
-        },
-        {
-          "name": "UseAxisNo",
-          "appliedTraits": [
-            "is.dataFormat.integer"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1/UseAxisNo",
-          "dataFormat": "Int32"
-        },
-        {
-          "name": "SequentialNumber",
-          "appliedTraits": [
-            "is.dataFormat.integer"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1/SequentialNumber",
-          "dataFormat": "Int32"
         },
         {
           "name": "NowProgram",
@@ -335,22 +355,14 @@
           "dataFormat": "String"
         },
         {
-          "name": "ShutdownTm",
+          "name": "MainProgram",
           "appliedTraits": [
             "is.dataFormat.character",
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1/ShutdownTm",
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1/MainProgram",
           "dataFormat": "String"
-        },
-        {
-          "name": "PowerOnTm",
-          "appliedTraits": [
-            "is.dataFormat.integer"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1/PowerOnTm",
-          "dataFormat": "Int32"
         },
         {
           "name": "Singlenote",
@@ -363,24 +375,6 @@
           "dataFormat": "String"
         },
         {
-          "name": "ProgramStep",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1/ProgramStep",
-          "dataFormat": "String"
-        },
-        {
-          "name": "MaxAxisNo",
-          "appliedTraits": [
-            "is.dataFormat.integer"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1/MaxAxisNo",
-          "dataFormat": "Int32"
-        },
-        {
           "name": "CNCMode",
           "appliedTraits": [
             "is.dataFormat.character",
@@ -391,8 +385,14 @@
           "dataFormat": "String"
         },
         {
-          "name": "EventTime",
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1/EventTime"
+          "name": "Programnote",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group1-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group1-1/Programnote",
+          "dataFormat": "String"
         }
       ],
       "displayName": "CNCDataGroup1",

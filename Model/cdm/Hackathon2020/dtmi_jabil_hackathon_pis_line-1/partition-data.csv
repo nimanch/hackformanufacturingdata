@@ -1,1 +1,1 @@
-$dtId,$timestamp,LineCode,ProjectUid,uid,IsDisabled,LineName,DateCreated,UserChanged,Remark,IsDeleted,DateChanged,OrgUid,UserDeleted,UserCreated,DateDeleted
+$dtId,$timestamp,OrgUid,uid,DateDeleted,DateCreated,IsDisabled,UserChanged,ProjectUid,UserDeleted,Remark,LineName,LineCode,IsDeleted,UserCreated,DateChanged

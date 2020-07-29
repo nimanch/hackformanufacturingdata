@@ -34,20 +34,11 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "EventTime",
+            "name": "EMT",
             "parent": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_status-1/hasAttributes/EventTime",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_status-1/hasAttributes/EMT",
             "contents": [
-              "dtmi_jabil_hackathon_cnc_status-1/hasAttributes/EventTime"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "TotalNum",
-            "parent": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_status-1/hasAttributes/TotalNum",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_status-1/hasAttributes/TotalNum"
+              "dtmi_jabil_hackathon_cnc_status-1/hasAttributes/EMT"
             ]
           },
           {
@@ -61,38 +52,11 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "DataType",
+            "name": "EventTime",
             "parent": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_status-1/hasAttributes/DataType",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_status-1/hasAttributes/EventTime",
             "contents": [
-              "dtmi_jabil_hackathon_cnc_status-1/hasAttributes/DataType"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "Category",
-            "parent": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_status-1/hasAttributes/Category",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_status-1/hasAttributes/Category"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "Status",
-            "parent": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_status-1/hasAttributes/Status",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_status-1/hasAttributes/Status"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "SequentialNumber",
-            "parent": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_status-1/hasAttributes/SequentialNumber",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_status-1/hasAttributes/SequentialNumber"
+              "dtmi_jabil_hackathon_cnc_status-1/hasAttributes/EventTime"
             ]
           },
           {
@@ -106,11 +70,38 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "EMT",
+            "name": "Category",
             "parent": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_status-1/hasAttributes/EMT",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_status-1/hasAttributes/Category",
             "contents": [
-              "dtmi_jabil_hackathon_cnc_status-1/hasAttributes/EMT"
+              "dtmi_jabil_hackathon_cnc_status-1/hasAttributes/Category"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "SequentialNumber",
+            "parent": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_status-1/hasAttributes/SequentialNumber",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_status-1/hasAttributes/SequentialNumber"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "TotalNum",
+            "parent": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_status-1/hasAttributes/TotalNum",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_status-1/hasAttributes/TotalNum"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Status",
+            "parent": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_status-1/hasAttributes/Status",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_status-1/hasAttributes/Status"
             ]
           }
         ]
@@ -141,16 +132,14 @@
           "dataFormat": "DateTime"
         },
         {
-          "name": "EventTime",
-          "attributeContext": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1/EventTime"
-        },
-        {
-          "name": "TotalNum",
+          "name": "EMT",
           "appliedTraits": [
-            "is.dataFormat.integer"
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1/TotalNum",
-          "dataFormat": "Int32"
+          "attributeContext": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1/EMT",
+          "dataFormat": "String"
         },
         {
           "name": "ErrorCode",
@@ -163,14 +152,12 @@
           "dataFormat": "String"
         },
         {
-          "name": "DataType",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1/DataType",
-          "dataFormat": "String"
+          "name": "EventTime",
+          "attributeContext": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1/EventTime"
+        },
+        {
+          "name": "CreateTime",
+          "attributeContext": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1/CreateTime"
         },
         {
           "name": "Category",
@@ -183,16 +170,6 @@
           "dataFormat": "String"
         },
         {
-          "name": "Status",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1/Status",
-          "dataFormat": "String"
-        },
-        {
           "name": "SequentialNumber",
           "appliedTraits": [
             "is.dataFormat.integer"
@@ -201,17 +178,21 @@
           "dataFormat": "Int32"
         },
         {
-          "name": "CreateTime",
-          "attributeContext": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1/CreateTime"
+          "name": "TotalNum",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1/TotalNum",
+          "dataFormat": "Int32"
         },
         {
-          "name": "EMT",
+          "name": "Status",
           "appliedTraits": [
             "is.dataFormat.character",
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1/EMT",
+          "attributeContext": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1/Status",
           "dataFormat": "String"
         }
       ],
