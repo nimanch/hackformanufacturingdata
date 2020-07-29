@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "part-00000-tid-4711089681696309747-e526eeef-9a40-4a36-951f-564fc105ce66-89-1-c000.csv",
-				"folderPath": "cncstatus",
+				"fileName": "data_d0e6d6d9-79d1-4966-ba92-964c3fdf4f7d_201132a1-5f1d-43f6-b450-eecb1b4855c3.csv",
+				"folderPath": "cncdatagroup1/Concatenated",
 				"fileSystem": "cnctransformeddata"
 			},
 			"columnDelimiter": ",",
@@ -41,19 +41,59 @@
 				"type": "String"
 			},
 			{
-				"name": "Status",
+				"name": "PowerOn",
 				"type": "String"
 			},
 			{
-				"name": "ErrorCode",
+				"name": "ServoName",
 				"type": "String"
 			},
 			{
-				"name": "TotalNum",
+				"name": "PowerOnTm",
 				"type": "String"
 			},
 			{
-				"name": "Category",
+				"name": "CuttingTm",
+				"type": "String"
+			},
+			{
+				"name": "CycleRunTm",
+				"type": "String"
+			},
+			{
+				"name": "CurrenttoolNo",
+				"type": "String"
+			},
+			{
+				"name": "MaxAxisNo",
+				"type": "String"
+			},
+			{
+				"name": "UseAxisNo",
+				"type": "String"
+			},
+			{
+				"name": "CNCMode",
+				"type": "String"
+			},
+			{
+				"name": "MainProgram",
+				"type": "String"
+			},
+			{
+				"name": "NowProgram",
+				"type": "String"
+			},
+			{
+				"name": "ProgramStep",
+				"type": "String"
+			},
+			{
+				"name": "Singlenote",
+				"type": "String"
+			},
+			{
+				"name": "Programnote",
 				"type": "String"
 			},
 			{
