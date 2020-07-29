@@ -1,0 +1,125 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Appendfiles",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "mbtest/single/"
+					},
+					{
+						"name": "Destination",
+						"value": "mbtest/combine/"
+					}
+				],
+				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true,
+							"wildcardFolderPath": "single",
+							"wildcardFileName": "*",
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
+					"sink": {
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings",
+							"copyBehavior": "MergeFiles"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".csv"
+						}
+					},
+					"enableStaging": false,
+					"enableSkipIncompatibleRow": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "Month_index",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Month_index",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Predicted_PD",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Predicted_PD",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Year_Quarter",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Year_Quarter",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "PD_Risk_Rating",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PD_Risk_Rating",
+									"type": "String"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "DelimitedText1",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "sinkgen2",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}

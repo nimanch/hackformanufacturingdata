@@ -1,0 +1,44 @@
+{
+    "@id": "dtmi:jabil:hackathon:cnc:tool:info;1",
+    "@type": "Interface",
+    "displayName": "CNCToolInfo",
+   "contents": [
+      {
+        "@type": "Property",
+        "name": "SequentialNumber",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "EMT",
+        "schema": "string"
+      },
+      {
+        "@type": "Property",
+        "name": "ToolNo",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "UseCount",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "LimitCount",
+        "schema": "integer"
+      },
+      {
+        "@type": "Property",
+        "name": "CreateTime",
+        "schema": "dateTime"
+      },
+      {
+        "@type": "Property",
+        "name": "EditTime",
+        "schema": "dateTime"
+      }
+    ],
+    "@context": "dtmi:dtdl:context;2"
+  }
+  
