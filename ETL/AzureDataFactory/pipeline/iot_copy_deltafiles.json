@@ -1,5 +1,5 @@
 {
-	"name": "CopyNewFilesByLastModifiedDate",
+	"name": "iot_copy_deltafiles",
 	"properties": {
 		"description": "Copy new and changed files only by using LastModifiedDate",
 		"activities": [
