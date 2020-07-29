@@ -26,7 +26,7 @@
 					"name": "combine"
 				}
 			],
-			"script": "source(output(\n\t\tMonth_index as string,\n\t\tPredicted_PD as string,\n\t\tYear_Quarter as string,\n\t\tPD_Risk_Rating as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false,\n\twildcardPaths:['**']) ~> single\nsingle union(byName: true)~> combine\ncombine sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tpartitionFileNames:['testcomb.csv'],\n\tpartitionBy('hash', 1),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> sinkdatalakeg2"
+			"script": "source(output(\n\t\tMonth_index as string,\n\t\tPredicted_PD as string,\n\t\tYear_Quarter as string,\n\t\tPD_Risk_Rating as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\twildcardPaths:['*']) ~> single\nsingle union(byName: true)~> combine\ncombine sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tpartitionFileNames:['testcomb.csv'],\n\tpartitionBy('hash', 1),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> sinkdatalakeg2"
 		}
 	}
 }
