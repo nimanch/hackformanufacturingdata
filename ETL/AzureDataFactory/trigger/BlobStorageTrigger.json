@@ -3,7 +3,7 @@
 	"properties": {
 		"description": "BlobStorageTrigger to convert Base64 to string ",
 		"annotations": [],
-		"runtimeState": "Started",
+		"runtimeState": "Stopped",
 		"pipelines": [],
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
