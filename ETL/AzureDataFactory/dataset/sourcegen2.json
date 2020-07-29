@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "cncdatagroup3",
+				"folderPath": "cncprodata",
 				"fileSystem": "cnctransformeddata"
 			},
 			"columnDelimiter": ",",
@@ -40,55 +40,23 @@
 				"type": "String"
 			},
 			{
-				"name": "ProcessStartTm",
-				"type": "String"
-			},
-			{
 				"name": "ProcessCycleTm",
 				"type": "String"
 			},
 			{
-				"name": "X_load",
+				"name": "TotalNum",
 				"type": "String"
 			},
 			{
-				"name": "Y_load",
+				"name": "MainProgram",
 				"type": "String"
 			},
 			{
-				"name": "Z_load",
+				"name": "CycleRunTm",
 				"type": "String"
 			},
 			{
-				"name": "A_load",
-				"type": "String"
-			},
-			{
-				"name": "S_RPM",
-				"type": "String"
-			},
-			{
-				"name": "Feed",
-				"type": "String"
-			},
-			{
-				"name": "AxisangleX",
-				"type": "String"
-			},
-			{
-				"name": "AxisangleY",
-				"type": "String"
-			},
-			{
-				"name": "AxisangleZ",
-				"type": "String"
-			},
-			{
-				"name": "AxisangleA",
-				"type": "String"
-			},
-			{
-				"name": "Toolset",
+				"name": "ProcessStartTm",
 				"type": "String"
 			},
 			{
