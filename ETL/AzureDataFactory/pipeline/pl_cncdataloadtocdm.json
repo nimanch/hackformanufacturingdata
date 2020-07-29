@@ -20,8 +20,8 @@
 						"type": "DataFlowReference"
 					},
 					"compute": {
-						"coreCount": 16,
-						"computeType": "General"
+						"coreCount": 144,
+						"computeType": "ComputeOptimized"
 					}
 				}
 			}

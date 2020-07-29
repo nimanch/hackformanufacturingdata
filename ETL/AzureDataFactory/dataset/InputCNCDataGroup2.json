@@ -1,0 +1,136 @@
+{
+	"name": "InputCNCDataGroup2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "gen2hackstore",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "cncdatagroup2/Concatenated",
+				"fileSystem": "cnctransformeddata"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "$dtid",
+				"type": "String"
+			},
+			{
+				"name": "$timestamp",
+				"type": "String"
+			},
+			{
+				"name": "SequentialNumber",
+				"type": "String"
+			},
+			{
+				"name": "EMT",
+				"type": "String"
+			},
+			{
+				"name": "CreateTime",
+				"type": "String"
+			},
+			{
+				"name": "S_Temp",
+				"type": "String"
+			},
+			{
+				"name": "S_Torque",
+				"type": "String"
+			},
+			{
+				"name": "S_TE",
+				"type": "String"
+			},
+			{
+				"name": "Mcode",
+				"type": "String"
+			},
+			{
+				"name": "Cuttingfluid",
+				"type": "String"
+			},
+			{
+				"name": "S_Gap",
+				"type": "String"
+			},
+			{
+				"name": "ServoTemp",
+				"type": "String"
+			},
+			{
+				"name": "S_Load",
+				"type": "String"
+			},
+			{
+				"name": "CuttingSpeed",
+				"type": "String"
+			},
+			{
+				"name": "ActualSpeedX",
+				"type": "String"
+			},
+			{
+				"name": "ActualSpeedY",
+				"type": "String"
+			},
+			{
+				"name": "ActualSpeedZ",
+				"type": "String"
+			},
+			{
+				"name": "ActualSpeedA",
+				"type": "String"
+			},
+			{
+				"name": "RateJOG",
+				"type": "String"
+			},
+			{
+				"name": "RateFastmove",
+				"type": "String"
+			},
+			{
+				"name": "RateHAND",
+				"type": "String"
+			},
+			{
+				"name": "FastmoveTmC",
+				"type": "String"
+			},
+			{
+				"name": "Fastmovespeed",
+				"type": "String"
+			},
+			{
+				"name": "AbsPos",
+				"type": "String"
+			},
+			{
+				"name": "MachPos",
+				"type": "String"
+			},
+			{
+				"name": "RelPos",
+				"type": "String"
+			},
+			{
+				"name": "Distance",
+				"type": "String"
+			},
+			{
+				"name": "EventTime",
+				"type": "String"
+			}
+		]
+	}
+}
