@@ -1,0 +1,31 @@
+{
+	"name": "PipeLineAddDataToCDMModels",
+	"properties": {
+		"activities": [
+			{
+				"name": "df_cdmload",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "AddIoTDataToCNCStatusData",
+						"type": "DataFlowReference"
+					},
+					"compute": {
+						"coreCount": 144,
+						"computeType": "ComputeOptimized"
+					}
+				}
+			}
+		],
+		"annotations": []
+	}
+}
