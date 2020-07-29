@@ -67,6 +67,10 @@
 			"type": "string",
 			"defaultValue": "/subscriptions/901ba023-b9b4-4c6d-9494-916872c2c164/resourceGroups/Hack/providers/Microsoft.Storage/storageAccounts/gen2hackstore"
 		},
+		"conct_telemetry_properties_typeProperties_scope": {
+			"type": "string",
+			"defaultValue": "/subscriptions/901ba023-b9b4-4c6d-9494-916872c2c164/resourceGroups/Hack/providers/Microsoft.Storage/storageAccounts/gen2hackstore"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "URI to storage account containing linked ARM templates"
@@ -142,6 +146,29 @@
 				}
 			},
 			"dependsOn": []
+		},
+		{
+			"name": "ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"conct_telemetry_properties_typeProperties_scope": {
+						"value": "[parameters('conct_telemetry_properties_typeProperties_scope')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'ArmTemplate_0')]"
+			]
 		}
 	]
 }
