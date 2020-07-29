@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "iot_appened_files",
-				"fileSystem": "mbtest"
+				"folderPath": "cncdatagroup1/Concatenated",
+				"fileSystem": "cnctransformeddata"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
