@@ -298,13 +298,23 @@
 							"secureOutput": false,
 							"secureInput": false
 						},
-						"userProperties": [],
+						"userProperties": [
+							{
+								"name": "Source",
+								"value": "mbtest/single/"
+							},
+							{
+								"name": "Destination",
+								"value": "mbtest/combine/"
+							}
+						],
 						"typeProperties": {
 							"source": {
 								"type": "DelimitedTextSource",
 								"storeSettings": {
 									"type": "AzureBlobFSReadSettings",
 									"recursive": true,
+									"wildcardFolderPath": "single",
 									"wildcardFileName": "*",
 									"enablePartitionDiscovery": false
 								},
@@ -325,6 +335,7 @@
 								}
 							},
 							"enableStaging": false,
+							"enableSkipIncompatibleRow": false,
 							"translator": {
 								"type": "TabularTranslator",
 								"mappings": [
