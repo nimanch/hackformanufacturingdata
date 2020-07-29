@@ -104,11 +104,11 @@
 						"userProperties": [
 							{
 								"name": "Source",
-								"value": "mbtest/single/"
+								"value": "mbtest/iot_delta_files/"
 							},
 							{
 								"name": "Destination",
-								"value": "mbtest/combine/"
+								"value": "mbtest/iot_appened_files/"
 							}
 						],
 						"typeProperties": {
@@ -117,15 +117,7 @@
 								"storeSettings": {
 									"type": "AzureBlobFSReadSettings",
 									"recursive": true,
-									"modifiedDatetimeStart": {
-										"value": "@addminutes(utcnow(),-10)",
-										"type": "Expression"
-									},
-									"modifiedDatetimeEnd": {
-										"value": "@utcnow()",
-										"type": "Expression"
-									},
-									"wildcardFolderPath": "single",
+									"wildcardFolderPath": "newfiles",
 									"wildcardFileName": "*",
 									"enablePartitionDiscovery": false
 								},
@@ -158,7 +150,8 @@
 										},
 										"sink": {
 											"name": "Month_index",
-											"type": "String"
+											"type": "String",
+											"physicalType": "String"
 										}
 									},
 									{
@@ -169,7 +162,8 @@
 										},
 										"sink": {
 											"name": "Predicted_PD",
-											"type": "String"
+											"type": "String",
+											"physicalType": "String"
 										}
 									},
 									{
@@ -180,7 +174,8 @@
 										},
 										"sink": {
 											"name": "Year_Quarter",
-											"type": "String"
+											"type": "String",
+											"physicalType": "String"
 										}
 									},
 									{
@@ -191,7 +186,8 @@
 										},
 										"sink": {
 											"name": "PD_Risk_Rating",
-											"type": "String"
+											"type": "String",
+											"physicalType": "String"
 										}
 									}
 								],
@@ -341,7 +337,7 @@
 								"parameters": {},
 								"datasetParameters": {
 									"srccncstatus": {},
-									"loadcncstatus": {}
+									"PartitionDataSetCDM": {}
 								}
 							},
 							"staging": {},
@@ -427,6 +423,97 @@
 			]
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/JabilPartitionData')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "gen2hackstore",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "DelimitedText",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobFSLocation",
+						"folderPath": "jabilcdm/dtmi_jabil_hackathon_cnc_data_group1-1",
+						"fileSystem": "cdm"
+					},
+					"columnDelimiter": ",",
+					"escapeChar": "\\",
+					"quoteChar": "\""
+				},
+				"schema": [
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					},
+					{
+						"type": "String"
+					}
+				]
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/gen2hackstore')]"
+			]
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/SourceDataset_delta')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
@@ -463,8 +550,8 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"fileName": "part-00000-tid-4711089681696309747-e526eeef-9a40-4a36-951f-564fc105ce66-89-1-c000.csv",
-						"folderPath": "cncstatus",
+						"fileName": "data_d0e6d6d9-79d1-4966-ba92-964c3fdf4f7d_201132a1-5f1d-43f6-b450-eecb1b4855c3.csv",
+						"folderPath": "cncdatagroup1/Concatenated",
 						"fileSystem": "cnctransformeddata"
 					},
 					"columnDelimiter": ",",
@@ -494,19 +581,59 @@
 						"type": "String"
 					},
 					{
-						"name": "Status",
+						"name": "PowerOn",
 						"type": "String"
 					},
 					{
-						"name": "ErrorCode",
+						"name": "ServoName",
 						"type": "String"
 					},
 					{
-						"name": "TotalNum",
+						"name": "PowerOnTm",
 						"type": "String"
 					},
 					{
-						"name": "Category",
+						"name": "CuttingTm",
+						"type": "String"
+					},
+					{
+						"name": "CycleRunTm",
+						"type": "String"
+					},
+					{
+						"name": "CurrenttoolNo",
+						"type": "String"
+					},
+					{
+						"name": "MaxAxisNo",
+						"type": "String"
+					},
+					{
+						"name": "UseAxisNo",
+						"type": "String"
+					},
+					{
+						"name": "CNCMode",
+						"type": "String"
+					},
+					{
+						"name": "MainProgram",
+						"type": "String"
+					},
+					{
+						"name": "NowProgram",
+						"type": "String"
+					},
+					{
+						"name": "ProgramStep",
+						"type": "String"
+					},
+					{
+						"name": "Singlenote",
+						"type": "String"
+					},
+					{
+						"name": "Programnote",
 						"type": "String"
 					},
 					{
@@ -533,35 +660,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"folderPath": "combine",
-						"fileSystem": "mbtest"
-					},
-					"columnDelimiter": ",",
-					"escapeChar": "\\",
-					"firstRowAsHeader": true,
-					"quoteChar": "\""
-				},
-				"schema": []
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/gen2hackstore')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/sourcegen2')]",
-			"type": "Microsoft.DataFactory/factories/datasets",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"linkedServiceName": {
-					"referenceName": "gen2hackstore",
-					"type": "LinkedServiceReference"
-				},
-				"annotations": [],
-				"type": "DelimitedText",
-				"typeProperties": {
-					"location": {
-						"type": "AzureBlobFSLocation",
-						"folderPath": "single",
+						"folderPath": "iot_appened_files",
 						"fileSystem": "mbtest"
 					},
 					"columnDelimiter": ",",
@@ -584,6 +683,71 @@
 					},
 					{
 						"name": "PD_Risk_Rating",
+						"type": "String"
+					}
+				]
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/gen2hackstore')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/sourcegen2')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "gen2hackstore",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "DelimitedText",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobFSLocation",
+						"folderPath": "cnctoolinfo",
+						"fileSystem": "cnctransformeddata"
+					},
+					"columnDelimiter": ",",
+					"escapeChar": "\\",
+					"firstRowAsHeader": true,
+					"quoteChar": "\""
+				},
+				"schema": [
+					{
+						"name": "$dtid",
+						"type": "String"
+					},
+					{
+						"name": "$timestamp",
+						"type": "String"
+					},
+					{
+						"name": "SequentialNumber",
+						"type": "String"
+					},
+					{
+						"name": "EMT",
+						"type": "String"
+					},
+					{
+						"name": "CreateTime",
+						"type": "String"
+					},
+					{
+						"name": "ToolNo",
+						"type": "String"
+					},
+					{
+						"name": "UseCount",
+						"type": "String"
+					},
+					{
+						"name": "LimitCount",
+						"type": "String"
+					},
+					{
+						"name": "EventTime",
 						"type": "String"
 					}
 				]
@@ -872,24 +1036,20 @@
 					],
 					"sinks": [
 						{
-							"linkedService": {
-								"referenceName": "gen2hackstore",
-								"type": "LinkedServiceReference"
+							"dataset": {
+								"referenceName": "JabilPartitionData",
+								"type": "DatasetReference"
 							},
-							"schemaLinkedService": {
-								"referenceName": "gen2hackstore",
-								"type": "LinkedServiceReference"
-							},
-							"name": "loadcncstatus"
+							"name": "PartitionDataSetCDM"
 						}
 					],
 					"transformations": [],
-					"script": "source(output(\n\t\t{$dtid} as string,\n\t\t{$timestamp} as string,\n\t\tSequentialNumber as string,\n\t\tEMT as string,\n\t\tCreateTime as string,\n\t\tStatus as string,\n\t\tErrorCode as string,\n\t\tTotalNum as string,\n\t\tCategory as string,\n\t\tEventTime as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false) ~> srccncstatus\nsrccncstatus sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tentity: 'resolved/dtmi_jabil_hackathon_cnc_status-1.cdm.json/dtmi_jabil_hackathon_cnc_status-1',\n\tformat: 'cdm',\n\tmanifestName: 'default',\n\tcorpusPath: 'jabilcdm',\n\tpartitionPath: 'jabilcdm/dtmi_jabil_hackathon_cnc_status-1/partition-data.csv',\n\tfolderPath: 'jabilcdm',\n\tfileSystem: 'cdm',\n\tcolumnDelimiter: ',',\n\tcolumnNamesAsHeader: false,\n\tcorpusStore: 'adlsgen2',\n\tadlsgen2_fileSystem: 'cdm',\n\tmapColumn(\n\t\t{$dtid},\n\t\t{$timestamp},\n\t\tSequentialNumber,\n\t\tEMT,\n\t\tCreateTime,\n\t\tStatus,\n\t\tErrorCode,\n\t\tTotalNum,\n\t\tCategory,\n\t\tEventTime\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> loadcncstatus"
+					"script": "source(output(\n\t\t{$dtid} as string,\n\t\t{$timestamp} as string,\n\t\tSequentialNumber as string,\n\t\tEMT as string,\n\t\tCreateTime as string,\n\t\tPowerOn as string,\n\t\tServoName as string,\n\t\tPowerOnTm as string,\n\t\tCuttingTm as string,\n\t\tCycleRunTm as string,\n\t\tCurrenttoolNo as string,\n\t\tMaxAxisNo as string,\n\t\tUseAxisNo as string,\n\t\tCNCMode as string,\n\t\tMainProgram as string,\n\t\tNowProgram as string,\n\t\tProgramStep as string,\n\t\tSinglenote as string,\n\t\tProgramnote as string,\n\t\tEventTime as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false) ~> srccncstatus\nsrccncstatus sink(input(\n\t\tColumn_1 as string,\n\t\tColumn_2 as string,\n\t\tColumn_3 as string,\n\t\tColumn_4 as string,\n\t\tColumn_5 as string,\n\t\tColumn_6 as string,\n\t\tColumn_7 as string,\n\t\tColumn_8 as string,\n\t\tColumn_9 as string,\n\t\tColumn_10 as string,\n\t\tColumn_11 as string,\n\t\tColumn_12 as string,\n\t\tColumn_13 as string,\n\t\tColumn_14 as string,\n\t\tColumn_15 as string,\n\t\tColumn_16 as string,\n\t\tColumn_17 as string,\n\t\tColumn_18 as string,\n\t\tColumn_19 as string,\n\t\tColumn_20 as string,\n\t\tColumn_21 as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tmapColumn(\n\t\t{$dtid},\n\t\t{$timestamp},\n\t\tSequentialNumber,\n\t\tEMT,\n\t\tCreateTime,\n\t\tPowerOn,\n\t\tServoName,\n\t\tPowerOnTm,\n\t\tCuttingTm,\n\t\tCycleRunTm,\n\t\tCurrenttoolNo,\n\t\tMaxAxisNo,\n\t\tUseAxisNo,\n\t\tCNCMode,\n\t\tMainProgram,\n\t\tNowProgram,\n\t\tProgramStep,\n\t\tSinglenote,\n\t\tProgramnote,\n\t\tEventTime\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> PartitionDataSetCDM"
 				}
 			},
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/ds_cncstatus')]",
-				"[concat(variables('factoryId'), '/linkedServices/gen2hackstore')]"
+				"[concat(variables('factoryId'), '/datasets/JabilPartitionData')]"
 			]
 		}
 	]
