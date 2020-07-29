@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Azure Function1",
+				"name": "JsontoCsvConvertor",
 				"type": "AzureFunctionActivity",
 				"dependsOn": [],
 				"policy": {
@@ -15,11 +15,11 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"functionName": "Base64ToXMLConvertor",
-					"method": "GET"
+					"functionName": "JsonToCsvConvertor",
+					"method": "POST"
 				},
 				"linkedServiceName": {
-					"referenceName": "Base64Convertor",
+					"referenceName": "JsonToCSVConvertor",
 					"type": "LinkedServiceReference"
 				}
 			}
