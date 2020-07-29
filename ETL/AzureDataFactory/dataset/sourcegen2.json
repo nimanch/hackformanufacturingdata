@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "cnctoolchange",
+				"folderPath": "cnctoolinfo",
 				"fileSystem": "cnctransformeddata"
 			},
 			"columnDelimiter": ",",
@@ -49,10 +49,6 @@
 			},
 			{
 				"name": "LimitCount",
-				"type": "String"
-			},
-			{
-				"name": "UseCountAfter",
 				"type": "String"
 			},
 			{
