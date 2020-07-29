@@ -67,11 +67,11 @@
 			"type": "string",
 			"defaultValue": "/subscriptions/901ba023-b9b4-4c6d-9494-916872c2c164/resourceGroups/Hack/providers/Microsoft.Storage/storageAccounts/gen2hackstore"
 		},
-		"Trigger_iu0_properties_pipeline_parameters_windowStart": {
+		"Trigger_4y9_properties_pipeline_parameters_windowStart": {
 			"type": "string",
 			"defaultValue": "@trigger().outputs.windowStartTime"
 		},
-		"Trigger_iu0_properties_pipeline_parameters_windowEnd": {
+		"Trigger_4y9_properties_pipeline_parameters_windowEnd": {
 			"type": "string",
 			"defaultValue": "@trigger().outputs.windowEndTime"
 		},
@@ -169,11 +169,11 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"Trigger_iu0_properties_pipeline_parameters_windowStart": {
-						"value": "[parameters('Trigger_iu0_properties_pipeline_parameters_windowStart')]"
+					"Trigger_4y9_properties_pipeline_parameters_windowStart": {
+						"value": "[parameters('Trigger_4y9_properties_pipeline_parameters_windowStart')]"
 					},
-					"Trigger_iu0_properties_pipeline_parameters_windowEnd": {
-						"value": "[parameters('Trigger_iu0_properties_pipeline_parameters_windowEnd')]"
+					"Trigger_4y9_properties_pipeline_parameters_windowEnd": {
+						"value": "[parameters('Trigger_4y9_properties_pipeline_parameters_windowEnd')]"
 					},
 					"conct_telemetry_properties_typeProperties_scope": {
 						"value": "[parameters('conct_telemetry_properties_typeProperties_scope')]"

@@ -7,11 +7,11 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "ADF-Hack2020"
 		},
-		"Trigger_iu0_properties_pipeline_parameters_windowStart": {
+		"Trigger_4y9_properties_pipeline_parameters_windowStart": {
 			"type": "string",
 			"defaultValue": "@trigger().outputs.windowStartTime"
 		},
-		"Trigger_iu0_properties_pipeline_parameters_windowEnd": {
+		"Trigger_4y9_properties_pipeline_parameters_windowEnd": {
 			"type": "string",
 			"defaultValue": "@trigger().outputs.windowEndTime"
 		},
@@ -25,33 +25,73 @@
 	},
 	"resources": [
 		{
-			"name": "[concat(parameters('factoryName'), '/Trigger_iu0')]",
+			"name": "[concat(parameters('factoryName'), '/pl_cncdataloadtocdm')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "df_cdmload",
+						"type": "ExecuteDataFlow",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"dataflow": {
+								"referenceName": "df_cdmload_cncstatus",
+								"type": "DataFlowReference",
+								"parameters": {},
+								"datasetParameters": {
+									"srccncstatus": {},
+									"loadcncstatus": {}
+								}
+							},
+							"staging": {},
+							"compute": {
+								"coreCount": 8,
+								"computeType": "General"
+							}
+						}
+					}
+				],
+				"annotations": []
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/Trigger_4y9')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
-				"runtimeState": "Stopped",
+				"runtimeState": "Started",
 				"pipeline": {
 					"pipelineReference": {
-						"referenceName": "last_modified_files",
+						"referenceName": "Copy_delta_files",
 						"type": "PipelineReference"
 					},
 					"parameters": {
 						"windowStart": {
 							"type": "Expression",
-							"value": "[parameters('Trigger_iu0_properties_pipeline_parameters_windowStart')]"
+							"value": "[parameters('Trigger_4y9_properties_pipeline_parameters_windowStart')]"
 						},
 						"windowEnd": {
 							"type": "Expression",
-							"value": "[parameters('Trigger_iu0_properties_pipeline_parameters_windowEnd')]"
+							"value": "[parameters('Trigger_4y9_properties_pipeline_parameters_windowEnd')]"
 						}
 					}
 				},
 				"type": "TumblingWindowTrigger",
 				"typeProperties": {
 					"frequency": "Minute",
-					"interval": 30,
-					"startTime": "2020-07-29T14:45:00.000Z",
+					"interval": 5,
+					"startTime": "2020-07-29T15:21:00.000Z",
 					"delay": "00:00:00",
 					"maxConcurrency": 50,
 					"retryPolicy": {

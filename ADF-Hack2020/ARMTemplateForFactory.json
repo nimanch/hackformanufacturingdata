@@ -67,11 +67,11 @@
 			"type": "string",
 			"defaultValue": "/subscriptions/901ba023-b9b4-4c6d-9494-916872c2c164/resourceGroups/Hack/providers/Microsoft.Storage/storageAccounts/gen2hackstore"
 		},
-		"Trigger_iu0_properties_pipeline_parameters_windowStart": {
+		"Trigger_4y9_properties_pipeline_parameters_windowStart": {
 			"type": "string",
 			"defaultValue": "@trigger().outputs.windowStartTime"
 		},
-		"Trigger_iu0_properties_pipeline_parameters_windowEnd": {
+		"Trigger_4y9_properties_pipeline_parameters_windowEnd": {
 			"type": "string",
 			"defaultValue": "@trigger().outputs.windowEndTime"
 		},
@@ -226,13 +226,13 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/last_modified_files')]",
+			"name": "[concat(parameters('factoryName'), '/Copy_delta_files')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"activities": [
 					{
-						"name": "Copy_iu0",
+						"name": "Copy_delta_files",
 						"type": "Copy",
 						"dependsOn": [],
 						"policy": {
@@ -266,8 +266,7 @@
 										"value": "@pipeline().parameters.windowEnd",
 										"type": "Expression"
 									},
-									"wildcardFileName": "*",
-									"deleteFilesAfterCompletion": false
+									"wildcardFileName": "*"
 								},
 								"formatSettings": {
 									"type": "BinaryReadSettings"
@@ -288,14 +287,14 @@
 						},
 						"inputs": [
 							{
-								"referenceName": "SourceDataset_iu0",
+								"referenceName": "SourceDataset_delta",
 								"type": "DatasetReference",
 								"parameters": {}
 							}
 						],
 						"outputs": [
 							{
-								"referenceName": "DestinationDataset_iu0",
+								"referenceName": "DestinationDataset_delta",
 								"type": "DatasetReference",
 								"parameters": {}
 							}
@@ -313,8 +312,8 @@
 				"annotations": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/SourceDataset_iu0')]",
-				"[concat(variables('factoryId'), '/datasets/DestinationDataset_iu0')]"
+				"[concat(variables('factoryId'), '/datasets/SourceDataset_delta')]",
+				"[concat(variables('factoryId'), '/datasets/DestinationDataset_delta')]"
 			]
 		},
 		{
@@ -360,7 +359,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/DestinationDataset_iu0')]",
+			"name": "[concat(parameters('factoryName'), '/DestinationDataset_delta')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -428,7 +427,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/SourceDataset_iu0')]",
+			"name": "[concat(parameters('factoryName'), '/SourceDataset_delta')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -764,28 +763,52 @@
 			"dependsOn": []
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/Trigger_4y9')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Started",
+				"pipeline": {
+					"pipelineReference": {
+						"referenceName": "Copy_delta_files",
+						"type": "PipelineReference"
+					},
+					"parameters": {
+						"windowStart": {
+							"type": "Expression",
+							"value": "[parameters('Trigger_4y9_properties_pipeline_parameters_windowStart')]"
+						},
+						"windowEnd": {
+							"type": "Expression",
+							"value": "[parameters('Trigger_4y9_properties_pipeline_parameters_windowEnd')]"
+						}
+					}
+				},
+				"type": "TumblingWindowTrigger",
+				"typeProperties": {
+					"frequency": "Minute",
+					"interval": 5,
+					"startTime": "2020-07-29T15:21:00.000Z",
+					"delay": "00:00:00",
+					"maxConcurrency": 50,
+					"retryPolicy": {
+						"intervalInSeconds": 30
+					},
+					"dependsOn": []
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/Copy_delta_files')]"
+			]
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/Trigger_iu0')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"annotations": [],
 				"runtimeState": "Stopped",
-				"pipeline": {
-					"pipelineReference": {
-						"referenceName": "last_modified_files",
-						"type": "PipelineReference"
-					},
-					"parameters": {
-						"windowStart": {
-							"type": "Expression",
-							"value": "[parameters('Trigger_iu0_properties_pipeline_parameters_windowStart')]"
-						},
-						"windowEnd": {
-							"type": "Expression",
-							"value": "[parameters('Trigger_iu0_properties_pipeline_parameters_windowEnd')]"
-						}
-					}
-				},
 				"type": "TumblingWindowTrigger",
 				"typeProperties": {
 					"frequency": "Minute",
@@ -799,9 +822,7 @@
 					"dependsOn": []
 				}
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/pipelines/last_modified_files')]"
-			]
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/conct_telemetry')]",

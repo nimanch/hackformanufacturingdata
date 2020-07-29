@@ -219,7 +219,29 @@
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/DestinationDataset_iu0')]",
+			"name": "[concat(parameters('factoryName'), '/Trigger_iu0')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Stopped",
+				"type": "TumblingWindowTrigger",
+				"typeProperties": {
+					"frequency": "Minute",
+					"interval": 30,
+					"startTime": "2020-07-29T14:45:00.000Z",
+					"delay": "00:00:00",
+					"maxConcurrency": 50,
+					"retryPolicy": {
+						"intervalInSeconds": 30
+					},
+					"dependsOn": []
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/DestinationDataset_delta')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -287,7 +309,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/SourceDataset_iu0')]",
+			"name": "[concat(parameters('factoryName'), '/SourceDataset_delta')]",
 			"type": "Microsoft.DataFactory/factories/datasets",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -618,13 +640,13 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/last_modified_files')]",
+			"name": "[concat(parameters('factoryName'), '/Copy_delta_files')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"activities": [
 					{
-						"name": "Copy_iu0",
+						"name": "Copy_delta_files",
 						"type": "Copy",
 						"dependsOn": [],
 						"policy": {
@@ -658,8 +680,7 @@
 										"value": "@pipeline().parameters.windowEnd",
 										"type": "Expression"
 									},
-									"wildcardFileName": "*",
-									"deleteFilesAfterCompletion": false
+									"wildcardFileName": "*"
 								},
 								"formatSettings": {
 									"type": "BinaryReadSettings"
@@ -680,14 +701,14 @@
 						},
 						"inputs": [
 							{
-								"referenceName": "SourceDataset_iu0",
+								"referenceName": "SourceDataset_delta",
 								"type": "DatasetReference",
 								"parameters": {}
 							}
 						],
 						"outputs": [
 							{
-								"referenceName": "DestinationDataset_iu0",
+								"referenceName": "DestinationDataset_delta",
 								"type": "DatasetReference",
 								"parameters": {}
 							}
@@ -705,8 +726,8 @@
 				"annotations": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/SourceDataset_iu0')]",
-				"[concat(variables('factoryId'), '/datasets/DestinationDataset_iu0')]"
+				"[concat(variables('factoryId'), '/datasets/SourceDataset_delta')]",
+				"[concat(variables('factoryId'), '/datasets/DestinationDataset_delta')]"
 			]
 		},
 		{
@@ -745,48 +766,6 @@
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/ds_cncstatus')]",
 				"[concat(variables('factoryId'), '/linkedServices/gen2hackstore')]"
-			]
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/pl_cncdataloadtocdm')]",
-			"type": "Microsoft.DataFactory/factories/pipelines",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"activities": [
-					{
-						"name": "df_cdmload",
-						"type": "ExecuteDataFlow",
-						"dependsOn": [],
-						"policy": {
-							"timeout": "7.00:00:00",
-							"retry": 0,
-							"retryIntervalInSeconds": 30,
-							"secureOutput": false,
-							"secureInput": false
-						},
-						"userProperties": [],
-						"typeProperties": {
-							"dataflow": {
-								"referenceName": "df_cdmload_cncstatus",
-								"type": "DataFlowReference",
-								"parameters": {},
-								"datasetParameters": {
-									"srccncstatus": {},
-									"loadcncstatus": {}
-								}
-							},
-							"staging": {},
-							"compute": {
-								"coreCount": 8,
-								"computeType": "General"
-							}
-						}
-					}
-				],
-				"annotations": []
-			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/dataflows/df_cdmload_cncstatus')]"
 			]
 		}
 	]
