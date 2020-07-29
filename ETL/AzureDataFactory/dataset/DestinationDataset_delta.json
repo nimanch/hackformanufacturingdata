@@ -1,5 +1,5 @@
 {
-	"name": "DestinationDataset_4y9",
+	"name": "DestinationDataset_delta",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "gen2hackstore",

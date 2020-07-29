@@ -58,13 +58,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "SourceDataset_4y9",
+						"referenceName": "SourceDataset_delta",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "DestinationDataset_4y9",
+						"referenceName": "DestinationDataset_delta",
 						"type": "DatasetReference"
 					}
 				]
