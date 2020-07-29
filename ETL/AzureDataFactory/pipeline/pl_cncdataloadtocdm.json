@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataflow": {
-						"referenceName": "df_cdmload_cncstatus",
+						"referenceName": "DF_IOTHUB_DATAFLOW",
 						"type": "DataFlowReference"
 					},
 					"compute": {
