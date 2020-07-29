@@ -13,14 +13,22 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "mbtest/single/"
+					},
+					{
+						"name": "Destination",
+						"value": "mbtest/combine/"
+					}
+				],
 				"typeProperties": {
 					"source": {
 						"type": "DelimitedTextSource",
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
-							"recursive": true,
-							"wildcardFileName": "*",
+							"fileListPath": "*",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
@@ -36,7 +44,7 @@
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
 							"quoteAllText": true,
-							"fileExtension": ".csv"
+							"fileExtension": "combo.csv"
 						}
 					},
 					"enableStaging": false,
