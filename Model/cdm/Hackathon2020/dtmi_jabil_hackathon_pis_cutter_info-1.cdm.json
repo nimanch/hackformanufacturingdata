@@ -25,7 +25,12 @@
           "dataType": "integer"
         },
         {
-          "name": "PartSpec",
+          "name": "VendorUid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "Version",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -45,22 +50,12 @@
           "dataType": "string"
         },
         {
-          "name": "BatchNo",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "VendorUid",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "Version",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
           "name": "AVGPrice",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Remark",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -70,12 +65,12 @@
           "dataType": "string"
         },
         {
-          "name": "DateChanged",
+          "name": "IsDisabled",
           "purpose": "hasA",
-          "dataType": "dateTime"
+          "dataType": "string"
         },
         {
-          "name": "IsDisabled",
+          "name": "PartSpec",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -85,24 +80,9 @@
           "dataType": "dateTime"
         },
         {
-          "name": "UserCreated",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "DateDeleted",
+          "name": "DateChanged",
           "purpose": "hasA",
           "dataType": "dateTime"
-        },
-        {
-          "name": "Remark",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "Path",
-          "purpose": "hasA",
-          "dataType": "string"
         },
         {
           "name": "UserChanged",
@@ -115,17 +95,27 @@
           "dataType": "string"
         },
         {
+          "name": "BatchNo",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "DateDeleted",
+          "purpose": "hasA",
+          "dataType": "dateTime"
+        },
+        {
           "name": "VendorCode",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "Row_Num",
+          "name": "Path",
           "purpose": "hasA",
-          "dataType": "integer"
+          "dataType": "string"
         },
         {
-          "name": "VendorName",
+          "name": "UserCreated",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -133,6 +123,16 @@
           "name": "TextDisabled",
           "purpose": "hasA",
           "dataType": "string"
+        },
+        {
+          "name": "VendorName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Row_Num",
+          "purpose": "hasA",
+          "dataType": "integer"
         }
       ],
       "displayName": "Cutter Info",

@@ -20,27 +20,7 @@
           "dataType": "dateTime"
         },
         {
-          "name": "ToolNo",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "UseCountAfter",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "SequentialNumber",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "EventTime",
-          "purpose": "hasA",
-          "dataType": "dateTime"
-        },
-        {
-          "name": "LimitCount",
+          "name": "UseCount",
           "purpose": "hasA",
           "dataType": "integer"
         },
@@ -50,12 +30,32 @@
           "dataType": "string"
         },
         {
+          "name": "EventTime",
+          "purpose": "hasA",
+          "dataType": "dateTime"
+        },
+        {
+          "name": "SequentialNumber",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
           "name": "CreateTime",
           "purpose": "hasA",
           "dataType": "dateTime"
         },
         {
-          "name": "UseCount",
+          "name": "LimitCount",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "UseCountAfter",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "ToolNo",
           "purpose": "hasA",
           "dataType": "integer"
         }

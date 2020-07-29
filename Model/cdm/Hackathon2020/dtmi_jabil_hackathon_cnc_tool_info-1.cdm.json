@@ -20,14 +20,14 @@
           "dataType": "dateTime"
         },
         {
-          "name": "CreateTime",
+          "name": "UseCount",
           "purpose": "hasA",
-          "dataType": "dateTime"
+          "dataType": "integer"
         },
         {
-          "name": "EditTime",
+          "name": "SequentialNumber",
           "purpose": "hasA",
-          "dataType": "dateTime"
+          "dataType": "integer"
         },
         {
           "name": "EMT",
@@ -35,14 +35,9 @@
           "dataType": "string"
         },
         {
-          "name": "UseCount",
+          "name": "EditTime",
           "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "ToolNo",
-          "purpose": "hasA",
-          "dataType": "integer"
+          "dataType": "dateTime"
         },
         {
           "name": "LimitCount",
@@ -50,7 +45,12 @@
           "dataType": "integer"
         },
         {
-          "name": "SequentialNumber",
+          "name": "CreateTime",
+          "purpose": "hasA",
+          "dataType": "dateTime"
+        },
+        {
+          "name": "ToolNo",
           "purpose": "hasA",
           "dataType": "integer"
         }

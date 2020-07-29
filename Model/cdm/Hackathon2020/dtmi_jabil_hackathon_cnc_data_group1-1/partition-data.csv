@@ -1,1 +1,1 @@
-$dtId,$timestamp,CreateTime,ProgramStep,MaxAxisNo,UseAxisNo,ShutdownTm,PowerOnTm,NowProgram,CuttingTm,MainProgram,ServoName,PowerOn,SequentialNumber,CNCMode,EMT,Singlenote,CycleRunTm,EventTime,Programnote,CurrenttoolNo
+$dtId,$timestamp,ShutdownTm,UseAxisNo,CycleRunTm,PowerOn,CuttingTm,EMT,CreateTime,ProgramStep,SequentialNumber,ServoName,PowerOnTm,MaxAxisNo,CNCMode,CurrenttoolNo,Singlenote,MainProgram,EventTime,Programnote,NowProgram

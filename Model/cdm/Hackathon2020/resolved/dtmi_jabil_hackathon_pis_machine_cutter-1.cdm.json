@@ -34,20 +34,11 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "Path",
+            "name": "Equipment",
             "parent": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/Path",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/Equipment",
             "contents": [
-              "dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/Path"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "ShowStationName",
-            "parent": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/ShowStationName",
-            "contents": [
-              "dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/ShowStationName"
+              "dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/Equipment"
             ]
           },
           {
@@ -61,29 +52,20 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "TextDisabled",
+            "name": "MachineNo",
             "parent": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/TextDisabled",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/MachineNo",
             "contents": [
-              "dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/TextDisabled"
+              "dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/MachineNo"
             ]
           },
           {
             "type": "attributeDefinition",
-            "name": "Equipment",
+            "name": "Path",
             "parent": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/Equipment",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/Path",
             "contents": [
-              "dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/Equipment"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "Row_Num",
-            "parent": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/Row_Num",
-            "contents": [
-              "dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/Row_Num"
+              "dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/Path"
             ]
           },
           {
@@ -97,29 +79,20 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "ShowProjectName",
+            "name": "TextDisabled",
             "parent": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/ShowProjectName",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/TextDisabled",
             "contents": [
-              "dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/ShowProjectName"
+              "dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/TextDisabled"
             ]
           },
           {
             "type": "attributeDefinition",
-            "name": "MachineNo",
+            "name": "Row_Num",
             "parent": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/MachineNo",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/Row_Num",
             "contents": [
-              "dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/MachineNo"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "ShowLineName",
-            "parent": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/ShowLineName",
-            "contents": [
-              "dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/ShowLineName"
+              "dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/Row_Num"
             ]
           },
           {
@@ -138,6 +111,33 @@
             "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/BuildingName",
             "contents": [
               "dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/BuildingName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ShowStationName",
+            "parent": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/ShowStationName",
+            "contents": [
+              "dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/ShowStationName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ShowLineName",
+            "parent": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/ShowLineName",
+            "contents": [
+              "dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/ShowLineName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ShowProjectName",
+            "parent": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/ShowProjectName",
+            "contents": [
+              "dtmi_jabil_hackathon_pis_machine_cutter-1/hasAttributes/ShowProjectName"
             ]
           }
         ]
@@ -168,24 +168,12 @@
           "dataFormat": "DateTime"
         },
         {
-          "name": "Path",
+          "name": "Equipment",
           "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
+            "is.dataFormat.integer"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1/Path",
-          "dataFormat": "String"
-        },
-        {
-          "name": "ShowStationName",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1/ShowStationName",
-          "dataFormat": "String"
+          "attributeContext": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1/Equipment",
+          "dataFormat": "Int32"
         },
         {
           "name": "LDBMachineNo",
@@ -195,50 +183,6 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1/LDBMachineNo",
-          "dataFormat": "String"
-        },
-        {
-          "name": "TextDisabled",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1/TextDisabled",
-          "dataFormat": "String"
-        },
-        {
-          "name": "Equipment",
-          "appliedTraits": [
-            "is.dataFormat.integer"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1/Equipment",
-          "dataFormat": "Int32"
-        },
-        {
-          "name": "Row_Num",
-          "appliedTraits": [
-            "is.dataFormat.integer"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1/Row_Num",
-          "dataFormat": "Int32"
-        },
-        {
-          "name": "Seat",
-          "appliedTraits": [
-            "is.dataFormat.integer"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1/Seat",
-          "dataFormat": "Int32"
-        },
-        {
-          "name": "ShowProjectName",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1/ShowProjectName",
           "dataFormat": "String"
         },
         {
@@ -252,14 +196,40 @@
           "dataFormat": "String"
         },
         {
-          "name": "ShowLineName",
+          "name": "Path",
           "appliedTraits": [
             "is.dataFormat.character",
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1/ShowLineName",
+          "attributeContext": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1/Path",
           "dataFormat": "String"
+        },
+        {
+          "name": "Seat",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1/Seat",
+          "dataFormat": "Int32"
+        },
+        {
+          "name": "TextDisabled",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1/TextDisabled",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Row_Num",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1/Row_Num",
+          "dataFormat": "Int32"
         },
         {
           "name": "WorkareaName",
@@ -279,6 +249,36 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1/BuildingName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "ShowStationName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1/ShowStationName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "ShowLineName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1/ShowLineName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "ShowProjectName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_pis_machine_cutter-1/attributeContext/dtmi_jabil_hackathon_pis_machine_cutter-1/ShowProjectName",
           "dataFormat": "String"
         }
       ],

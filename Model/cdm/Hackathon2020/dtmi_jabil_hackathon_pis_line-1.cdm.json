@@ -20,14 +20,24 @@
           "dataType": "dateTime"
         },
         {
+          "name": "OrgUid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "LineName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
           "name": "uid",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "Remark",
+          "name": "ProjectUid",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "integer"
         },
         {
           "name": "DateDeleted",
@@ -40,21 +50,6 @@
           "dataType": "integer"
         },
         {
-          "name": "ProjectUid",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "OrgUid",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "UserChanged",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
           "name": "IsDeleted",
           "purpose": "hasA",
           "dataType": "string"
@@ -65,7 +60,17 @@
           "dataType": "string"
         },
         {
-          "name": "LineName",
+          "name": "IsDisabled",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Remark",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "UserDeleted",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -80,12 +85,7 @@
           "dataType": "dateTime"
         },
         {
-          "name": "UserDeleted",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "IsDisabled",
+          "name": "UserChanged",
           "purpose": "hasA",
           "dataType": "string"
         }

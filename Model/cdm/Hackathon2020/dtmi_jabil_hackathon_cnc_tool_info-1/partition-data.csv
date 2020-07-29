@@ -1,1 +1,1 @@
-$dtId,$timestamp,CreateTime,EditTime,EMT,UseCount,ToolNo,LimitCount,SequentialNumber
+$dtId,$timestamp,UseCount,SequentialNumber,EMT,EditTime,LimitCount,CreateTime,ToolNo

@@ -20,6 +20,36 @@
           "dataType": "dateTime"
         },
         {
+          "name": "ShutdownTm",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "UseAxisNo",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "CycleRunTm",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "PowerOn",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "CuttingTm",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "EMT",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
           "name": "CreateTime",
           "purpose": "hasA",
           "dataType": "dateTime"
@@ -30,17 +60,12 @@
           "dataType": "string"
         },
         {
-          "name": "MaxAxisNo",
+          "name": "SequentialNumber",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "UseAxisNo",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "ShutdownTm",
+          "name": "ServoName",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -50,32 +75,7 @@
           "dataType": "integer"
         },
         {
-          "name": "NowProgram",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "CuttingTm",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "MainProgram",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "ServoName",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "PowerOn",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "SequentialNumber",
+          "name": "MaxAxisNo",
           "purpose": "hasA",
           "dataType": "integer"
         },
@@ -85,9 +85,9 @@
           "dataType": "string"
         },
         {
-          "name": "EMT",
+          "name": "CurrenttoolNo",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "integer"
         },
         {
           "name": "Singlenote",
@@ -95,9 +95,9 @@
           "dataType": "string"
         },
         {
-          "name": "CycleRunTm",
+          "name": "MainProgram",
           "purpose": "hasA",
-          "dataType": "integer"
+          "dataType": "string"
         },
         {
           "name": "EventTime",
@@ -110,9 +110,9 @@
           "dataType": "string"
         },
         {
-          "name": "CurrenttoolNo",
+          "name": "NowProgram",
           "purpose": "hasA",
-          "dataType": "integer"
+          "dataType": "string"
         }
       ],
       "displayName": "CNCDataGroup1",

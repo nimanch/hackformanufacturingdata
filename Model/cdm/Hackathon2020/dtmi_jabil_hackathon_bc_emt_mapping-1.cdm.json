@@ -20,7 +20,17 @@
           "dataType": "dateTime"
         },
         {
+          "name": "Project",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
           "name": "EMT",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Name",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -30,17 +40,7 @@
           "dataType": "string"
         },
         {
-          "name": "Project",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
           "name": "Process",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "Name",
           "purpose": "hasA",
           "dataType": "string"
         }

@@ -34,29 +34,11 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "AllData",
+            "name": "SequentialNumber",
             "parent": "dtmi_jabil_hackathon_bc_all-1/attributeContext/dtmi_jabil_hackathon_bc_all-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_bc_all-1/hasAttributes/AllData",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_bc_all-1/hasAttributes/SequentialNumber",
             "contents": [
-              "dtmi_jabil_hackathon_bc_all-1/hasAttributes/AllData"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "DataType",
-            "parent": "dtmi_jabil_hackathon_bc_all-1/attributeContext/dtmi_jabil_hackathon_bc_all-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_bc_all-1/hasAttributes/DataType",
-            "contents": [
-              "dtmi_jabil_hackathon_bc_all-1/hasAttributes/DataType"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "EMT",
-            "parent": "dtmi_jabil_hackathon_bc_all-1/attributeContext/dtmi_jabil_hackathon_bc_all-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_bc_all-1/hasAttributes/EMT",
-            "contents": [
-              "dtmi_jabil_hackathon_bc_all-1/hasAttributes/EMT"
+              "dtmi_jabil_hackathon_bc_all-1/hasAttributes/SequentialNumber"
             ]
           },
           {
@@ -70,11 +52,29 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "SequentialNumber",
+            "name": "DataType",
             "parent": "dtmi_jabil_hackathon_bc_all-1/attributeContext/dtmi_jabil_hackathon_bc_all-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_bc_all-1/hasAttributes/SequentialNumber",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_bc_all-1/hasAttributes/DataType",
             "contents": [
-              "dtmi_jabil_hackathon_bc_all-1/hasAttributes/SequentialNumber"
+              "dtmi_jabil_hackathon_bc_all-1/hasAttributes/DataType"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AllData",
+            "parent": "dtmi_jabil_hackathon_bc_all-1/attributeContext/dtmi_jabil_hackathon_bc_all-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_bc_all-1/hasAttributes/AllData",
+            "contents": [
+              "dtmi_jabil_hackathon_bc_all-1/hasAttributes/AllData"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "EMT",
+            "parent": "dtmi_jabil_hackathon_bc_all-1/attributeContext/dtmi_jabil_hackathon_bc_all-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_bc_all-1/hasAttributes/EMT",
+            "contents": [
+              "dtmi_jabil_hackathon_bc_all-1/hasAttributes/EMT"
             ]
           }
         ]
@@ -105,33 +105,13 @@
           "dataFormat": "DateTime"
         },
         {
-          "name": "AllData",
+          "name": "SequentialNumber",
           "appliedTraits": [
             "is.dataFormat.character",
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_bc_all-1/attributeContext/dtmi_jabil_hackathon_bc_all-1/AllData",
-          "dataFormat": "String"
-        },
-        {
-          "name": "DataType",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_bc_all-1/attributeContext/dtmi_jabil_hackathon_bc_all-1/DataType",
-          "dataFormat": "String"
-        },
-        {
-          "name": "EMT",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_bc_all-1/attributeContext/dtmi_jabil_hackathon_bc_all-1/EMT",
+          "attributeContext": "dtmi_jabil_hackathon_bc_all-1/attributeContext/dtmi_jabil_hackathon_bc_all-1/SequentialNumber",
           "dataFormat": "String"
         },
         {
@@ -146,13 +126,33 @@
           "dataFormat": "DateTime"
         },
         {
-          "name": "SequentialNumber",
+          "name": "DataType",
           "appliedTraits": [
             "is.dataFormat.character",
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_bc_all-1/attributeContext/dtmi_jabil_hackathon_bc_all-1/SequentialNumber",
+          "attributeContext": "dtmi_jabil_hackathon_bc_all-1/attributeContext/dtmi_jabil_hackathon_bc_all-1/DataType",
+          "dataFormat": "String"
+        },
+        {
+          "name": "AllData",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_bc_all-1/attributeContext/dtmi_jabil_hackathon_bc_all-1/AllData",
+          "dataFormat": "String"
+        },
+        {
+          "name": "EMT",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_bc_all-1/attributeContext/dtmi_jabil_hackathon_bc_all-1/EMT",
           "dataFormat": "String"
         }
       ],

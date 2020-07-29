@@ -20,12 +20,17 @@
           "dataType": "dateTime"
         },
         {
-          "name": "pid",
+          "name": "uid",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "Path",
+          "name": "Type",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Text",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -35,22 +40,12 @@
           "dataType": "string"
         },
         {
-          "name": "uid",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "UserChanged",
+          "name": "name",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "DateCreated",
-          "purpose": "hasA",
-          "dataType": "dateTime"
-        },
-        {
-          "name": "IsDeleted",
+          "name": "Path",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -60,7 +55,17 @@
           "dataType": "integer"
         },
         {
-          "name": "name",
+          "name": "DateDeleted",
+          "purpose": "hasA",
+          "dataType": "dateTime"
+        },
+        {
+          "name": "pid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "UserCreated",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -75,22 +80,7 @@
           "dataType": "string"
         },
         {
-          "name": "Type",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "UserCreated",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
           "name": "DateChanged",
-          "purpose": "hasA",
-          "dataType": "dateTime"
-        },
-        {
-          "name": "DateDeleted",
           "purpose": "hasA",
           "dataType": "dateTime"
         },
@@ -100,7 +90,17 @@
           "dataType": "string"
         },
         {
-          "name": "Text",
+          "name": "DateCreated",
+          "purpose": "hasA",
+          "dataType": "dateTime"
+        },
+        {
+          "name": "UserChanged",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "IsDeleted",
           "purpose": "hasA",
           "dataType": "string"
         }

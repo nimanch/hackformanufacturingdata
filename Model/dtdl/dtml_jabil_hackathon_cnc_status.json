@@ -42,6 +42,11 @@
         "@type": "Property",
         "name": "EventTime",
         "schema": "dateTime"
+      },
+      {
+        "@type": "Property",
+        "name": "Tag_Modbus_Humidity",
+        "schema": "integer"       
       }
     ],
     "@context": "dtmi:dtdl:context;2"

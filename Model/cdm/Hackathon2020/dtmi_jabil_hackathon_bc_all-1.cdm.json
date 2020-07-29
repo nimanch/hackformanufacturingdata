@@ -20,17 +20,7 @@
           "dataType": "dateTime"
         },
         {
-          "name": "AllData",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "DataType",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "EMT",
+          "name": "SequentialNumber",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -40,7 +30,17 @@
           "dataType": "dateTime"
         },
         {
-          "name": "SequentialNumber",
+          "name": "DataType",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "AllData",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "EMT",
           "purpose": "hasA",
           "dataType": "string"
         }

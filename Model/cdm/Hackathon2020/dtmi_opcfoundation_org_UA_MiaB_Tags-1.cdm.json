@@ -25,17 +25,17 @@
           "dataType": "integer"
         },
         {
-          "name": "Tag_D2_Blue",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "Tag_Modbus_Temperature",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
           "name": "Tag_D0_Digital",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "Tag_Modbus_CO2",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "Tag_D2_Blue",
           "purpose": "hasA",
           "dataType": "integer"
         },
@@ -45,7 +45,7 @@
           "dataType": "integer"
         },
         {
-          "name": "Tag_Modbus_CO2",
+          "name": "Tag_Modbus_Temperature",
           "purpose": "hasA",
           "dataType": "integer"
         }

@@ -34,20 +34,11 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "TotalNum",
+            "name": "SequentialNumber",
             "parent": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_status-1/hasAttributes/TotalNum",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_status-1/hasAttributes/SequentialNumber",
             "contents": [
-              "dtmi_jabil_hackathon_cnc_status-1/hasAttributes/TotalNum"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "Status",
-            "parent": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_status-1/hasAttributes/Status",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_status-1/hasAttributes/Status"
+              "dtmi_jabil_hackathon_cnc_status-1/hasAttributes/SequentialNumber"
             ]
           },
           {
@@ -79,11 +70,29 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "EventTime",
+            "name": "TotalNum",
             "parent": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_status-1/hasAttributes/EventTime",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_status-1/hasAttributes/TotalNum",
             "contents": [
-              "dtmi_jabil_hackathon_cnc_status-1/hasAttributes/EventTime"
+              "dtmi_jabil_hackathon_cnc_status-1/hasAttributes/TotalNum"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Status",
+            "parent": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_status-1/hasAttributes/Status",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_status-1/hasAttributes/Status"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Tag_Modbus_Humidity",
+            "parent": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_status-1/hasAttributes/Tag_Modbus_Humidity",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_status-1/hasAttributes/Tag_Modbus_Humidity"
             ]
           },
           {
@@ -97,11 +106,11 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "SequentialNumber",
+            "name": "EventTime",
             "parent": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_status-1/hasAttributes/SequentialNumber",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_status-1/hasAttributes/EventTime",
             "contents": [
-              "dtmi_jabil_hackathon_cnc_status-1/hasAttributes/SequentialNumber"
+              "dtmi_jabil_hackathon_cnc_status-1/hasAttributes/EventTime"
             ]
           }
         ]
@@ -132,22 +141,12 @@
           "dataFormat": "DateTime"
         },
         {
-          "name": "TotalNum",
+          "name": "SequentialNumber",
           "appliedTraits": [
             "is.dataFormat.integer"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1/TotalNum",
+          "attributeContext": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1/SequentialNumber",
           "dataFormat": "Int32"
-        },
-        {
-          "name": "Status",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1/Status",
-          "dataFormat": "String"
         },
         {
           "name": "EMT",
@@ -181,15 +180,30 @@
           "dataFormat": "String"
         },
         {
-          "name": "EventTime",
+          "name": "TotalNum",
           "appliedTraits": [
-            "is.dataFormat.date",
-            "means.measurement.date",
-            "is.dataFormat.time",
-            "means.measurement.time"
+            "is.dataFormat.integer"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1/EventTime",
-          "dataFormat": "DateTime"
+          "attributeContext": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1/TotalNum",
+          "dataFormat": "Int32"
+        },
+        {
+          "name": "Status",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1/Status",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Tag_Modbus_Humidity",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1/Tag_Modbus_Humidity",
+          "dataFormat": "Int32"
         },
         {
           "name": "ErrorCode",
@@ -202,12 +216,15 @@
           "dataFormat": "String"
         },
         {
-          "name": "SequentialNumber",
+          "name": "EventTime",
           "appliedTraits": [
-            "is.dataFormat.integer"
+            "is.dataFormat.date",
+            "means.measurement.date",
+            "is.dataFormat.time",
+            "means.measurement.time"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1/SequentialNumber",
-          "dataFormat": "Int32"
+          "attributeContext": "dtmi_jabil_hackathon_cnc_status-1/attributeContext/dtmi_jabil_hackathon_cnc_status-1/EventTime",
+          "dataFormat": "DateTime"
         }
       ],
       "displayName": "CNCStatus",

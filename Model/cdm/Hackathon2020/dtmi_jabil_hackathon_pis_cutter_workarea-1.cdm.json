@@ -20,9 +20,14 @@
           "dataType": "dateTime"
         },
         {
-          "name": "uid",
+          "name": "OrgUid",
           "purpose": "hasA",
           "dataType": "integer"
+        },
+        {
+          "name": "IsDeleted",
+          "purpose": "hasA",
+          "dataType": "string"
         },
         {
           "name": "KPIStationUid",
@@ -30,34 +35,24 @@
           "dataType": "integer"
         },
         {
-          "name": "OrgUid",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "IsDisabled",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
           "name": "DateCreated",
           "purpose": "hasA",
           "dataType": "dateTime"
         },
         {
-          "name": "ShowStationName",
+          "name": "Remark",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "integer"
         },
         {
-          "name": "UserChanged",
+          "name": "uid",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "integer"
         },
         {
-          "name": "UserDeleted",
+          "name": "DateChanged",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "dateTime"
         },
         {
           "name": "pid",
@@ -75,12 +70,17 @@
           "dataType": "dateTime"
         },
         {
-          "name": "Remark",
+          "name": "UserChanged",
           "purpose": "hasA",
-          "dataType": "integer"
+          "dataType": "string"
         },
         {
-          "name": "Path",
+          "name": "UserDeleted",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "ShowStationName",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -90,7 +90,12 @@
           "dataType": "integer"
         },
         {
-          "name": "ShowProjectName",
+          "name": "IsDisabled",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "ShowLineName",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -100,29 +105,9 @@
           "dataType": "integer"
         },
         {
-          "name": "WorkareaName",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
           "name": "WorkProjectUid",
           "purpose": "hasA",
           "dataType": "string"
-        },
-        {
-          "name": "IsDeleted",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "DateChanged",
-          "purpose": "hasA",
-          "dataType": "dateTime"
-        },
-        {
-          "name": "Row_Num",
-          "purpose": "hasA",
-          "dataType": "integer"
         },
         {
           "name": "TextDisabled",
@@ -130,7 +115,22 @@
           "dataType": "string"
         },
         {
-          "name": "ShowLineName",
+          "name": "ShowProjectName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Row_Num",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "Path",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "WorkareaName",
           "purpose": "hasA",
           "dataType": "string"
         }

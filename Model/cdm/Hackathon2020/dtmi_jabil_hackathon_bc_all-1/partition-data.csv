@@ -1,1 +1,1 @@
-$dtId,$timestamp,AllData,DataType,EMT,CreateTime,SequentialNumber
+$dtId,$timestamp,SequentialNumber,CreateTime,DataType,AllData,EMT

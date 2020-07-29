@@ -25,57 +25,12 @@
           "dataType": "integer"
         },
         {
-          "name": "ActualSpeedZ",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "Mcode",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "S_Torque",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "S_TE",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "ActualSpeedX",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
           "name": "SequentialNumber",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "S_Load",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "RateFastmove",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "RateJOG",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "CuttingSpeed",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "Fastmovespeed",
+          "name": "EMT",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -85,44 +40,9 @@
           "dataType": "integer"
         },
         {
-          "name": "ActualSpeedA",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "RelPos",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "CreateTime",
-          "purpose": "hasA",
-          "dataType": "dateTime"
-        },
-        {
-          "name": "EMT",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "AbsPos",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "Tag_D1_Analog",
+          "name": "S_Torque",
           "purpose": "hasA",
           "dataType": "integer"
-        },
-        {
-          "name": "RateHAND",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "Distance",
-          "purpose": "hasA",
-          "dataType": "string"
         },
         {
           "name": "S_Temp",
@@ -130,7 +50,7 @@
           "dataType": "integer"
         },
         {
-          "name": "ActualSpeedY",
+          "name": "RateFastmove",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -140,7 +60,77 @@
           "dataType": "integer"
         },
         {
+          "name": "ActualSpeedX",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "CuttingSpeed",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "S_Load",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "ActualSpeedZ",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
           "name": "MachPos",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "CreateTime",
+          "purpose": "hasA",
+          "dataType": "dateTime"
+        },
+        {
+          "name": "S_TE",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "ActualSpeedA",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Fastmovespeed",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "ActualSpeedY",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "AbsPos",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Distance",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Tag_D1_Analog",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "Mcode",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "RateHAND",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -150,7 +140,17 @@
           "dataType": "dateTime"
         },
         {
+          "name": "RelPos",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
           "name": "FastmoveTmC",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "RateJOG",
           "purpose": "hasA",
           "dataType": "string"
         }

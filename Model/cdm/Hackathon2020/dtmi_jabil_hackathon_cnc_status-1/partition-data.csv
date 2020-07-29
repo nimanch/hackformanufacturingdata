@@ -1,1 +1,1 @@
-$dtId,$timestamp,TotalNum,Status,EMT,CreateTime,Category,EventTime,ErrorCode,SequentialNumber
+$dtId,$timestamp,SequentialNumber,EMT,CreateTime,Category,TotalNum,Status,Tag_Modbus_Humidity,ErrorCode,EventTime

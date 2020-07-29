@@ -1,1 +1,1 @@
-$dtId,$timestamp,ProcessStartTm,CreateTime,A_load,Y_load,EventTime,AxisangleY,Feed,Toolset,EMT,X_load,Z_load,S_RPM,AxisangleX,AxisangleZ,SequentialNumber,ProcessCycleTm,AxisangleA
+$dtId,$timestamp,A_load,CreateTime,Feed,ProcessStartTm,AxisangleZ,AxisangleA,SequentialNumber,X_load,EventTime,S_RPM,Y_load,AxisangleY,ProcessCycleTm,Toolset,Z_load,EMT,AxisangleX

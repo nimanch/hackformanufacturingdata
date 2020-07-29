@@ -1,1 +1,1 @@
-$dtId,$timestamp,pid,Path,Code,uid,UserChanged,DateCreated,IsDeleted,OrderIndex,name,IsDisabled,UserDeleted,Type,UserCreated,DateChanged,DateDeleted,Remark,Text
+$dtId,$timestamp,uid,Type,Text,Code,name,Path,OrderIndex,DateDeleted,pid,UserCreated,IsDisabled,UserDeleted,DateChanged,Remark,DateCreated,UserChanged,IsDeleted

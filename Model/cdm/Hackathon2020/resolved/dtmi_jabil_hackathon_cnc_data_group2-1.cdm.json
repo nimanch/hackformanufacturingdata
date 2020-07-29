@@ -43,137 +43,11 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "ActualSpeedZ",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/ActualSpeedZ",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/ActualSpeedZ"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "Mcode",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/Mcode",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/Mcode"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "S_Torque",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/S_Torque",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/S_Torque"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "S_TE",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/S_TE",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/S_TE"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "ActualSpeedX",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/ActualSpeedX",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/ActualSpeedX"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
             "name": "SequentialNumber",
             "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
             "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/SequentialNumber",
             "contents": [
               "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/SequentialNumber"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "S_Load",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/S_Load",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/S_Load"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "RateFastmove",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/RateFastmove",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/RateFastmove"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "RateJOG",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/RateJOG",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/RateJOG"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "CuttingSpeed",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/CuttingSpeed",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/CuttingSpeed"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "Fastmovespeed",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/Fastmovespeed",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/Fastmovespeed"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "ServoTemp",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/ServoTemp",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/ServoTemp"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "ActualSpeedA",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/ActualSpeedA",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/ActualSpeedA"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "RelPos",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/RelPos",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/RelPos"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "CreateTime",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/CreateTime",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/CreateTime"
             ]
           },
           {
@@ -187,38 +61,20 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "AbsPos",
+            "name": "ServoTemp",
             "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/AbsPos",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/ServoTemp",
             "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/AbsPos"
+              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/ServoTemp"
             ]
           },
           {
             "type": "attributeDefinition",
-            "name": "Tag_D1_Analog",
+            "name": "S_Torque",
             "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/Tag_D1_Analog",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/S_Torque",
             "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/Tag_D1_Analog"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "RateHAND",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/RateHAND",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/RateHAND"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "Distance",
-            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/Distance",
-            "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/Distance"
+              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/S_Torque"
             ]
           },
           {
@@ -232,11 +88,11 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "ActualSpeedY",
+            "name": "RateFastmove",
             "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/ActualSpeedY",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/RateFastmove",
             "contents": [
-              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/ActualSpeedY"
+              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/RateFastmove"
             ]
           },
           {
@@ -250,11 +106,137 @@
           },
           {
             "type": "attributeDefinition",
+            "name": "ActualSpeedX",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/ActualSpeedX",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/ActualSpeedX"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CuttingSpeed",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/CuttingSpeed",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/CuttingSpeed"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "S_Load",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/S_Load",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/S_Load"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ActualSpeedZ",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/ActualSpeedZ",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/ActualSpeedZ"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
             "name": "MachPos",
             "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
             "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/MachPos",
             "contents": [
               "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/MachPos"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "CreateTime",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/CreateTime",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/CreateTime"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "S_TE",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/S_TE",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/S_TE"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ActualSpeedA",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/ActualSpeedA",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/ActualSpeedA"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Fastmovespeed",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/Fastmovespeed",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/Fastmovespeed"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "ActualSpeedY",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/ActualSpeedY",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/ActualSpeedY"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "AbsPos",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/AbsPos",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/AbsPos"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Distance",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/Distance",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/Distance"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Tag_D1_Analog",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/Tag_D1_Analog",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/Tag_D1_Analog"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Mcode",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/Mcode",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/Mcode"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RateHAND",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/RateHAND",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/RateHAND"
             ]
           },
           {
@@ -268,11 +250,29 @@
           },
           {
             "type": "attributeDefinition",
+            "name": "RelPos",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/RelPos",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/RelPos"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
             "name": "FastmoveTmC",
             "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
             "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/FastmoveTmC",
             "contents": [
               "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/FastmoveTmC"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "RateJOG",
+            "parent": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/RateJOG",
+            "contents": [
+              "dtmi_jabil_hackathon_cnc_data_group2-1/hasAttributes/RateJOG"
             ]
           }
         ]
@@ -311,21 +311,29 @@
           "dataFormat": "Int32"
         },
         {
-          "name": "ActualSpeedZ",
+          "name": "SequentialNumber",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/SequentialNumber",
+          "dataFormat": "Int32"
+        },
+        {
+          "name": "EMT",
           "appliedTraits": [
             "is.dataFormat.character",
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/ActualSpeedZ",
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/EMT",
           "dataFormat": "String"
         },
         {
-          "name": "Mcode",
+          "name": "ServoTemp",
           "appliedTraits": [
             "is.dataFormat.integer"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/Mcode",
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/ServoTemp",
           "dataFormat": "Int32"
         },
         {
@@ -337,37 +345,11 @@
           "dataFormat": "Int32"
         },
         {
-          "name": "S_TE",
+          "name": "S_Temp",
           "appliedTraits": [
             "is.dataFormat.integer"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/S_TE",
-          "dataFormat": "Int32"
-        },
-        {
-          "name": "ActualSpeedX",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/ActualSpeedX",
-          "dataFormat": "String"
-        },
-        {
-          "name": "SequentialNumber",
-          "appliedTraits": [
-            "is.dataFormat.integer"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/SequentialNumber",
-          "dataFormat": "Int32"
-        },
-        {
-          "name": "S_Load",
-          "appliedTraits": [
-            "is.dataFormat.integer"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/S_Load",
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/S_Temp",
           "dataFormat": "Int32"
         },
         {
@@ -381,13 +363,21 @@
           "dataFormat": "String"
         },
         {
-          "name": "RateJOG",
+          "name": "Cuttingfluid",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/Cuttingfluid",
+          "dataFormat": "Int32"
+        },
+        {
+          "name": "ActualSpeedX",
           "appliedTraits": [
             "is.dataFormat.character",
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/RateJOG",
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/ActualSpeedX",
           "dataFormat": "String"
         },
         {
@@ -399,41 +389,31 @@
           "dataFormat": "Int32"
         },
         {
-          "name": "Fastmovespeed",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/Fastmovespeed",
-          "dataFormat": "String"
-        },
-        {
-          "name": "ServoTemp",
+          "name": "S_Load",
           "appliedTraits": [
             "is.dataFormat.integer"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/ServoTemp",
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/S_Load",
           "dataFormat": "Int32"
         },
         {
-          "name": "ActualSpeedA",
+          "name": "ActualSpeedZ",
           "appliedTraits": [
             "is.dataFormat.character",
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/ActualSpeedA",
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/ActualSpeedZ",
           "dataFormat": "String"
         },
         {
-          "name": "RelPos",
+          "name": "MachPos",
           "appliedTraits": [
             "is.dataFormat.character",
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/RelPos",
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/MachPos",
           "dataFormat": "String"
         },
         {
@@ -448,13 +428,41 @@
           "dataFormat": "DateTime"
         },
         {
-          "name": "EMT",
+          "name": "S_TE",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/S_TE",
+          "dataFormat": "Int32"
+        },
+        {
+          "name": "ActualSpeedA",
           "appliedTraits": [
             "is.dataFormat.character",
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/EMT",
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/ActualSpeedA",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Fastmovespeed",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/Fastmovespeed",
+          "dataFormat": "String"
+        },
+        {
+          "name": "ActualSpeedY",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/ActualSpeedY",
           "dataFormat": "String"
         },
         {
@@ -468,24 +476,6 @@
           "dataFormat": "String"
         },
         {
-          "name": "Tag_D1_Analog",
-          "appliedTraits": [
-            "is.dataFormat.integer"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/Tag_D1_Analog",
-          "dataFormat": "Int32"
-        },
-        {
-          "name": "RateHAND",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/RateHAND",
-          "dataFormat": "String"
-        },
-        {
           "name": "Distance",
           "appliedTraits": [
             "is.dataFormat.character",
@@ -496,39 +486,29 @@
           "dataFormat": "String"
         },
         {
-          "name": "S_Temp",
+          "name": "Tag_D1_Analog",
           "appliedTraits": [
             "is.dataFormat.integer"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/S_Temp",
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/Tag_D1_Analog",
           "dataFormat": "Int32"
         },
         {
-          "name": "ActualSpeedY",
+          "name": "Mcode",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/Mcode",
+          "dataFormat": "Int32"
+        },
+        {
+          "name": "RateHAND",
           "appliedTraits": [
             "is.dataFormat.character",
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/ActualSpeedY",
-          "dataFormat": "String"
-        },
-        {
-          "name": "Cuttingfluid",
-          "appliedTraits": [
-            "is.dataFormat.integer"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/Cuttingfluid",
-          "dataFormat": "Int32"
-        },
-        {
-          "name": "MachPos",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/MachPos",
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/RateHAND",
           "dataFormat": "String"
         },
         {
@@ -543,6 +523,16 @@
           "dataFormat": "DateTime"
         },
         {
+          "name": "RelPos",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/RelPos",
+          "dataFormat": "String"
+        },
+        {
           "name": "FastmoveTmC",
           "appliedTraits": [
             "is.dataFormat.character",
@@ -550,6 +540,16 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/FastmoveTmC",
+          "dataFormat": "String"
+        },
+        {
+          "name": "RateJOG",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_cnc_data_group2-1/attributeContext/dtmi_jabil_hackathon_cnc_data_group2-1/RateJOG",
           "dataFormat": "String"
         }
       ],

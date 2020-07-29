@@ -20,14 +20,9 @@
           "dataType": "dateTime"
         },
         {
-          "name": "TotalNum",
+          "name": "SequentialNumber",
           "purpose": "hasA",
           "dataType": "integer"
-        },
-        {
-          "name": "Status",
-          "purpose": "hasA",
-          "dataType": "string"
         },
         {
           "name": "EMT",
@@ -45,9 +40,19 @@
           "dataType": "string"
         },
         {
-          "name": "EventTime",
+          "name": "TotalNum",
           "purpose": "hasA",
-          "dataType": "dateTime"
+          "dataType": "integer"
+        },
+        {
+          "name": "Status",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Tag_Modbus_Humidity",
+          "purpose": "hasA",
+          "dataType": "integer"
         },
         {
           "name": "ErrorCode",
@@ -55,9 +60,9 @@
           "dataType": "string"
         },
         {
-          "name": "SequentialNumber",
+          "name": "EventTime",
           "purpose": "hasA",
-          "dataType": "integer"
+          "dataType": "dateTime"
         }
       ],
       "displayName": "CNCStatus",
