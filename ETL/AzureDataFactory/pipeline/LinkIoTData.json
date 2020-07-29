@@ -1,0 +1,7 @@
+{
+	"name": "LinkIoTData",
+	"properties": {
+		"description": "Links IoT Hub Data to OT Data",
+		"annotations": []
+	}
+}
