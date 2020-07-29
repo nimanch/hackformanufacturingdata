@@ -1,0 +1,68 @@
+{
+	"name": "CDMCNCProData",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "gen2hackstore",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "jabilcdm/dtmi_jabil_hackathon_cnc_pro_data-1",
+				"fileSystem": "cdm"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "$dtId",
+				"type": "String"
+			},
+			{
+				"name": "$timestamp",
+				"type": "String"
+			},
+			{
+				"name": "ProcessCycleTm",
+				"type": "String"
+			},
+			{
+				"name": "EventTime",
+				"type": "String"
+			},
+			{
+				"name": "TotalNum",
+				"type": "String"
+			},
+			{
+				"name": "CreateTime",
+				"type": "String"
+			},
+			{
+				"name": "EMT",
+				"type": "String"
+			},
+			{
+				"name": "SequentialNumber",
+				"type": "String"
+			},
+			{
+				"name": "ProcessStartTm",
+				"type": "String"
+			},
+			{
+				"name": "CycleRunTm",
+				"type": "String"
+			},
+			{
+				"name": "MainProgram",
+				"type": "String"
+			}
+		]
+	}
+}
