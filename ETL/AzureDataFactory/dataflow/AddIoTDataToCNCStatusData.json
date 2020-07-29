@@ -1,5 +1,5 @@
 {
-	"name": "Modify_Iot_data",
+	"name": "AddIoTDataToCNCStatusData",
 	"properties": {
 		"type": "MappingDataFlow",
 		"typeProperties": {
