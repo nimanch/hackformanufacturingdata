@@ -43,6 +43,15 @@
           },
           {
             "type": "attributeDefinition",
+            "name": "LifeStand",
+            "parent": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/LifeStand",
+            "contents": [
+              "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/LifeStand"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
             "name": "PartSpec",
             "parent": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1",
             "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/PartSpec",
@@ -61,11 +70,47 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "LifeStand",
+            "name": "AVGPrice",
             "parent": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/LifeStand",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/AVGPrice",
             "contents": [
-              "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/LifeStand"
+              "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/AVGPrice"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Version",
+            "parent": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/Version",
+            "contents": [
+              "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/Version"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Remark",
+            "parent": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/Remark",
+            "contents": [
+              "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/Remark"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DateChanged",
+            "parent": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/DateChanged",
+            "contents": [
+              "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/DateChanged"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "DateDeleted",
+            "parent": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/DateDeleted",
+            "contents": [
+              "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/DateDeleted"
             ]
           },
           {
@@ -88,65 +133,11 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "BatchNo",
-            "parent": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/BatchNo",
-            "contents": [
-              "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/BatchNo"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "Version",
-            "parent": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/Version",
-            "contents": [
-              "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/Version"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "AVGPrice",
-            "parent": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/AVGPrice",
-            "contents": [
-              "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/AVGPrice"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
             "name": "IsDeleted",
             "parent": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1",
             "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/IsDeleted",
             "contents": [
               "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/IsDeleted"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "UserChanged",
-            "parent": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/UserChanged",
-            "contents": [
-              "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/UserChanged"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "Path",
-            "parent": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/Path",
-            "contents": [
-              "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/Path"
-            ]
-          },
-          {
-            "type": "attributeDefinition",
-            "name": "VendorCode",
-            "parent": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/VendorCode",
-            "contents": [
-              "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/VendorCode"
             ]
           },
           {
@@ -160,20 +151,20 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "Row_Num",
+            "name": "UserDeleted",
             "parent": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/Row_Num",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/UserDeleted",
             "contents": [
-              "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/Row_Num"
+              "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/UserDeleted"
             ]
           },
           {
             "type": "attributeDefinition",
-            "name": "Remark",
+            "name": "Path",
             "parent": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/Remark",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/Path",
             "contents": [
-              "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/Remark"
+              "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/Path"
             ]
           },
           {
@@ -187,20 +178,20 @@
           },
           {
             "type": "attributeDefinition",
-            "name": "IsDisabled",
+            "name": "VendorCode",
             "parent": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/IsDisabled",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/VendorCode",
             "contents": [
-              "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/IsDisabled"
+              "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/VendorCode"
             ]
           },
           {
             "type": "attributeDefinition",
-            "name": "UserDeleted",
+            "name": "DateCreated",
             "parent": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1",
-            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/UserDeleted",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/DateCreated",
             "contents": [
-              "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/UserDeleted"
+              "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/DateCreated"
             ]
           },
           {
@@ -210,6 +201,42 @@
             "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/VendorName",
             "contents": [
               "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/VendorName"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "Row_Num",
+            "parent": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/Row_Num",
+            "contents": [
+              "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/Row_Num"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "UserChanged",
+            "parent": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/UserChanged",
+            "contents": [
+              "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/UserChanged"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "IsDisabled",
+            "parent": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/IsDisabled",
+            "contents": [
+              "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/IsDisabled"
+            ]
+          },
+          {
+            "type": "attributeDefinition",
+            "name": "BatchNo",
+            "parent": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1",
+            "definition": "resolvedFrom/dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/BatchNo",
+            "contents": [
+              "dtmi_jabil_hackathon_pis_cutter_info-1/hasAttributes/BatchNo"
             ]
           }
         ]
@@ -248,6 +275,16 @@
           "dataFormat": "Int32"
         },
         {
+          "name": "LifeStand",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1/LifeStand",
+          "dataFormat": "String"
+        },
+        {
           "name": "PartSpec",
           "appliedTraits": [
             "is.dataFormat.character",
@@ -268,14 +305,42 @@
           "dataFormat": "String"
         },
         {
-          "name": "LifeStand",
+          "name": "AVGPrice",
           "appliedTraits": [
             "is.dataFormat.character",
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1/LifeStand",
+          "attributeContext": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1/AVGPrice",
           "dataFormat": "String"
+        },
+        {
+          "name": "Version",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1/Version",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Remark",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1/Remark",
+          "dataFormat": "String"
+        },
+        {
+          "name": "DateChanged",
+          "attributeContext": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1/DateChanged"
+        },
+        {
+          "name": "DateDeleted",
+          "attributeContext": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1/DateDeleted"
         },
         {
           "name": "uid",
@@ -294,36 +359,6 @@
           "dataFormat": "Int32"
         },
         {
-          "name": "BatchNo",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1/BatchNo",
-          "dataFormat": "String"
-        },
-        {
-          "name": "Version",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1/Version",
-          "dataFormat": "String"
-        },
-        {
-          "name": "AVGPrice",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1/AVGPrice",
-          "dataFormat": "String"
-        },
-        {
           "name": "IsDeleted",
           "appliedTraits": [
             "is.dataFormat.character",
@@ -331,36 +366,6 @@
             "is.dataFormat.array"
           ],
           "attributeContext": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1/IsDeleted",
-          "dataFormat": "String"
-        },
-        {
-          "name": "UserChanged",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1/UserChanged",
-          "dataFormat": "String"
-        },
-        {
-          "name": "Path",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1/Path",
-          "dataFormat": "String"
-        },
-        {
-          "name": "VendorCode",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1/VendorCode",
           "dataFormat": "String"
         },
         {
@@ -374,21 +379,23 @@
           "dataFormat": "String"
         },
         {
-          "name": "Row_Num",
-          "appliedTraits": [
-            "is.dataFormat.integer"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1/Row_Num",
-          "dataFormat": "Int32"
-        },
-        {
-          "name": "Remark",
+          "name": "UserDeleted",
           "appliedTraits": [
             "is.dataFormat.character",
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1/Remark",
+          "attributeContext": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1/UserDeleted",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Path",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1/Path",
           "dataFormat": "String"
         },
         {
@@ -402,6 +409,48 @@
           "dataFormat": "String"
         },
         {
+          "name": "VendorCode",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1/VendorCode",
+          "dataFormat": "String"
+        },
+        {
+          "name": "DateCreated",
+          "attributeContext": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1/DateCreated"
+        },
+        {
+          "name": "VendorName",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1/VendorName",
+          "dataFormat": "String"
+        },
+        {
+          "name": "Row_Num",
+          "appliedTraits": [
+            "is.dataFormat.integer"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1/Row_Num",
+          "dataFormat": "Int32"
+        },
+        {
+          "name": "UserChanged",
+          "appliedTraits": [
+            "is.dataFormat.character",
+            "is.dataFormat.big",
+            "is.dataFormat.array"
+          ],
+          "attributeContext": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1/UserChanged",
+          "dataFormat": "String"
+        },
+        {
           "name": "IsDisabled",
           "appliedTraits": [
             "is.dataFormat.character",
@@ -412,23 +461,13 @@
           "dataFormat": "String"
         },
         {
-          "name": "UserDeleted",
+          "name": "BatchNo",
           "appliedTraits": [
             "is.dataFormat.character",
             "is.dataFormat.big",
             "is.dataFormat.array"
           ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1/UserDeleted",
-          "dataFormat": "String"
-        },
-        {
-          "name": "VendorName",
-          "appliedTraits": [
-            "is.dataFormat.character",
-            "is.dataFormat.big",
-            "is.dataFormat.array"
-          ],
-          "attributeContext": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1/VendorName",
+          "attributeContext": "dtmi_jabil_hackathon_pis_cutter_info-1/attributeContext/dtmi_jabil_hackathon_pis_cutter_info-1/BatchNo",
           "dataFormat": "String"
         }
       ],

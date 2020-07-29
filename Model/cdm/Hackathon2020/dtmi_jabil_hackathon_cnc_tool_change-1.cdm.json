@@ -7,7 +7,7 @@
   ],
   "definitions": [
     {
-      "entityName": "dtmi_jabil_hackathon_bc_all-1",
+      "entityName": "dtmi_jabil_hackathon_cnc_tool_change-1",
       "hasAttributes": [
         {
           "name": "$dtId",
@@ -20,19 +20,19 @@
           "dataType": "dateTime"
         },
         {
-          "name": "SequentialNumber",
+          "name": "EventTime",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "datetime"
         },
         {
-          "name": "DataType",
+          "name": "LimitCount",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "integer"
         },
         {
-          "name": "AllData",
+          "name": "ToolNo",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "integer"
         },
         {
           "name": "EMT",
@@ -40,12 +40,27 @@
           "dataType": "string"
         },
         {
+          "name": "SequentialNumber",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
           "name": "CreateTime",
           "purpose": "hasA",
           "dataType": "datetime"
+        },
+        {
+          "name": "UseCountAfter",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "UseCount",
+          "purpose": "hasA",
+          "dataType": "integer"
         }
       ],
-      "displayName": "All",
+      "displayName": "CNCToolChange",
       "version": "0.0.1"
     }
   ]

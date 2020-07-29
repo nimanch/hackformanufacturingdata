@@ -7,7 +7,7 @@
   ],
   "definitions": [
     {
-      "entityName": "dtmi_jabil_hackathon_pis_organization-1",
+      "entityName": "dtmi_jabil_hackathon_cnc_data_group3-1",
       "hasAttributes": [
         {
           "name": "$dtId",
@@ -20,92 +20,92 @@
           "dataType": "dateTime"
         },
         {
-          "name": "Type",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "OrderIndex",
+          "name": "Z_load",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "uid",
+          "name": "EventTime",
+          "purpose": "hasA",
+          "dataType": "datetime"
+        },
+        {
+          "name": "ProcessStartTm",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "CreateTime",
+          "purpose": "hasA",
+          "dataType": "datetime"
+        },
+        {
+          "name": "Toolset",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "Code",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "IsDisabled",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "Remark",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "Text",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "pid",
+          "name": "SequentialNumber",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "IsDeleted",
+          "name": "AxisangleA",
+          "purpose": "hasA",
+          "dataType": "double"
+        },
+        {
+          "name": "A_load",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "Y_load",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "Feed",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "EMT",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "DateCreated",
+          "name": "X_load",
           "purpose": "hasA",
-          "dataType": "datetime"
+          "dataType": "integer"
         },
         {
-          "name": "DateChanged",
+          "name": "S_RPM",
           "purpose": "hasA",
-          "dataType": "datetime"
+          "dataType": "integer"
         },
         {
-          "name": "Path",
+          "name": "AxisangleX",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "double"
         },
         {
-          "name": "name",
+          "name": "AxisangleZ",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "double"
         },
         {
-          "name": "UserChanged",
+          "name": "AxisangleY",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "double"
         },
         {
-          "name": "UserCreated",
+          "name": "ProcessCycleTm",
           "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "UserDeleted",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "DateDeleted",
-          "purpose": "hasA",
-          "dataType": "datetime"
+          "dataType": "integer"
         }
       ],
-      "displayName": "Organization",
+      "displayName": "CNCDataGroup3",
       "version": "0.0.1"
     }
   ]

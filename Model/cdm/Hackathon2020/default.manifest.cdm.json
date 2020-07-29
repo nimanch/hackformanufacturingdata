@@ -208,6 +208,188 @@
           ]
         }
       ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "dtmi_jabil_hackathon_cnc_data_group1-1",
+      "entityPath": "resolved/dtmi_jabil_hackathon_cnc_data_group1-1.cdm.json/dtmi_jabil_hackathon_cnc_data_group1-1",
+      "dataPartitions": [
+        {
+          "name": "dtmi_jabil_hackathon_cnc_data_group1-1-data-description",
+          "location": "dtmi_jabil_hackathon_cnc_data_group1-1/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "dtmi_jabil_hackathon_cnc_data_group2-1",
+      "entityPath": "resolved/dtmi_jabil_hackathon_cnc_data_group2-1.cdm.json/dtmi_jabil_hackathon_cnc_data_group2-1",
+      "dataPartitions": [
+        {
+          "name": "dtmi_jabil_hackathon_cnc_data_group2-1-data-description",
+          "location": "dtmi_jabil_hackathon_cnc_data_group2-1/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "dtmi_jabil_hackathon_cnc_data_group3-1",
+      "entityPath": "resolved/dtmi_jabil_hackathon_cnc_data_group3-1.cdm.json/dtmi_jabil_hackathon_cnc_data_group3-1",
+      "dataPartitions": [
+        {
+          "name": "dtmi_jabil_hackathon_cnc_data_group3-1-data-description",
+          "location": "dtmi_jabil_hackathon_cnc_data_group3-1/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "dtmi_jabil_hackathon_cnc_pro_data-1",
+      "entityPath": "resolved/dtmi_jabil_hackathon_cnc_pro_data-1.cdm.json/dtmi_jabil_hackathon_cnc_pro_data-1",
+      "dataPartitions": [
+        {
+          "name": "dtmi_jabil_hackathon_cnc_pro_data-1-data-description",
+          "location": "dtmi_jabil_hackathon_cnc_pro_data-1/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "dtmi_jabil_hackathon_cnc_status-1",
+      "entityPath": "resolved/dtmi_jabil_hackathon_cnc_status-1.cdm.json/dtmi_jabil_hackathon_cnc_status-1",
+      "dataPartitions": [
+        {
+          "name": "dtmi_jabil_hackathon_cnc_status-1-data-description",
+          "location": "dtmi_jabil_hackathon_cnc_status-1/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "dtmi_jabil_hackathon_cnc_tool_change-1",
+      "entityPath": "resolved/dtmi_jabil_hackathon_cnc_tool_change-1.cdm.json/dtmi_jabil_hackathon_cnc_tool_change-1",
+      "dataPartitions": [
+        {
+          "name": "dtmi_jabil_hackathon_cnc_tool_change-1-data-description",
+          "location": "dtmi_jabil_hackathon_cnc_tool_change-1/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "LocalEntity",
+      "entityName": "dtmi_jabil_hackathon_cnc_tool_info-1",
+      "entityPath": "resolved/dtmi_jabil_hackathon_cnc_tool_info-1.cdm.json/dtmi_jabil_hackathon_cnc_tool_info-1",
+      "dataPartitions": [
+        {
+          "name": "dtmi_jabil_hackathon_cnc_tool_info-1-data-description",
+          "location": "dtmi_jabil_hackathon_cnc_tool_info-1/partition-data.csv",
+          "exhibitsTraits": [
+            {
+              "traitReference": "is.partition.format.CSV",
+              "arguments": [
+                {
+                  "name": "columnHeaders",
+                  "value": "true"
+                },
+                {
+                  "name": "delimiter",
+                  "value": ","
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "jsonSchemaSemanticVersion": "1.0.0",

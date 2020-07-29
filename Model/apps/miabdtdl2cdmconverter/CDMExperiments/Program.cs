@@ -20,16 +20,16 @@ namespace MiaB.model.dtdl2cdm
         // Configure storage adapters to point at the target local manifest location and at the fake public standards
         // TODO: These values should be changed based on your environment (better to take these from configurations)
         private const string local = "local";
-        private const string dtdlRoot = @"C:\Hack2020\DTDL\Jabil";
-        private const string pathToCDMWork = @"C:\Hack2020\CDM\";
-        private const string pathToCDMSampleData = @"C:\Hack2020\CDM\CDM\samples\";
-        private const string outputFolderName = "JabilCDM";
+        private const string dtdlRoot = @"E:\Hack2020\DtdlToCdmConverter\Models";
+        private const string pathToCDMWork = @"E:\Hack2020\DtdlToCdmConverter\CDM\";
+        private const string pathToCDMSampleData = @"E:\Hack2020\DtdlToCdmConverter\CDM\Samples\";
+        private const string outputFolderName = "Hackathon2020";
 
         // Hard coded values for ADLS
         private const string adls = "adls";
         private const string adlsHostName = "gen2hackstore.dfs.core.windows.net";
         // Remember ADLS allows only lowercase letters, numbers and hyphens.This root path should be available in ADLS - i.e. needs to be created manually
-        private const string adlsRoot = "/cdm/jabilcdm";
+        private const string adlsRoot = "/cdm/hack2020";
         // SECURITY RISK - this should be saved in AKV and retrived from there. Hardcodign for quick hacking
         private const string adlsAccessKey = "xnv4EoFbGh53d5n2669F5CniZYRnY/EfDQSz6vStu22m4m/pJlq9zn0nfI8UsQvvtixM/kIoxC4xpinHSYV7ZQ==";
         
@@ -48,7 +48,10 @@ namespace MiaB.model.dtdl2cdm
 
                 // Fake cdm, normaly use the github adapter
                 // Mount it as the 'cdm' device, not the default so must use "cdm:/folder" to get there
-                cdmCorpus.Storage.Mount(cdm, new LocalAdapter(pathToCDMSampleData + "example-public-standards"));
+                // cdmCorpus.Storage.Mount(cdm, new LocalAdapter(pathToCDMSampleData + "example-public-standards"));
+
+                // Mount CDM adapter
+                cdmCorpus.Storage.Mount(cdm, new CdmStandardsAdapter());
 
                 // Mount ADLS adapter
                 cdmCorpus.Storage.Mount(
@@ -99,7 +102,26 @@ namespace MiaB.model.dtdl2cdm
 
             Console.WriteLine($"Save the manifest, entity and resolved documents to {nameSpace} storage.");
             // Save all other files (resolved, manifest, entity etc.)
-            await manifestResolved.SaveAsAsync($"{manifestResolved.ManifestName}.manifest.cdm.json", true);
+
+            var manifestFileName = $"{manifestResolved.ManifestName}.manifest.cdm.json";
+            var manifestSaved = await manifestResolved.SaveAsAsync(manifestFileName, true);
+            LogSaveOutput(manifestSaved, manifestFileName);
+
+            var modelFileName = "model.json";
+            var modelSaved = await manifestResolved.SaveAsAsync(modelFileName, true);
+            LogSaveOutput(modelSaved, modelFileName);
+        }
+
+        private static void LogSaveOutput(bool saveOutput, string fileName)
+        {
+            if (saveOutput)
+            {
+                Log.Ok($"{fileName} file saved.");
+            }
+            else
+            {
+                Log.Error($"Error in saving {fileName} file.");
+            }
         }
 
         private static async Task SavePartitionDocuments(string nameSpace, CdmCorpusDefinition cdmCorpus, CdmManifestDefinition manifestResolved)
@@ -305,7 +327,7 @@ namespace MiaB.model.dtdl2cdm
                                 case DTEntityKind.Double: type = "double"; break;
                                 case DTEntityKind.Boolean: type = "boolean"; break;
                                 case DTEntityKind.Integer: type = "integer"; break;
-                                case DTEntityKind.DateTime: type = "datetime"; break;
+                                case DTEntityKind.DateTime: type = "dateTime"; break;
                                 default: break;
                             }
                         }

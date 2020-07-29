@@ -30,7 +30,7 @@
           "dataType": "string"
         },
         {
-          "name": "Station",
+          "name": "Name",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -40,7 +40,7 @@
           "dataType": "string"
         },
         {
-          "name": "Name",
+          "name": "Station",
           "purpose": "hasA",
           "dataType": "string"
         }

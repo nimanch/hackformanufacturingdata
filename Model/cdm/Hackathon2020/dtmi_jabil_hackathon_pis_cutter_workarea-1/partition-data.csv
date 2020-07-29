@@ -1,1 +1,1 @@
-$dtId,$timestamp,uid,pid,OrgUid,IsDisabled,KPIStationUid,IsDeleted,Remark,TextDisabled,Path,ShowLineName,UserDeleted,WorkProjectUid,WorkLineUid,ShowProjectName,WorkStationUid,UserCreated,UserChanged,WorkareaName,ShowStationName,Row_Num
+$dtId,$timestamp,pid,KPIStationUid,OrgUid,uid,WorkareaName,DateChanged,IsDeleted,UserDeleted,UserCreated,IsDisabled,Path,WorkLineUid,DateCreated,UserChanged,ShowLineName,DateDeleted,Remark,WorkStationUid,WorkProjectUid,ShowProjectName,ShowStationName,Row_Num,TextDisabled

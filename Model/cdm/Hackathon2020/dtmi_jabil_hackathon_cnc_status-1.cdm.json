@@ -7,7 +7,7 @@
   ],
   "definitions": [
     {
-      "entityName": "dtmi_jabil_hackathon_bc_all-1",
+      "entityName": "dtmi_jabil_hackathon_cnc_status-1",
       "hasAttributes": [
         {
           "name": "$dtId",
@@ -20,32 +20,47 @@
           "dataType": "dateTime"
         },
         {
-          "name": "SequentialNumber",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "DataType",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "AllData",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
           "name": "EMT",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
+          "name": "ErrorCode",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "EventTime",
+          "purpose": "hasA",
+          "dataType": "datetime"
+        },
+        {
           "name": "CreateTime",
           "purpose": "hasA",
           "dataType": "datetime"
+        },
+        {
+          "name": "Category",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "SequentialNumber",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "TotalNum",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "Status",
+          "purpose": "hasA",
+          "dataType": "string"
         }
       ],
-      "displayName": "All",
+      "displayName": "CNCStatus",
       "version": "0.0.1"
     }
   ]

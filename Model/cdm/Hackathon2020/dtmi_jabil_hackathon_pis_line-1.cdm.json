@@ -20,9 +20,9 @@
           "dataType": "dateTime"
         },
         {
-          "name": "LineName",
+          "name": "OrgUid",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "integer"
         },
         {
           "name": "uid",
@@ -30,17 +30,22 @@
           "dataType": "integer"
         },
         {
-          "name": "OrgUid",
+          "name": "DateDeleted",
           "purpose": "hasA",
-          "dataType": "integer"
+          "dataType": "datetime"
         },
         {
-          "name": "IsDeleted",
+          "name": "DateCreated",
+          "purpose": "hasA",
+          "dataType": "datetime"
+        },
+        {
+          "name": "IsDisabled",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "Remark",
+          "name": "UserChanged",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -50,17 +55,17 @@
           "dataType": "integer"
         },
         {
-          "name": "UserChanged",
+          "name": "UserDeleted",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "IsDisabled",
+          "name": "Remark",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "UserCreated",
+          "name": "LineName",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -70,9 +75,19 @@
           "dataType": "integer"
         },
         {
-          "name": "UserDeleted",
+          "name": "IsDeleted",
           "purpose": "hasA",
           "dataType": "string"
+        },
+        {
+          "name": "UserCreated",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "DateChanged",
+          "purpose": "hasA",
+          "dataType": "datetime"
         }
       ],
       "displayName": "Line",

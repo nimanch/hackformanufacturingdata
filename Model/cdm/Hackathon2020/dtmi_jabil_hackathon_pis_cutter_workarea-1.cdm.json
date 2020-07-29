@@ -20,12 +20,12 @@
           "dataType": "dateTime"
         },
         {
-          "name": "uid",
+          "name": "pid",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "pid",
+          "name": "KPIStationUid",
           "purpose": "hasA",
           "dataType": "integer"
         },
@@ -35,37 +35,22 @@
           "dataType": "integer"
         },
         {
-          "name": "IsDisabled",
+          "name": "uid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "WorkareaName",
           "purpose": "hasA",
           "dataType": "string"
         },
         {
-          "name": "KPIStationUid",
+          "name": "DateChanged",
           "purpose": "hasA",
-          "dataType": "integer"
+          "dataType": "datetime"
         },
         {
           "name": "IsDeleted",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "Remark",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "TextDisabled",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "Path",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "ShowLineName",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -75,7 +60,17 @@
           "dataType": "string"
         },
         {
-          "name": "WorkProjectUid",
+          "name": "UserCreated",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "IsDisabled",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "Path",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -85,19 +80,9 @@
           "dataType": "integer"
         },
         {
-          "name": "ShowProjectName",
+          "name": "DateCreated",
           "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "WorkStationUid",
-          "purpose": "hasA",
-          "dataType": "integer"
-        },
-        {
-          "name": "UserCreated",
-          "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "datetime"
         },
         {
           "name": "UserChanged",
@@ -105,7 +90,32 @@
           "dataType": "string"
         },
         {
-          "name": "WorkareaName",
+          "name": "ShowLineName",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "DateDeleted",
+          "purpose": "hasA",
+          "dataType": "datetime"
+        },
+        {
+          "name": "Remark",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "WorkStationUid",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "WorkProjectUid",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "ShowProjectName",
           "purpose": "hasA",
           "dataType": "string"
         },
@@ -118,6 +128,11 @@
           "name": "Row_Num",
           "purpose": "hasA",
           "dataType": "integer"
+        },
+        {
+          "name": "TextDisabled",
+          "purpose": "hasA",
+          "dataType": "string"
         }
       ],
       "displayName": "Work Area",

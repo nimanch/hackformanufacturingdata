@@ -7,7 +7,7 @@
   ],
   "definitions": [
     {
-      "entityName": "dtmi_jabil_hackathon_pis_machine_cutter-1",
+      "entityName": "dtmi_jabil_hackathon_cnc_pro_data-1",
       "hasAttributes": [
         {
           "name": "$dtId",
@@ -20,67 +20,52 @@
           "dataType": "dateTime"
         },
         {
-          "name": "Equipment",
+          "name": "CycleRunTm",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "LDBMachineNo",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "Seat",
+          "name": "TotalNum",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "WorkareaName",
+          "name": "CreateTime",
           "purpose": "hasA",
-          "dataType": "string"
+          "dataType": "datetime"
         },
         {
-          "name": "MachineNo",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "TextDisabled",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "ShowProjectName",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "BuildingName",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "ShowStationName",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "Path",
-          "purpose": "hasA",
-          "dataType": "string"
-        },
-        {
-          "name": "Row_Num",
+          "name": "MainProgram",
           "purpose": "hasA",
           "dataType": "integer"
         },
         {
-          "name": "ShowLineName",
+          "name": "ProcessStartTm",
           "purpose": "hasA",
           "dataType": "string"
+        },
+        {
+          "name": "SequentialNumber",
+          "purpose": "hasA",
+          "dataType": "integer"
+        },
+        {
+          "name": "EventTime",
+          "purpose": "hasA",
+          "dataType": "datetime"
+        },
+        {
+          "name": "EMT",
+          "purpose": "hasA",
+          "dataType": "string"
+        },
+        {
+          "name": "ProcessCycleTm",
+          "purpose": "hasA",
+          "dataType": "integer"
         }
       ],
-      "displayName": "Machine Cutter",
+      "displayName": "CNCProData",
       "version": "0.0.1"
     }
   ]
