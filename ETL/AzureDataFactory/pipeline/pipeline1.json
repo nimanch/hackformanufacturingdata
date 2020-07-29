@@ -56,46 +56,46 @@
 						"mappings": [
 							{
 								"source": {
+									"name": "Month_index",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 1
+									"physicalType": "String"
 								},
 								"sink": {
-									"type": "String",
-									"ordinal": 1
+									"name": "Month_index",
+									"type": "String"
 								}
 							},
 							{
 								"source": {
+									"name": "Predicted_PD",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 2
+									"physicalType": "String"
 								},
 								"sink": {
-									"type": "String",
-									"ordinal": 2
+									"name": "Predicted_PD",
+									"type": "String"
 								}
 							},
 							{
 								"source": {
+									"name": "Year_Quarter",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 3
+									"physicalType": "String"
 								},
 								"sink": {
-									"type": "String",
-									"ordinal": 3
+									"name": "Year_Quarter",
+									"type": "String"
 								}
 							},
 							{
 								"source": {
+									"name": "PD_Risk_Rating",
 									"type": "String",
-									"physicalType": "String",
-									"ordinal": 4
+									"physicalType": "String"
 								},
 								"sink": {
-									"type": "String",
-									"ordinal": 4
+									"name": "PD_Risk_Rating",
+									"type": "String"
 								}
 							}
 						],
