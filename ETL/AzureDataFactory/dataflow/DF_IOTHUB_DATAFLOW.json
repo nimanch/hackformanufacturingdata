@@ -10,18 +10,19 @@
 						"type": "DatasetReference"
 					},
 					"name": "srccncstatus"
-				},
-				{
-					"dataset": {
-						"referenceName": "CDMMiabData",
-						"type": "DatasetReference"
-					},
-					"name": "IoTHubData"
 				}
 			],
-			"sinks": [],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "CDMCNSPartitionData",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				}
+			],
 			"transformations": [],
-			"script": "source(output(\n\t\t{$dtid} as string,\n\t\t{$timestamp} as string,\n\t\tSequentialNumber as string,\n\t\tEMT as string,\n\t\tCreateTime as string,\n\t\tStatus as string,\n\t\tErrorCode as string,\n\t\tTotalNum as string,\n\t\tCategory as string,\n\t\tEventTime as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false) ~> srccncstatus\nsource(output(\n\t\t{$dtId} as string,\n\t\t{$timestamp} as string,\n\t\tTag_Modbus_Humidity as string,\n\t\tTag_D2_Blue as string,\n\t\tTag_Modbus_Temperature as string,\n\t\tTag_D1_Analog as string,\n\t\tTag_Modbus_CO2 as string,\n\t\tTag_D0_Digital as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false) ~> IoTHubData"
+			"script": "source(output(\n\t\t{$dtid} as string,\n\t\t{$timestamp} as string,\n\t\tSequentialNumber as string,\n\t\tEMT as string,\n\t\tCreateTime as string,\n\t\tStatus as string,\n\t\tErrorCode as string,\n\t\tTotalNum as string,\n\t\tCategory as string,\n\t\tEventTime as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false) ~> srccncstatus\nsrccncstatus sink(input(\n\t\t{$dtId} as string,\n\t\t{$timestamp} as string,\n\t\tErrorCode as string,\n\t\tTotalNum as string,\n\t\tTag_Modbus_Humidity as string,\n\t\tCreateTime as string,\n\t\tStatus as string,\n\t\tEventTime as string,\n\t\tSequentialNumber as string,\n\t\tCategory as string,\n\t\tEMT as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false,\n\tpartitionFileNames:['partition-data.csv'],\n\ttruncate: true,\n\tmapColumn(\n\t\t{$dtId} = {$dtid},\n\t\t{$timestamp},\n\t\tErrorCode,\n\t\tTotalNum,\n\t\tTag_Modbus_Humidity = EMT,\n\t\tCreateTime,\n\t\tStatus,\n\t\tEventTime,\n\t\tSequentialNumber,\n\t\tCategory,\n\t\tEMT\n\t)) ~> sink1"
 		}
 	}
 }
