@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "cncprodata",
+				"folderPath": "cncstatus",
 				"fileSystem": "cnctransformeddata"
 			},
 			"columnDelimiter": ",",
@@ -40,7 +40,11 @@
 				"type": "String"
 			},
 			{
-				"name": "ProcessCycleTm",
+				"name": "Status",
+				"type": "String"
+			},
+			{
+				"name": "ErrorCode",
 				"type": "String"
 			},
 			{
@@ -48,15 +52,7 @@
 				"type": "String"
 			},
 			{
-				"name": "MainProgram",
-				"type": "String"
-			},
-			{
-				"name": "CycleRunTm",
-				"type": "String"
-			},
-			{
-				"name": "ProcessStartTm",
+				"name": "Category",
 				"type": "String"
 			},
 			{
