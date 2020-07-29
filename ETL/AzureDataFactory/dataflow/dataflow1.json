@@ -1,0 +1,32 @@
+{
+	"name": "dataflow1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "srcsite",
+						"type": "DatasetReference"
+					},
+					"name": "srcsite"
+				}
+			],
+			"sinks": [
+				{
+					"linkedService": {
+						"referenceName": "HackSchema",
+						"type": "LinkedServiceReference"
+					},
+					"schemaLinkedService": {
+						"referenceName": "gen2hackstore",
+						"type": "LinkedServiceReference"
+					},
+					"name": "sinksite"
+				}
+			],
+			"transformations": [],
+			"script": "source(output(\n\t\tGroup as string,\n\t\t{Group CN} as string,\n\t\tDivision as string,\n\t\t{Division CN} as string,\n\t\tSite as string,\n\t\t{Site CN} as string,\n\t\tCode as string,\n\t\t{Personal Area} as string,\n\t\tCapabilities as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false) ~> srcsite\nsrcsite sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tentity: 'Site.cdm.json/Site',\n\tformat: 'cdm',\n\tmanifestName: 'Enterprise',\n\tcorpusPath: 'enterprisecdm/entity_cdm_files',\n\tpartitionPath: 'data',\n\tfolderPath: 'enterprisecdm',\n\tfileSystem: 'cdm',\n\tcolumnDelimiter: ',',\n\tcolumnNamesAsHeader: false,\n\tcorpusStore: 'adlsgen2',\n\tadlsgen2_fileSystem: 'cdm',\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> sinksite"
+		}
+	}
+}
