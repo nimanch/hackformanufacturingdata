@@ -1,5 +1,5 @@
 {
-	"name": "pl_cncdataloadtocdm",
+	"name": "PipelineLoadIoTData",
 	"properties": {
 		"activities": [
 			{
