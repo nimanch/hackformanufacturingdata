@@ -6,7 +6,7 @@
 			"sources": [
 				{
 					"dataset": {
-						"referenceName": "InputCNCDataGroup3",
+						"referenceName": "InputCNCProData",
 						"type": "DatasetReference"
 					},
 					"name": "srccncstatus"
@@ -15,14 +15,14 @@
 			"sinks": [
 				{
 					"dataset": {
-						"referenceName": "CDMCNCDataGroup3",
+						"referenceName": "CDMCNCProData",
 						"type": "DatasetReference"
 					},
 					"name": "PartitionDataSetCDM"
 				}
 			],
 			"transformations": [],
-			"script": "source(output(\n\t\t{$dtid} as string,\n\t\t{$timestamp} as string,\n\t\tSequentialNumber as string,\n\t\tEMT as string,\n\t\tCreateTime as string,\n\t\tProcessStartTm as string,\n\t\tProcessCycleTm as string,\n\t\tX_load as string,\n\t\tY_load as string,\n\t\tZ_load as string,\n\t\tA_load as string,\n\t\tS_RPM as string,\n\t\tFeed as string,\n\t\tAxisangleX as string,\n\t\tAxisangleY as string,\n\t\tAxisangleZ as string,\n\t\tAxisangleA as string,\n\t\tToolset as string,\n\t\tEventTime as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false) ~> srccncstatus\nsrccncstatus sink(input(\n\t\t{$dtId} as string,\n\t\t{$timestamp} as string,\n\t\tEventTime as string,\n\t\tAxisangleA as string,\n\t\tAxisangleZ as string,\n\t\tZ_load as string,\n\t\tProcessStartTm as string,\n\t\tY_load as string,\n\t\tAxisangleX as string,\n\t\tCreateTime as string,\n\t\tToolset as string,\n\t\tX_load as string,\n\t\tS_RPM as string,\n\t\tProcessCycleTm as string,\n\t\tEMT as string,\n\t\tFeed as string,\n\t\tAxisangleY as string,\n\t\tA_load as string,\n\t\tSequentialNumber as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false,\n\tpartitionFileNames:['partition-data.csv'],\n\ttruncate: true,\n\tmapColumn(\n\t\t{$dtId} = {$dtid},\n\t\t{$timestamp},\n\t\tEventTime,\n\t\tAxisangleA,\n\t\tAxisangleZ,\n\t\tZ_load,\n\t\tProcessStartTm,\n\t\tY_load,\n\t\tAxisangleX,\n\t\tCreateTime,\n\t\tToolset,\n\t\tX_load,\n\t\tS_RPM,\n\t\tProcessCycleTm,\n\t\tEMT,\n\t\tFeed,\n\t\tAxisangleY,\n\t\tA_load,\n\t\tSequentialNumber\n\t),\n\tpartitionBy('hash', 1)) ~> PartitionDataSetCDM"
+			"script": "source(output(\n\t\t{$dtid} as string,\n\t\t{$timestamp} as string,\n\t\tSequentialNumber as string,\n\t\tEMT as string,\n\t\tCreateTime as string,\n\t\tProcessCycleTm as string,\n\t\tTotalNum as string,\n\t\tMainProgram as string,\n\t\tCycleRunTm as string,\n\t\tProcessStartTm as string,\n\t\tEventTime as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false) ~> srccncstatus\nsrccncstatus sink(input(\n\t\t{$dtId} as string,\n\t\t{$timestamp} as string,\n\t\tProcessCycleTm as string,\n\t\tEventTime as string,\n\t\tTotalNum as string,\n\t\tCreateTime as string,\n\t\tEMT as string,\n\t\tSequentialNumber as string,\n\t\tProcessStartTm as string,\n\t\tCycleRunTm as string,\n\t\tMainProgram as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false,\n\tpartitionFileNames:['partition-data.csv'],\n\ttruncate: true,\n\tmapColumn(\n\t\t{$dtId} = {$dtid},\n\t\t{$timestamp},\n\t\tEventTime,\n\t\tAxisangleA,\n\t\tAxisangleZ,\n\t\tZ_load,\n\t\tProcessStartTm,\n\t\tY_load,\n\t\tAxisangleX,\n\t\tCreateTime,\n\t\tToolset,\n\t\tX_load,\n\t\tS_RPM,\n\t\tProcessCycleTm,\n\t\tEMT,\n\t\tFeed,\n\t\tAxisangleY,\n\t\tA_load,\n\t\tSequentialNumber\n\t),\n\tpartitionBy('hash', 1)) ~> PartitionDataSetCDM"
 		}
 	}
 }
