@@ -4,7 +4,14 @@
 		"description": "BlobStorageTrigger to convert Base64 to string ",
 		"annotations": [],
 		"runtimeState": "Stopped",
-		"pipelines": [],
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "IoTHubOPCUAConvertor",
+					"type": "PipelineReference"
+				}
+			}
+		],
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
 			"blobPathBeginsWith": "/messagefiles/blobs/iot-hub-hack",
