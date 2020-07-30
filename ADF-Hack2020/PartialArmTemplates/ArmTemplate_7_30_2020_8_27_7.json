@@ -6,189 +6,12 @@
 			"type": "string",
 			"metadata": "Data Factory name",
 			"defaultValue": "ADF-Hack2020"
-		},
-		"AzureDataLakeStorage1_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
-		},
-		"AzureSqldb_sqlhack_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSqldb_sqlhack'"
-		},
-		"Base64Convertor_functionKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'functionKey' of 'Base64Convertor'"
-		},
-		"HackSchema_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'HackSchema'"
-		},
-		"JsonToCSVConvertor_functionKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'functionKey' of 'JsonToCSVConvertor'"
-		},
-		"gen2hackStoreDataSet_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'gen2hackStoreDataSet'"
-		},
-		"gen2hackstore_accountKey": {
-			"type": "secureString",
-			"metadata": "Secure string for 'accountKey' of 'gen2hackstore'"
-		},
-		"AzureDataLakeStorage1_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://gen2hackstore.dfs.core.windows.net"
-		},
-		"Base64Convertor_properties_typeProperties_functionAppUrl": {
-			"type": "string",
-			"defaultValue": "https://base64toxmlconvertor.azurewebsites.net"
-		},
-		"HackSchema_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://gen2hackstore.dfs.core.windows.net"
-		},
-		"JsonToCSVConvertor_properties_typeProperties_functionAppUrl": {
-			"type": "string",
-			"defaultValue": "https://jsontocsvconvertor.azurewebsites.net"
-		},
-		"KV2020_properties_typeProperties_baseUrl": {
-			"type": "string",
-			"defaultValue": "https://kvhack2020.vault.azure.net/"
-		},
-		"gen2hackstore_properties_typeProperties_url": {
-			"type": "string",
-			"defaultValue": "https://gen2hackstore.dfs.core.windows.net"
 		}
 	},
 	"variables": {
 		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
 	},
 	"resources": [
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureDataLakeStorage1')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"description": "Storage link to Gen2 account",
-				"annotations": [],
-				"type": "AzureBlobFS",
-				"typeProperties": {
-					"url": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]",
-					"accountKey": {
-						"type": "SecureString",
-						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
-					}
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/AzureSqldb_sqlhack')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureSqlDatabase",
-				"typeProperties": {
-					"connectionString": "[parameters('AzureSqldb_sqlhack_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/Base64Convertor')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureFunction",
-				"typeProperties": {
-					"functionAppUrl": "[parameters('Base64Convertor_properties_typeProperties_functionAppUrl')]",
-					"functionKey": {
-						"type": "SecureString",
-						"value": "[parameters('Base64Convertor_functionKey')]"
-					}
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/HackSchema')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobFS",
-				"typeProperties": {
-					"url": "[parameters('HackSchema_properties_typeProperties_url')]",
-					"accountKey": {
-						"type": "SecureString",
-						"value": "[parameters('HackSchema_accountKey')]"
-					}
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/JsonToCSVConvertor')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureFunction",
-				"typeProperties": {
-					"functionAppUrl": "[parameters('JsonToCSVConvertor_properties_typeProperties_functionAppUrl')]",
-					"functionKey": {
-						"type": "SecureString",
-						"value": "[parameters('JsonToCSVConvertor_functionKey')]"
-					}
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/KV2020')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureKeyVault",
-				"typeProperties": {
-					"baseUrl": "[parameters('KV2020_properties_typeProperties_baseUrl')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/gen2hackStoreDataSet')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobStorage",
-				"typeProperties": {
-					"connectionString": "[parameters('gen2hackStoreDataSet_connectionString')]"
-				}
-			},
-			"dependsOn": []
-		},
-		{
-			"name": "[concat(parameters('factoryName'), '/gen2hackstore')]",
-			"type": "Microsoft.DataFactory/factories/linkedServices",
-			"apiVersion": "2018-06-01",
-			"properties": {
-				"annotations": [],
-				"type": "AzureBlobFS",
-				"typeProperties": {
-					"url": "[parameters('gen2hackstore_properties_typeProperties_url')]",
-					"accountKey": {
-						"type": "SecureString",
-						"value": "[parameters('gen2hackstore_accountKey')]"
-					}
-				}
-			},
-			"dependsOn": []
-		},
 		{
 			"name": "[concat(parameters('factoryName'), '/IoTHubOPCUAConvertor')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
@@ -209,8 +32,7 @@
 						"userProperties": [],
 						"typeProperties": {
 							"functionName": "Base64Convertor",
-							"method": "GET",
-							"headers": {}
+							"method": "GET"
 						},
 						"linkedServiceName": {
 							"referenceName": "Base64Convertor",
@@ -238,8 +60,7 @@
 						"userProperties": [],
 						"typeProperties": {
 							"functionName": "JsonToCSVConvertor",
-							"method": "GET",
-							"headers": {}
+							"method": "GET"
 						},
 						"linkedServiceName": {
 							"referenceName": "JsonToCSVConvertor",
@@ -249,9 +70,78 @@
 				],
 				"annotations": []
 			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/PipeLineAddDataToCDMModels')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "df_cdmload",
+						"type": "ExecuteDataFlow",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"dataflow": {
+								"referenceName": "InputDataToCDMTransfer",
+								"type": "DataFlowReference"
+							},
+							"compute": {
+								"coreCount": 144,
+								"computeType": "ComputeOptimized"
+							}
+						}
+					}
+				],
+				"annotations": []
+			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/Base64Convertor')]",
-				"[concat(variables('factoryId'), '/linkedServices/JsonToCSVConvertor')]"
+				"[concat(variables('factoryId'), '/dataflows/InputDataToCDMTransfer')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/PipelineLoadIoTData')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "df_cdmload",
+						"type": "ExecuteDataFlow",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"dataflow": {
+								"referenceName": "AddIoTDataToCNCStatusData",
+								"type": "DataFlowReference"
+							},
+							"compute": {
+								"coreCount": 144,
+								"computeType": "ComputeOptimized"
+							}
+						}
+					}
+				],
+				"annotations": []
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/dataflows/AddIoTDataToCNCStatusData')]"
 			]
 		},
 		{
@@ -363,9 +253,7 @@
 					}
 				]
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/gen2hackstore')]"
-			]
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/CDMCNCDataGroup2')]",
@@ -508,9 +396,7 @@
 					}
 				]
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/gen2hackstore')]"
-			]
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/CDMCNCDataGroup3')]",
@@ -613,9 +499,7 @@
 					}
 				]
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/gen2hackstore')]"
-			]
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/CDMCNCProData')]",
@@ -686,9 +570,7 @@
 					}
 				]
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/gen2hackstore')]"
-			]
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/CDMCNCToolChangeData')]",
@@ -755,9 +637,7 @@
 					}
 				]
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/gen2hackstore')]"
-			]
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/CDMCNSPartitionData')]",
@@ -828,9 +708,7 @@
 					}
 				]
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/gen2hackstore')]"
-			]
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/CDMCutterInfoData')]",
@@ -977,9 +855,7 @@
 					}
 				]
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/gen2hackstore')]"
-			]
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/CDMMiabData')]",
@@ -1038,9 +914,7 @@
 					}
 				]
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/gen2hackstore')]"
-			]
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/CDMToolInfoData')]",
@@ -1103,9 +977,7 @@
 					}
 				]
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/gen2hackstore')]"
-			]
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/InputCNCDataGroup1')]",
@@ -1212,9 +1084,7 @@
 					}
 				]
 			},
-			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/gen2hackstore')]"
-			]
+			"dependsOn": []
 		},
 		{
 			"name": "[concat(parameters('factoryName'), '/InputCNCDataGroup2')]",
@@ -1353,8 +1223,760 @@
 					}
 				]
 			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/InputCNCDataGroup3')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "gen2hackstore",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "DelimitedText",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobFSLocation",
+						"folderPath": "cncdatagroup3/Concatenated",
+						"fileSystem": "cnctransformeddata"
+					},
+					"columnDelimiter": ",",
+					"escapeChar": "\\",
+					"firstRowAsHeader": true,
+					"quoteChar": "\""
+				},
+				"schema": [
+					{
+						"name": "$dtid",
+						"type": "String"
+					},
+					{
+						"name": "$timestamp",
+						"type": "String"
+					},
+					{
+						"name": "SequentialNumber",
+						"type": "String"
+					},
+					{
+						"name": "EMT",
+						"type": "String"
+					},
+					{
+						"name": "CreateTime",
+						"type": "String"
+					},
+					{
+						"name": "ProcessStartTm",
+						"type": "String"
+					},
+					{
+						"name": "ProcessCycleTm",
+						"type": "String"
+					},
+					{
+						"name": "X_load",
+						"type": "String"
+					},
+					{
+						"name": "Y_load",
+						"type": "String"
+					},
+					{
+						"name": "Z_load",
+						"type": "String"
+					},
+					{
+						"name": "A_load",
+						"type": "String"
+					},
+					{
+						"name": "S_RPM",
+						"type": "String"
+					},
+					{
+						"name": "Feed",
+						"type": "String"
+					},
+					{
+						"name": "AxisangleX",
+						"type": "String"
+					},
+					{
+						"name": "AxisangleY",
+						"type": "String"
+					},
+					{
+						"name": "AxisangleZ",
+						"type": "String"
+					},
+					{
+						"name": "AxisangleA",
+						"type": "String"
+					},
+					{
+						"name": "Toolset",
+						"type": "String"
+					},
+					{
+						"name": "EventTime",
+						"type": "String"
+					}
+				]
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/InputCNCProData')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "gen2hackstore",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "DelimitedText",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobFSLocation",
+						"folderPath": "cncprodata/Concatenated",
+						"fileSystem": "cnctransformeddata"
+					},
+					"columnDelimiter": ",",
+					"escapeChar": "\\",
+					"firstRowAsHeader": true,
+					"quoteChar": "\""
+				},
+				"schema": [
+					{
+						"name": "$dtid",
+						"type": "String"
+					},
+					{
+						"name": "$timestamp",
+						"type": "String"
+					},
+					{
+						"name": "SequentialNumber",
+						"type": "String"
+					},
+					{
+						"name": "EMT",
+						"type": "String"
+					},
+					{
+						"name": "CreateTime",
+						"type": "String"
+					},
+					{
+						"name": "ProcessCycleTm",
+						"type": "String"
+					},
+					{
+						"name": "TotalNum",
+						"type": "String"
+					},
+					{
+						"name": "MainProgram",
+						"type": "String"
+					},
+					{
+						"name": "CycleRunTm",
+						"type": "String"
+					},
+					{
+						"name": "ProcessStartTm",
+						"type": "String"
+					},
+					{
+						"name": "EventTime",
+						"type": "String"
+					}
+				]
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/InputCNCStatusData')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "gen2hackstore",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "DelimitedText",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobFSLocation",
+						"folderPath": "cncstatus/Concatenated",
+						"fileSystem": "cnctransformeddata"
+					},
+					"columnDelimiter": ",",
+					"escapeChar": "\\",
+					"firstRowAsHeader": true,
+					"quoteChar": "\""
+				},
+				"schema": [
+					{
+						"name": "$dtid",
+						"type": "String"
+					},
+					{
+						"name": "$timestamp",
+						"type": "String"
+					},
+					{
+						"name": "SequentialNumber",
+						"type": "String"
+					},
+					{
+						"name": "EMT",
+						"type": "String"
+					},
+					{
+						"name": "CreateTime",
+						"type": "String"
+					},
+					{
+						"name": "Status",
+						"type": "String"
+					},
+					{
+						"name": "ErrorCode",
+						"type": "String"
+					},
+					{
+						"name": "TotalNum",
+						"type": "String"
+					},
+					{
+						"name": "Category",
+						"type": "String"
+					},
+					{
+						"name": "EventTime",
+						"type": "String"
+					}
+				]
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/InputCNCToolChangeData')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "gen2hackstore",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "DelimitedText",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobFSLocation",
+						"folderPath": "cnctoolchange/Concatenated",
+						"fileSystem": "cnctransformeddata"
+					},
+					"columnDelimiter": ",",
+					"escapeChar": "\\",
+					"firstRowAsHeader": true,
+					"quoteChar": "\""
+				},
+				"schema": [
+					{
+						"name": "$dtid",
+						"type": "String"
+					},
+					{
+						"name": "$timestamp",
+						"type": "String"
+					},
+					{
+						"name": "SequentialNumber",
+						"type": "String"
+					},
+					{
+						"name": "EMT",
+						"type": "String"
+					},
+					{
+						"name": "CreateTime",
+						"type": "String"
+					},
+					{
+						"name": "ToolNo",
+						"type": "String"
+					},
+					{
+						"name": "UseCount",
+						"type": "String"
+					},
+					{
+						"name": "LimitCount",
+						"type": "String"
+					},
+					{
+						"name": "UseCountAfter",
+						"type": "String"
+					},
+					{
+						"name": "EventTime",
+						"type": "String"
+					}
+				]
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/InputCNCToolInfoData')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "gen2hackstore",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "DelimitedText",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobFSLocation",
+						"folderPath": "cnctoolinfo/Concatenated",
+						"fileSystem": "cnctransformeddata"
+					},
+					"columnDelimiter": ",",
+					"escapeChar": "\\",
+					"firstRowAsHeader": true,
+					"quoteChar": "\""
+				},
+				"schema": [
+					{
+						"name": "$dtid",
+						"type": "String"
+					},
+					{
+						"name": "$timestamp",
+						"type": "String"
+					},
+					{
+						"name": "SequentialNumber",
+						"type": "String"
+					},
+					{
+						"name": "EMT",
+						"type": "String"
+					},
+					{
+						"name": "CreateTime",
+						"type": "String"
+					},
+					{
+						"name": "ToolNo",
+						"type": "String"
+					},
+					{
+						"name": "UseCount",
+						"type": "String"
+					},
+					{
+						"name": "LimitCount",
+						"type": "String"
+					},
+					{
+						"name": "EventTime",
+						"type": "String"
+					}
+				]
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/InputCutterInfoData')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "gen2hackstore",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "DelimitedText",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobFSLocation",
+						"fileName": "other_cutter_change_info.csv",
+						"folderPath": "Other",
+						"fileSystem": "rowdatafromjabil"
+					},
+					"columnDelimiter": "|",
+					"escapeChar": "\\",
+					"firstRowAsHeader": true,
+					"quoteChar": "\""
+				},
+				"schema": [
+					{
+						"name": "OrderNumber",
+						"type": "String"
+					},
+					{
+						"name": "WorkflowStatus",
+						"type": "String"
+					},
+					{
+						"name": "ApplicationTime",
+						"type": "String"
+					},
+					{
+						"name": "EmployeeID",
+						"type": "String"
+					},
+					{
+						"name": "MachineType",
+						"type": "String"
+					},
+					{
+						"name": "ProcessName",
+						"type": "String"
+					},
+					{
+						"name": "Building",
+						"type": "String"
+					},
+					{
+						"name": "Area",
+						"type": "String"
+					},
+					{
+						"name": "MachineID",
+						"type": "String"
+					},
+					{
+						"name": "CutterNumber",
+						"type": "String"
+					},
+					{
+						"name": "CutterName",
+						"type": "String"
+					},
+					{
+						"name": "CutterSpecification",
+						"type": "String"
+					},
+					{
+						"name": "CutterProcessLife",
+						"type": "String"
+					},
+					{
+						"name": "CutterStandardLife",
+						"type": "String"
+					},
+					{
+						"name": "ExchangeReason",
+						"type": "String"
+					},
+					{
+						"name": "ExchangeReasonDetails",
+						"type": "String"
+					},
+					{
+						"name": "Manufacturer",
+						"type": "String"
+					},
+					{
+						"name": "IsCompliant",
+						"type": "String"
+					},
+					{
+						"name": "IPQCNumber",
+						"type": "String"
+					},
+					{
+						"name": "Size",
+						"type": "String"
+					},
+					{
+						"name": "Appearance",
+						"type": "String"
+					},
+					{
+						"name": "Calibrator",
+						"type": "String"
+					},
+					{
+						"name": "ConfirmationDetails",
+						"type": "String"
+					},
+					{
+						"name": "ReviewResult",
+						"type": "String"
+					},
+					{
+						"name": "ReviewDetails",
+						"type": "String"
+					}
+				]
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/JabilPartitionData')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "gen2hackstore",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "DelimitedText",
+				"typeProperties": {
+					"location": {
+						"type": "AzureBlobFSLocation",
+						"folderPath": "jabilcdm/dtmi_jabil_hackathon_cnc_data_group1-1",
+						"fileSystem": "cdm"
+					},
+					"columnDelimiter": ",",
+					"escapeChar": "\\",
+					"firstRowAsHeader": true,
+					"quoteChar": "\""
+				},
+				"schema": [
+					{
+						"name": "$dtId",
+						"type": "String"
+					},
+					{
+						"name": "$timestamp",
+						"type": "String"
+					},
+					{
+						"name": "PowerOn",
+						"type": "String"
+					},
+					{
+						"name": "ServoName",
+						"type": "String"
+					},
+					{
+						"name": "MainProgram",
+						"type": "String"
+					},
+					{
+						"name": "SequentialNumber",
+						"type": "String"
+					},
+					{
+						"name": "CuttingTm",
+						"type": "String"
+					},
+					{
+						"name": "CycleRunTm",
+						"type": "String"
+					},
+					{
+						"name": "CreateTime",
+						"type": "String"
+					},
+					{
+						"name": "EMT",
+						"type": "String"
+					},
+					{
+						"name": "MaxAxisNo",
+						"type": "String"
+					},
+					{
+						"name": "UseAxisNo",
+						"type": "String"
+					},
+					{
+						"name": "CNCMode",
+						"type": "String"
+					},
+					{
+						"name": "NowProgram",
+						"type": "String"
+					},
+					{
+						"name": "EventTime",
+						"type": "String"
+					},
+					{
+						"name": "PowerOnTm",
+						"type": "String"
+					},
+					{
+						"name": "CurrenttoolNo",
+						"type": "String"
+					},
+					{
+						"name": "ProgramStep",
+						"type": "String"
+					},
+					{
+						"name": "Programnote",
+						"type": "String"
+					},
+					{
+						"name": "Singlenote",
+						"type": "String"
+					},
+					{
+						"name": "ShutdownTm",
+						"type": "String"
+					}
+				]
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/BlobStorageTrigger')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"description": "BlobStorageTrigger to convert Base64 to string ",
+				"annotations": [],
+				"runtimeState": "Stopped",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "IoTHubOPCUAConvertor",
+							"type": "PipelineReference"
+						}
+					}
+				],
+				"type": "BlobEventsTrigger",
+				"typeProperties": {
+					"blobPathBeginsWith": "/messagefiles/blobs/iot-hub-hack",
+					"ignoreEmptyBlobs": true,
+					"scope": "/subscriptions/901ba023-b9b4-4c6d-9494-916872c2c164/resourceGroups/Hack/providers/Microsoft.Storage/storageAccounts/gen2hackstore",
+					"events": [
+						"Microsoft.Storage.BlobCreated"
+					]
+				}
+			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/gen2hackstore')]"
+				"[concat(variables('factoryId'), '/pipelines/IoTHubOPCUAConvertor')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AddIoTDataToCNCStatusData')]",
+			"type": "Microsoft.DataFactory/factories/dataflows",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"type": "MappingDataFlow",
+				"typeProperties": {
+					"sources": [
+						{
+							"dataset": {
+								"referenceName": "CDMCNSPartitionData",
+								"type": "DatasetReference"
+							},
+							"name": "InputCNCData"
+						},
+						{
+							"dataset": {
+								"referenceName": "CDMMiabData",
+								"type": "DatasetReference"
+							},
+							"name": "IoTHubData"
+						}
+					],
+					"sinks": [
+						{
+							"dataset": {
+								"referenceName": "CDMCNSPartitionData",
+								"type": "DatasetReference"
+							},
+							"name": "CNCDataWithHumidityData"
+						}
+					],
+					"transformations": [
+						{
+							"name": "LinkIoTHumidityData"
+						}
+					],
+					"script": "source(output(\n\t\t{$dtId} as string,\n\t\t{$timestamp} as string,\n\t\tErrorCode as string,\n\t\tTotalNum as string,\n\t\tTag_Modbus_Humidity as string,\n\t\tCreateTime as string,\n\t\tStatus as string,\n\t\tEventTime as string,\n\t\tSequentialNumber as string,\n\t\tCategory as string,\n\t\tEMT as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false) ~> InputCNCData\nsource(output(\n\t\t{$dtId} as string,\n\t\t{$timestamp} as string,\n\t\tTag_Modbus_Humidity as string,\n\t\tTag_D2_Blue as string,\n\t\tTag_Modbus_Temperature as string,\n\t\tTag_D1_Analog as string,\n\t\tTag_Modbus_CO2 as string,\n\t\tTag_D0_Digital as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false) ~> IoTHubData\nInputCNCData, IoTHubData join(InputCNCData@Tag_Modbus_Humidity != IoTHubData@Tag_Modbus_Humidity,\n\tjoinType:'outer',\n\tbroadcast: 'left')~> LinkIoTHumidityData\nLinkIoTHumidityData sink(input(\n\t\t{$dtId} as string,\n\t\t{$timestamp} as string,\n\t\tErrorCode as string,\n\t\tTotalNum as string,\n\t\tTag_Modbus_Humidity as string,\n\t\tCreateTime as string,\n\t\tStatus as string,\n\t\tEventTime as string,\n\t\tSequentialNumber as string,\n\t\tCategory as string,\n\t\tEMT as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false,\n\tpartitionFileNames:['partition-data.csv'],\n\tmapColumn(\n\t\t{$dtId} = InputCNCData@{$dtId},\n\t\t{$timestamp} = InputCNCData@{$timestamp},\n\t\tErrorCode,\n\t\tTotalNum,\n\t\tTag_Modbus_Humidity = IoTHubData@Tag_Modbus_Humidity,\n\t\tCreateTime,\n\t\tStatus,\n\t\tEventTime,\n\t\tSequentialNumber,\n\t\tCategory,\n\t\tEMT\n\t),\n\tpartitionBy('hash', 1)) ~> CNCDataWithHumidityData"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/CDMCNSPartitionData')]",
+				"[concat(variables('factoryId'), '/datasets/CDMMiabData')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/CNCDataPreparer')]",
+			"type": "Microsoft.DataFactory/factories/dataflows",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"description": "Prepares the CNC Data Set for adding the IoT Hub Data",
+				"type": "MappingDataFlow",
+				"typeProperties": {
+					"sources": [
+						{
+							"dataset": {
+								"referenceName": "InputCNCStatusData",
+								"type": "DatasetReference"
+							},
+							"name": "InputCNCData"
+						}
+					],
+					"sinks": [
+						{
+							"dataset": {
+								"referenceName": "CDMCNSPartitionData",
+								"type": "DatasetReference"
+							},
+							"name": "OutputCNCData"
+						}
+					],
+					"transformations": [],
+					"script": "source(output(\n\t\t{$dtid} as string,\n\t\t{$timestamp} as string,\n\t\tSequentialNumber as string,\n\t\tEMT as string,\n\t\tCreateTime as string,\n\t\tStatus as string,\n\t\tErrorCode as string,\n\t\tTotalNum as string,\n\t\tCategory as string,\n\t\tEventTime as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false) ~> InputCNCData\nInputCNCData sink(input(\n\t\t{$dtId} as string,\n\t\t{$timestamp} as string,\n\t\tErrorCode as string,\n\t\tTotalNum as string,\n\t\tTag_Modbus_Humidity as string,\n\t\tCreateTime as string,\n\t\tStatus as string,\n\t\tEventTime as string,\n\t\tSequentialNumber as string,\n\t\tCategory as string,\n\t\tEMT as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false,\n\tpartitionFileNames:['partition-data-intermediate.csv'],\n\ttruncate: true,\n\tmapColumn(\n\t\t{$dtId} = {$dtid},\n\t\t{$timestamp},\n\t\tErrorCode,\n\t\tTotalNum,\n\t\tTag_Modbus_Humidity = EMT,\n\t\tCreateTime,\n\t\tStatus,\n\t\tEventTime,\n\t\tSequentialNumber,\n\t\tCategory,\n\t\tEMT\n\t),\n\tpartitionBy('hash', 1)) ~> OutputCNCData"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/InputCNCStatusData')]",
+				"[concat(variables('factoryId'), '/datasets/CDMCNSPartitionData')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/InputDataToCDMTransfer')]",
+			"type": "Microsoft.DataFactory/factories/dataflows",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"type": "MappingDataFlow",
+				"typeProperties": {
+					"sources": [
+						{
+							"dataset": {
+								"referenceName": "InputCNCToolChangeData",
+								"type": "DatasetReference"
+							},
+							"name": "InputCNCData"
+						}
+					],
+					"sinks": [
+						{
+							"dataset": {
+								"referenceName": "CDMCNCToolChangeData",
+								"type": "DatasetReference"
+							},
+							"name": "CDMConvertedData"
+						}
+					],
+					"transformations": [],
+					"script": "source(output(\n\t\t{$dtid} as string,\n\t\t{$timestamp} as string,\n\t\tSequentialNumber as string,\n\t\tEMT as string,\n\t\tCreateTime as string,\n\t\tToolNo as string,\n\t\tUseCount as string,\n\t\tLimitCount as string,\n\t\tUseCountAfter as string,\n\t\tEventTime as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false) ~> InputCNCData\nInputCNCData sink(input(\n\t\t{$dtId} as string,\n\t\t{$timestamp} as string,\n\t\tUseCountAfter as string,\n\t\tToolNo as string,\n\t\tLimitCount as string,\n\t\tUseCount as string,\n\t\tSequentialNumber as string,\n\t\tCreateTime as string,\n\t\tEMT as string,\n\t\tEventTime as string\n\t),\n\tallowSchemaDrift: false,\n\tvalidateSchema: false,\n\tpartitionFileNames:['partition-data.csv'],\n\ttruncate: true,\n\tmapColumn(\n\t\t{$dtId} = {$dtid},\n\t\t{$timestamp},\n\t\tUseCountAfter,\n\t\tToolNo,\n\t\tLimitCount,\n\t\tUseCount,\n\t\tSequentialNumber,\n\t\tCreateTime,\n\t\tEMT,\n\t\tEventTime\n\t),\n\tpartitionBy('hash', 1)) ~> CDMConvertedData"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/InputCNCToolChangeData')]",
+				"[concat(variables('factoryId'), '/datasets/CDMCNCToolChangeData')]"
 			]
 		}
 	]
