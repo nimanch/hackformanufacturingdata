@@ -31,7 +31,7 @@ namespace MiaB.model.dtdl2cdm
         // Remember ADLS allows only lowercase letters, numbers and hyphens.This root path should be available in ADLS - i.e. needs to be created manually
         private const string adlsRoot = "/cdm/jabilcdm";
         // SECURITY RISK - this should be saved in AKV and retrived from there. Hardcodign for quick hacking
-        private const string adlsAccessKey = "xnv4EoFbGh53d5n2669F5CniZYRnY/EfDQSz6vStu22m4m/pJlq9zn0nfI8UsQvvtixM/kIoxC4xpinHSYV7ZQ==";
+        private const string adlsAccessKey = ""; // Add ADLS storage key here!
         
         static async Task Main(string[] args)
         {
